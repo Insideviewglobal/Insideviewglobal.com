@@ -139,7 +139,7 @@
                 class="absolute bottom-0 right-6 hidden w-1/3 bg-gray-secondary-100 md:block lg:right-12 xl:-right-0 xl:w-full xl:max-w-xl 2xl:-right-32 2xl:max-w-[640px]"
             >
                 <image
-                    src="assets/images/home_team.jpg"
+                    src="assets/images/opt/home_team.jpg"
                     class="h-auto w-full object-cover"
                     alt="Home Hero Image"
                 />

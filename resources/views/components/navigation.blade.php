@@ -11,7 +11,7 @@
                 <div class="flex items-center space-x-8 lg:space-x-12">
                     <!-- Logo-->
                     <a
-                        href="/index"
+                        href="/"
                         aria-label="Home"
                         class="pl-5 flex flex-shrink-0 items-center"
                     >
@@ -31,7 +31,7 @@
 
                     <div class="hidden items-center space-x-3 md:flex lg:space-x-4">
                         <a
-                            href="/index"
+                            href="/"
                             class="inline-block px-4 py-2 font-medium text-slate-700 hover:underline hover:text-slate-900"
                         >
                             Home
@@ -115,7 +115,7 @@
                     <div>
                         <div class="flex flex-col divide-y divide-gray-secondary-400/75">
                             <a
-                                href="/index"
+                                href="/"
                                 class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900"
                             >
                                 Home
