@@ -37,7 +37,7 @@
                             Home
                         </a>
                         <a
-                            href="/solutions"
+                            href="/"
                             class="inline-block px-4 py-2 font-medium text-slate-700 hover:underline hover:text-slate-900"
                         >
                             Solutions
