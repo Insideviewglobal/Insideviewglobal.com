@@ -1,0 +1,149 @@
+<section>
+  <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-32">
+    <div class="sm:text-center">
+      <p class="text-3xl font-normal text-black font-display">
+        Empowering users with
+        <span class="sm:block text-accent-500">
+          full control over their personal data.
+        </span>
+      </p>
+      <p class="text-base mt-4 text-zinc-500 max-w-2xl sm:mx-auto">
+        Transform your ordinary images into extraordinary masterpieces
+        effortlessly. Witness the magic unfold as your images evolve into
+        captivating and unforgettable works
+      </p>
+    </div>
+    <div
+      x-data="{
+        tabSelected: 1,
+        tabId: $id('tabs'),
+        tabButtonClicked(tabButton){
+            this.tabSelected = tabButton.id.replace(this.tabId + '-', '');
+            this.tabRepositionMarker(tabButton);
+        },
+        tabRepositionMarker(tabButton){
+            this.$refs.tabMarker.style.width=tabButton.offsetWidth + 'px';
+            this.$refs.tabMarker.style.height=tabButton.offsetHeight + 'px';
+            this.$refs.tabMarker.style.left=tabButton.offsetLeft + 'px';
+        },
+        tabContentActive(tabContent){
+            return this.tabSelected == tabContent.id.replace(this.tabId + '-content-', '');
+        }
+    }"
+      x-init="tabRepositionMarker($refs.tabButtons.firstElementChild);"
+      class="relative w-full mt-12 lg:mt-24">
+      <div class="relative flex items-center justify-center w-full">
+        <div
+          :id="$id(tabId + '-content')"
+          x-show="tabContentActive($el)"
+          class="relative">
+          <div class="relative items-center w-full" style="">
+            <img
+              class="w-full border rounded-2xl"
+              src="/assets/dashboard.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          :id="$id(tabId + '-content')"
+          x-show="tabContentActive($el)"
+          class="relative"
+          x-cloak>
+          <div class="relative items-center w-full" style="">
+            <img
+              class="w-full border rounded-2xl"
+              src="/assets/dashboardBlue.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div
+          :id="$id(tabId + '-content')"
+          x-show="tabContentActive($el)"
+          class="relative"
+          x-cloak>
+          <div class="relative items-center w-full" style="">
+            <img
+              class="w-full border rounded-2xl"
+              src="/assets/dashboardBlack.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          :id="$id(tabId + '-content')"
+          x-show="tabContentActive($el)"
+          class="relative"
+          x-cloak>
+          <div class="relative items-center w-full" style="">
+            <img
+              class="w-full border rounded-2xl"
+              src="/assets/dashboardBlack.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="max-w-xl mx-auto hidden sm:block mt-12">
+        <div
+          x-ref="tabButtons"
+          class="relative mx-auto inline-grid mt-6 items-center justify-center w-full h-8 grid-cols-3 text-black border-b border-zinc-300 rounded-lg select-none">
+          <button
+            :id="$id(tabId)"
+            @click="tabButtonClicked($el);"
+            type="button"
+            :class="{ 'border-b-2 border-accent-500' : tabButtonActive($el) }"
+            class="relative z-20 inline-flex items-center justify-center w-full h-8 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >End-to-end encryption</button
+          >
+          <button
+            :id="$id(tabId)"
+            @click="tabButtonClicked($el);"
+            type="button"
+            :class="{ 'border-b-2 border-accent-500' : tabButtonActive($el) }"
+            class="relative z-20 inline-flex items-center justify-center w-full h-8 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >No trackers or ads
+          </button>
+          <button
+            :id="$id(tabId)"
+            @click="tabButtonClicked($el);"
+            type="button"
+            :class="{ 'border-b-2 border-accent-500' : tabButtonActive($el) }"
+            class="relative z-20 inline-flex items-center justify-center w-full h-8 text-sm font-medium transition-all rounded-md cursor-pointer whitespace-nowrap"
+            >Open-source and audited
+          </button>
+
+          <div
+            x-ref="tabMarker"
+            class="absolute left-0 z-10 w-1/2 h-full duration-300 ease-out"
+            x-cloak>
+            <div class="w-full h-full border-b-2 border-accent-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 lg:mt-24 grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <p class="text-3xl font-normal text-black font-display">
+        Empowering users with
+        <span class="sm:block text-accent-500">
+          full control over their personal data.
+        </span>
+      </p>
+      <div>
+        <p class="text-sm text-zinc-500">
+          Transform your ordinary images into extraordinary masterpieces
+          effortlessly. Witness the magic unfold as your images evolve into
+          captivating and unforgettable works.
+        </p>
+        <p class="text-sm text-zinc-500 mt-4">
+          Employing a comprehensive security framework comprising multiple
+          layers, we fortify your digital presence against potential threats,
+          ensuring peace of mind in an ever-evolving digital landscape.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

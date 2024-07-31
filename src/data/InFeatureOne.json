@@ -1,0 +1,47 @@
+{
+  "title": "It's time to change",
+  "subtitle": "Maximize Efficiency, Minimize Financial Risks",
+  "byline": "Stuck in a loop with vendors? We break the cycle by getting to know you and crafting tailor-made solutions.",
+  "features": {
+    "column_a": [
+      {
+        "icon": "threeslide",
+        "color": "orange",
+        "icon_color": "bg-orange-700",
+        "border_color": "border-orange-300",
+        "icon_classes": "hi-outline hi-globe-alt relative inline-block size-6 text-white transition duration-200 ease-out group-hover:scale-110",
+        "label": "Your Vision",
+        "description": "You know your business inside out – your pain points and your goals. Let's make your vision a reality together. IT should empower, not control."
+      },
+      {
+        "icon": "piechart",
+        "color": "rose",
+        "icon_color": "bg-rose-700",
+        "border_color": "border-rose-300",
+        "icon_classes": "hi-outline hi-globe-alt relative inline-block size-6 text-white transition duration-200 ease-out group-hover:scale-110",
+        "label": "Our Expertise",
+        "description": "With experience ranging from point-of-sale operations to global rollouts, we are familiar with a wide range of challenges.\n\nOur expertise is committed to helping you achieve your desired outcomes, no matter how complex they may appear."
+      }
+    ],
+    "column_b": [
+      {
+        "icon": "global",
+        "color": "emerald",
+        "icon_color": "bg-emerald-700",
+        "border_color": "border-emerald-300",
+        "icon_classes": "hi-outline hi-globe-alt relative inline-block size-6 text-white transition duration-200 ease-out group-hover:scale-110",
+        "label": "Sustainable",
+        "description": "We're all about lasting solutions that truly meet customer needs. Forget the trendy tech fads. Our goal? Keep it simple, effective, adaptable, and user-friendly for the long haul."
+      },
+      {
+        "icon": "puzzle",
+        "color": "purple",
+        "icon_color": "bg-purple-700",
+        "border_color": "border-purple-300",
+        "icon_classes": "hi-outline hi-globe-alt relative inline-block size-6 text-white transition duration-200 ease-out group-hover:scale-110",
+        "label": "Scalable",
+        "description": "Our solutions are built to scale with your business. As you grow, we've got you covered. Plan for success with solutions that evolve alongside you."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "headline": "We Break Big Projects Into Small, Achievable Steps",
+  "subtitle": "Our proven process is the key to our success, crafted at every turn",
+  "phase_1": {
+    "headline": "1. Insights Workshops",
+    "description": "Our workshops are custom-designed for each unique use case, meticulously gathering all critical details to craft an accurate strategy"
+  },
+  "phase_2": {
+    "headline": "2. Visualize the Roadmap",
+    "description": "Envision the path forward. Embracing certainty is universal; assumptions are avoided as we furnish information for your well-informed decisions"
+  },
+  "phase_3": {
+    "headline": "3. Set Strategic Approach",
+    "description": "We leverage technology while you focus on mastering your business goals. You have the flexibility to prioritize milestones based on revenue, effort, and budget"
+  },
+  "phase_4": {
+    "headline": "4. Rapid Implementation",
+    "description": "We remain puzzled by the lengthy technical delays in achieving effective solutions. Our approach accelerates implementation by completing significant groundwork before our initial meeting"
+  }
+}

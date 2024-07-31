@@ -1,0 +1,684 @@
+---
+import links from "@/data/navigationLinks.json";
+
+//links to services
+const solutionsofferinglarge = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "large" && solution.type === "offering",
+);
+const solutionsolutionslarge = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "large" && solution.type === "solution",
+);
+const solutiontechlarge = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "large" && solution.type === "technology",
+);
+const solutionsofferingsmall = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "small" && solution.type === "offering",
+);
+const solutionsolutionssmall = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "small" && solution.type === "solution",
+);
+const solutiontechsmall = links.solutionslinks.filter(
+  (solution) =>
+    solution.resolutionsize === "small" && solution.type === "technology",
+);
+
+//links to services
+const servicesLeftlarge = links.servicesLinks.filter(
+  (service) => service.resolutionsize === "large" && service.column === "left",
+);
+const servicesRightlarge = links.servicesLinks.filter(
+  (service) => service.resolutionsize === "large" && service.column === "right",
+);
+const allservices = links.servicesLinks.filter(
+  (service) => service.resolutionsize === "small",
+);
+
+//links to industries
+const industriesLeftlarge = links.industriesLinks.filter(
+  (industry) =>
+    industry.resolutionsize === "large" && industry.column === "left",
+);
+const industriessRightlarge = links.industriesLinks.filter(
+  (industry) =>
+    industry.resolutionsize === "large" && industry.column === "right",
+);
+const allindustries = links.industriesLinks.filter(
+  (industry) => industry.resolutionsize === "small",
+);
+
+//links to about
+const allaboutlarge = links.allaboutLinks.filter(
+  (about) => about.resolutionsize === "large",
+);
+const allaboutsmall = links.allaboutLinks.filter(
+  (about) => about.resolutionsize === "small",
+);
+---
+
+<!-- Header -->
+
+<header
+  x-data="{ mobileNavOpen: false }"
+  id="page-header"
+  class="relative flex flex-none bg-neutral-800 dark:bg-stone-950 items-center py-6"
+>
+
+  <nav
+    class="fixed w-full z-20 top-0 start-0 border-b-4 border-sky-800 bg-neutral-800 dark:bg-stone-950 items-center pb-6"
+  >
+    <!-- Main Header Content -->
+    <div
+  class=" dark text-muted text-sm bg-[#002031] dark:bg-transparent dark:border-b dark:border-slate-800 dark:text-slate-100 hidden md:flex gap-1 overflow-hidden px-3 py-2 relative text-ellipsis whitespace-nowrap"
+>
+<div
+  class=" container relative mx-auto flex items-center justify-between px-4 lg:px-20 lg:max-w-7xl"
+>
+  
+  <a href="/blog/blog" class="text-muted px-5 hover:text-sky-700 dark:text-slate-400 text-slate-100 font-medium"
+    >Blog</a>
+
+    <a href="/" class="text-muted  px-5 hover:text-sky-700 dark:text-slate-400 text-slate-100 font-medium"
+    >Case Studies</a>
+
+    <a href="/forms/contact" class="text-muted  px-5 hover:text-sky-700 dark:text-slate-400 text-slate-100 font-medium"
+    >Book a Demo Today! </a>
+  <div class="ltr:ml-auto rtl:mr-auto ml-auto bg-contain inline-block ">
+  
+  <a href="https://www.linkedin.com/company/inside-view-global" class="ltr:ml-auto rtl:mr-auto w-10 h-[1.25rem] ml-auto bg-contain inline-block ">
+    <img src="/assets/icons/linkedin_2.svg" width="24" height="24" >
+  </a>
+  
+  <a href="https://www.instagram.com/insideviewglobal"  class="ltr:ml-auto rtl:mr-auto w-10 h-[1.25rem] ml-auto bg-contain inline-block ">
+    <img src="/assets/icons/instagram.svg" width="24" height="24" >
+  </a>
+  <a href="https://www.facebook.com/insideviewconsultinginc" class="ltr:ml-auto rtl:mr-auto w-10 h-[1.25rem] ml-auto bg-contain inline-block ">
+    <img src="/assets/icons/facebook.svg" width="24" height="24" >
+  </a>
+  <a
+    target="_blank"
+    rel="noopener"
+    class="ltr:ml-auto rtl:mr-auto w-10 h-[1.25rem] ml-auto bg-contain inline-block "
+    title="If you like IVG, give us a star."
+    href="/forms/contact"
+  >
+  <img src="/assets/icons/operator.svg" width="24" height="24" >
+  </a>
+</div>
+</div>
+</div>
+    
+    <div
+      class="container relative mx-auto flex items-center justify-between px-4 pt-4 lg:px-8 lg:max-w-7xl"
+    >
+      <!-- Left Section -->
+      <div class="flex items-center">
+        <!-- Logo -->
+        <a
+          href="/"
+          class="group inline-flex items-center space-x-2 text-lg md:ml-10 font-bold tracking-wide text-white hover:text-white dark:text-gray-100 dark:hover:text-gray-100"
+        >
+          <img src="/assets/Logo/logo white horizontal.png" />
+        </a>
+        <!-- END Logo -->
+        <!-- END Left Section -->
+      </div>
+      <!-- Right Section -->
+      <div class="flex items-center lg:pl-20 xl:pl-32">
+        <ul class="mt-0.5 hidden items-center lg:flex">
+          <li class="group">
+            <!-- Services Link -->
+            <a
+              href="/services/ivg_services"
+              class="inline-flex h-8 items-center gap-1 px-2.5 uppercase text-base font-light text-white hover:text-sky-500 group-hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <span>Services</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hi-solid hi-chevron-down inline-block size-5 opacity-80 transition duration-200 ease-out group-hover:rotate-180"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- END Services Link -->
+            <div
+              class="invisible absolute items-center text-sm right-52 justify-center top-8 z-auto pt-20 group-hover:visible lg:w-[550px]"
+            >
+              <div
+                class="origin-top scale-75 overflow-hidden rounded-lg bg-gray-100 opacity-0 shadow-xl ring-1 ring-black/5 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-stone-800 dark:ring-white/10"
+              >
+                <div
+                  class="grid scale-90 grid-cols-2 opacity-0 transition duration-500 ease-out group-hover:scale-100 group-hover:opacity-100 py-2 "
+                >
+                  <div class="space-y-1 ">
+                    <nav class="flex flex-col">
+                      {
+                        servicesLeftlarge.map((servicedefinition) => (
+                          <a
+                            href="/services/ivg_services"
+                            class="flex items-center rounded-xl m-2 px-4  text-gray-700 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25"
+                          >
+                            <img src="/assets/icons/link.svg" width="24" height="24" />
+                            <div class=" m-2 text-left">
+                              {servicedefinition.title}
+                            </div>
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                  <div class="space-y-1 ">
+                    <nav class="flex flex-col">
+                      {
+                        servicesRightlarge.map((servicedefinition) => (
+                          <a
+                            href="/services/ivg_services"
+                            class="flex items-center rounded-xl m-2 px-4  text-gray-700 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25"
+                          >
+                            <img src="/assets/icons/link.svg" width="24" height="24" />
+                            <div class=" m-2 text-left">
+                              {servicedefinition.title}
+                            </div>
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Solutions Menu -->
+
+            <!-- END Solutions Menu -->
+          </li>
+          <li class="group">
+            <!-- Solutions Link -->
+            <a
+              href="javascript:void(0)"
+              class="inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <span>Solutions</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hi-solid hi-chevron-down inline-block size-5 opacity-80 transition duration-200 ease-out group-hover:rotate-180"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- END Solutions Link -->
+            <!-- Solutions Menu -->
+            <div
+              class="invisible max-w-fit absolute left-96 right-8 top-8 z-1 pt-20 group-hover:visible"
+            >
+              <div
+                class="origin-top scale-75 overflow-hidden rounded-lg bg-slate-950 opacity-0 shadow-xl ring-1 ring-black/5 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-white dark:ring-white/10"
+              >
+                <div
+                  class="grid scale-90 grid-cols-3 opacity-0 transition text-left duration-500 ease-out group-hover:scale-100 group-hover:opacity-100"
+                >
+                  <div class="space-y-6 p-8 ">
+                    <h4
+                      class="text-base font-semibold uppercase tracking-wider dark:text-sky-600 text-sky-400"
+                    >
+                      Fixed Cost
+                    </h4>
+                    <nav class="flex flex-col gap-3">
+                      {
+                        solutionsofferinglarge.map((solution) => (
+                          <a
+                            href={solution.url}
+                            class="text-sm font-medium dark:text-gray-700 hover:text-sky-600 text-gray-200 dark:hover:text-sky-700"
+                          >
+                            {solution.title}
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                  <div class="space-y-6 p-8">
+                    <h4
+                      class="text-base font-semibold uppercase tracking-wider dark:text-sky-600 text-sky-400"
+                    >
+                      What We Do
+                    </h4>
+                    <nav class="flex flex-col gap-3">
+                      {
+                        solutionsolutionslarge.map((solution) => (
+                          <a
+                            href={solution.url}
+                            class="text-sm font-medium dark:text-gray-700 hover:text-sky-600 text-gray-200 dark:hover:text-sky-700"
+                          >
+                            {solution.title}
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                  <div class="space-y-6 p-8">
+                    <h4
+                      class="text-base font-semibold uppercase tracking-wider dark:text-sky-600 text-sky-400"
+                    >
+                      By Technology
+                    </h4>
+                    <nav class="flex flex-col gap-3">
+                      {
+                        solutiontechlarge.map((solution) => (
+                          <a
+                            href={solution.url}
+                            class="text-sm font-medium dark:text-gray-700 hover:text-sky-600 text-gray-200 dark:hover:text-sky-700"
+                          >
+                            {solution.title}
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END Developers Menu -->
+          </li>
+          <li class="group">
+            <!-- Resources Link -->
+            <a
+              href="javascript:void(0)"
+              class="inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <span>Industries</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hi-solid hi-chevron-down inline-block size-5 opacity-80 transition duration-200 ease-out group-hover:rotate-180"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- END Resources Link -->
+
+            <!-- Industries Menu -->
+            <div
+              class="invisible absolute items-center text-sm right-1  justify-center top-8 z-auto pt-20 group-hover:visible lg:w-[550px]"
+            >
+              <div
+                class="origin-top scale-75 overflow-hidden bg-gray-100 rounded-lg opacity-0 shadow-xl ring-1 ring-black/5 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-stone-800 dark:ring-white/10"
+              >
+              <div
+              class="grid scale-90 grid-cols-2 opacity-0 transition duration-500 ease-out group-hover:scale-100 group-hover:opacity-100 py-2"
+            >
+              
+                  <div class="space-y-1 ">
+                    <nav class="flex flex-col">
+                      {
+                        industriesLeftlarge.map((industry) => (
+                          <a
+                            href="javascript:void(0)"
+                            class="flex items-center rounded-xl m-2 px-9 text-gray-700 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25"
+                          >
+                            <img src="/assets/icons/link.svg" width="24" height="24" />
+                             <div class=" m-2 text-left">{industry.title}</div>
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                  <div class="space-y-1 ">
+                    <nav class="flex flex-col">
+                      {
+                        industriessRightlarge.map((industry) => (
+                          <a
+                            href="javascript:void(0)"
+                            class="flex items-center rounded-xl m-2 px-9 text-gray-700 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25"
+                          ><img src="/assets/icons/link.svg" width="24" height="24" />
+                            <div class=" m-2 text-left">{industry.title}</div>
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END Industries Menu -->
+          </li>
+          <li class="group relative">
+            <!-- Resources Link -->
+            <a
+              href="javascript:void(0)"
+              class="inline-flex h-8 items-center gap-1 uppercase px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold group-hover:text-sky-500 dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <span>About</span>
+              <svg
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hi-solid hi-chevron-down inline-block size-5 opacity-80 transition duration-200 ease-out group-hover:rotate-180"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <!-- END About Link -->
+
+            <!-- About Menu -->
+            
+            <div
+              class="invisible absolute items-center text-sm justify-center top-8 z-auto pt-11 group-hover:visible lg:w-[300px]"
+            >
+              <div
+                class="origin-top scale-75 overflow-hidden bg-gray-100 rounded-lg opacity-0 shadow-xl ring-1 ring-black/5 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-stone-800 dark:ring-white/10"
+              >
+              <div
+              class="grid scale-90 grid-cols-1 opacity-0 transition duration-500 ease-out group-hover:scale-100 group-hover:opacity-100 py-2"
+            >
+              
+                  <div class="space-y-1 ">
+                    <nav class="flex flex-col">
+                    {
+                      allaboutlarge.map((linkAbout) => (
+                        <a
+                          href={linkAbout.url}
+                          class="flex items-center  rounded-xl m-2 px-4  text-gray-700 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25"
+                        >
+                           <img src="/assets/icons/link.svg" width="24" height="24" />
+                          <div class=" m-2 text-left">
+                           {linkAbout.title}
+                          </div>
+                        </a>
+                      ))
+                    }
+                  </nav>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END Resources Menu -->
+          </li>
+          <li class="group relative">
+            <a
+              href="/forms/contact"
+              class="inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <span>Contact Us</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Open Mobile Navigation -->
+        <div class="lg:hidden">
+          <button
+            x-on:click="mobileNavOpen = true"
+            type="button"
+            class="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-base font-semibold leading-5 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300/25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-transparent dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600/40 dark:active:border-gray-700"
+            aria-controls="tkMobileNav"
+          >
+            <svg
+              class="hi-mini hi-bars-3 inline-block size-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- END Open Mobile Navigation -->
+      </div>
+      <!-- END Right Section -->
+
+      <!-- Mobile Navigation -->
+      <nav
+        x-cloak
+        x-show="mobileNavOpen"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-50 translate-x-full"
+        x-transition:enter-end="opacity-100 translate-x-0"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100 translate-x-0"
+        x-transition:leave-end="opacity-50 translate-x-full"
+        id="tkMobileNav"
+        class="fixed bottom-0 right-0 top-0 z-50 w-80 md:w-8/12 overflow-auto bg-white/95 shadow-lg dark:bg-stone-800/95 lg:hidden"
+        tabindex="-1"
+        aria-labelledby="tkMobileNavLabel"
+        x-bind:aria-modal="mobileNavOpen ? 'true' : null"
+        x-bind:role="mobileNavOpen ? 'dialog' : null"
+      >
+        <div class="flex items-center justify-between p-6">
+          <!-- Logo -->
+          <a
+            id="tkMobileNavLabel"
+            href="javascript:void(0)"
+            class="group inline-flex items-center font-semibold space-x-2 text-lg tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300"
+          >
+            <img src="/assets/logo_color.svg" class="h-8" />
+            <span>Inside View Global</span>
+          </a>
+          <!-- END Logo -->
+
+          <!-- Close Mobile Navigation -->
+          <button
+            x-on:click="mobileNavOpen = false"
+            type="button"
+            class="inline-flex items-center justify-center space-x-2 rounded-lg border border-gray-200 bg-white px-3 py-2 text-base font-semibold leading-5 text-gray-800 hover:border-gray-300 hover:text-gray-900 hover:shadow-sm focus:ring focus:ring-gray-300 focus:ring-opacity-25 active:border-gray-200 active:shadow-none dark:border-gray-700 dark:bg-stone-800 dark:text-gray-300 dark:hover:border-gray-600 dark:hover:text-gray-200 dark:focus:ring-gray-600 dark:focus:ring-opacity-40 dark:active:border-gray-700"
+          >
+            <svg
+              class="hi-mini hi-x-mark -mx-0.5 inline-block size-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
+              ></path>
+            </svg>
+          </button>
+          <!-- END Close Mobile Navigation -->
+        </div>
+        <div class="h-px bg-gray-200/75 dark:bg-gray-700/75"></div>
+        <div class="flex flex-col gap-2 px-6 ">
+          <div class="grid  gap-6">
+            <div class=" gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center">
+            <a href="/services/ivg_services"
+              ><h3 class=" uppercase font-semibold dark:text-sky-400 text-sky-400">
+                Services
+              </h3>
+            </a>
+          </div>
+              <nav class="flex flex-col gap-3">
+                {
+                  allservices.map((servicedefinition) => (
+                    <a
+                      href={servicedefinition.url}
+                      class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                    >
+                      
+                      <div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />
+                          {servicedefinition.title}
+                       
+                      </div>
+                    </a>
+                  ))
+                }
+              </nav>
+           
+          </div>
+          <div class="grid  gap-6">
+            <div class=" gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center">
+            <h3 class=" uppercase font-semibold dark:text-sky-400 text-sky-400">
+              Solutions
+            </h3>
+          </div>
+            <div class="ml-4 text-left">
+              <h4
+                class="text-base font-semibold tracking-wider text-sky-900 hover:bg-sky-200 hover:text-sky-500 dark:text-gray-200 dark:hover:bg-sky-400/25"
+              >
+                Fixed Cost
+              </h4>
+              <nav class="flex flex-col gap-3 py-5 ">
+                {
+                  solutionsofferingsmall.map((solution) => (
+                    <a
+                      href={solution.url}
+                      class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                    ><div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />
+                      {solution.title}
+                    </div>
+                      
+                    </a>
+                  ))
+                }
+              </nav>
+              <h4
+              class="text-base my-4 font-semibold tracking-wider text-sky-900 hover:bg-sky-200 hover:text-sky-500 dark:text-gray-200 dark:hover:bg-sky-400/25"
+            >
+                  What We Do
+                </h4>
+                <nav class="flex flex-col gap-3 py-5">
+                  {
+                    solutiontechsmall.map((solution) => (
+                    <a
+                        href={solution.url}
+                        class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                      ><div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />
+                        {solution.title}
+                        </div>
+                      </a>
+                    ))
+                  }
+                </nav>
+              
+              <h4
+                class="text-base my-4 font-semibold tracking-wider text-sky-900 hover:bg-sky-200 hover:text-sky-500 dark:text-gray-200 dark:hover:bg-sky-400/25"
+              >
+                By Technology
+              </h4>
+              <nav class="flex flex-col gap-3 py-5">
+                {
+                  solutionsolutionssmall.map((solution) => (
+                  <a
+                      href={solution.url}
+                      class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                    ><div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />
+                      {solution.title}
+                      </div>
+                    </a>
+                  ))
+                }
+              </nav>
+            </div>
+            
+          </div>
+          <div class="grid grid-cols-1 gap-6">
+            <h3
+              class="col-span-1 font-semibold uppercase dark:text-sky-400 text-sky-700"
+            >
+              Industries
+            </h3>
+            <div class="space-y-2">
+              <nav class="flex flex-col gap-3">
+                {
+                  allindustries.map((industry) => (
+                    <a
+                      href={industry.url}
+                      class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                    >
+                      
+                      <div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />{industry.title}
+                      </div>
+                    </a>
+                  ))
+                }
+              </nav>
+            </div>
+          </div>
+          <div class="grid  gap-6">
+            <div class=" gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center">
+            <a href="javascript:void(0)"
+              ><h3 class=" uppercase font-semibold dark:text-sky-400 text-sky-400">
+                About
+              </h3>
+            </a>
+          </div>
+              <nav class="flex flex-col gap-3">
+          
+                {
+                  allaboutsmall.map((linkAbout) => (
+                    <a
+                      href={linkAbout.url}
+                      class="text-base font-medium text-gray-700 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700"
+                    >
+                       <div class=" ml-4 text-left font-medium">
+                        <img src="/assets/icons/link.svg" class="inline-block pr-4" width="32" height="32" />
+                      {linkAbout.title}
+                      </div>
+                    </a>
+                  ))
+                }
+              </nav>
+
+          </div>
+
+          <div class=" gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center">
+            <a
+              href="/forms/contact"
+              class="inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400"
+            >
+              <h3
+                class=" font-semibold uppercase dark:text-sky-400 text-sky-400 "
+              >
+                Contact Us
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="h-px bg-gray-200/75 dark:bg-gray-700/75"></div>
+      </nav>
+
+      <!-- Mobile Navigation Backdrop -->
+      <div
+        x-cloak
+        x-show="mobileNavOpen"
+        x-on:click="mobileNavOpen = false"
+        x-transition:enter="transition ease-out duration-200"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed inset-0 z-40 bg-gray-900 bg-opacity-20 backdrop-blur-sm will-change-auto dark:bg-opacity-80 lg:hidden"
+      >
+      </div>
+      <!-- END Mobile Navigation Backdrop -->
+    </div>
+  </nav>
+</header>

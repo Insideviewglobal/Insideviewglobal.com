@@ -1,0 +1,76 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EntriesTwo from "@/components/entries/EntriesTwo.astro";
+import CtaFive from "@/components/ctas/CtaFive.astro";
+const allPosts = await getCollection("posts");
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+---
+<BaseLayout>
+  <section>
+    <div
+      class="relative items-center w-full px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-36">
+      <div class="text-center">
+        <h1
+          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display">
+          Insights and perspectives
+        </h1>
+        <p class="text-base mt-4 text-zinc-500 mx-auto max-w-sm">
+          Exploring topics, tips, and trends in the world of communication and
+          privacy
+        </p>
+        <form class="max-w-sm mt-4 mx-auto">
+          <div class="flex flex-col lg:flex-row gap-2">
+            <label class="sr-only" for="email-address">Email address</label>
+            <input
+              autocomplete="email"
+              class="block w-full px-4 py-2 h-10 border bg-chalk border-zinc-300 rounded-lg appearance-none text-accent-500 placeholder-zinc-300 focus:border-zinc-300 focus:outline-none focus:ring-zinc-300 duration-200 sm:text-sm"
+              id="email-address"
+              name="email"
+              placeholder="Enter your email"
+              required=""
+              type="email"
+            />
+            <button
+              class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center bg-black text-white hover:bg-zinc-700 h-10"
+              type="submit">Subscribe</button
+            >
+          </div>
+        </form>
+        <ul
+          class="flex flex-wrap w-full justify-center gap-2 mt-12"
+          role="list">
+          {
+            tags.map((tag) => (
+              <a href={`/tags/${tag}`}>
+                <li class=" rounded-lg px-4 border py-2 text-xs font-semibold transition-all flex items-center justify-center bg-white text-zinc-500 hover:text-accent-500 h-8 border-zinc-300">
+                  {tag}
+                </li>
+              </a>
+            ))
+          }
+        </ul>
+      </div>
+      <ol
+        class="grid grid-cols-1 gap-4 lg:gap-8 mt-12 lg:grid-cols-1 sm:grid-cols-2"
+        role="list">
+        {
+          allPosts
+            .slice()
+            .map((post) => (
+              <EntriesTwo
+                url={"/posts/" + post.slug}
+                title={post.data.title}
+                description={post.data.description}
+                alt={post.data.title}
+                pubDate={post.data.pubDate.toString().slice(0, 10)}
+                author={post.data.author}
+                image={post.data.image.url}
+              />
+            ))
+        }
+      </ol>
+    </div>
+  </section>
+  <CtaFive />
+</BaseLayout>

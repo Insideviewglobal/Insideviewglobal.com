@@ -1,0 +1,53 @@
+[33mb74b2eb[m[33m ([m[1;36mHEAD -> [m[1;32mluisDevEnvironment[m[33m)[m services layout, content and first draft
+[33m4833d69[m update font, adding services pages and updating layouts
+[33me85d045[m update font, adding services pages and updating layouts
+[33m56389a7[m branch initial development
+[33m93984fd[m remove copies
+[33m5ebf99c[m Merge pull request #1 from ziptied/fix
+[33mf0b210b[m[33m ([m[1;31morigin/fix[m[33m)[m Merge remote-tracking branch 'github/main' into fix
+[33mf737391[m Update README.md
+[33m5f3eab1[m menu blog removes
+[33mbbffe3c[m Merge branch 'main' of https://github.com/ziptied/liveview_astro
+[33m23f8e1f[m undo
+[33mbed8ad6[m Revert "flash updates"
+[33m3f448c2[m style
+[33mb6cf6c3[m style
+[33m6458470[m style
+[33m09c9fe7[m style
+[33m73ecb66[m style
+[33ma056885[m flash updates
+[33mcafd012[m content order changes
+[33mbe3d268[m updates and changes to sections.
+[33mcf48c3f[m Merge branch 'main' of https://github.com/ziptied/liveview_astro
+[33m41a8644[m features
+[33md80c72c[m Update team.json
+[33m21625fd[m Update team.json
+[33mda909c6[m remove old hero
+[33mc8f4249[m update to image
+[33m650617b[m image change up
+[33mbe29ea8[m Update team.json
+[33m1764071[m Update team.json
+[33m9e08f81[m Update team.json
+[33m8c110b9[m Add files via upload
+[33mbceb55e[m Uploading HM File
+[33mab9aa48[m hero and image component
+[33mac2d561[m remove middle initial in demo
+[33mf6afcea[m data driven team section
+[33mf5e9bb2[m menu changes
+[33m3bc97c0[m menu style adjustements
+[33m040021f[m sticky and z-index
+[33mbdc7c16[m padding and alignment
+[33m88b4622[m mega
+[33mb7cf240[m basic spacing and size fixes
+[33m95e2f47[m mega menu defination
+[33m794f1eb[m remove 3rd party
+[33m6a146df[m remove lazy load
+[33m34e110e[m port of old to new template
+[33m8aa6ca2[m color and logo
+[33m95fdca8[m base change
+[33m5b5c070[m change name
+[33m350308f[m title and url
+[33m39c840d[m add sharp into depends
+[33mf5fdb18[m update ignore
+[33m3ebd427[m image deployment test
+[33m7c7a411[m init

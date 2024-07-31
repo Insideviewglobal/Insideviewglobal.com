@@ -1,0 +1,49 @@
+---
+const { title, description, url, socialImage, twitterImage, author } =
+  Astro.props;
+let shortTitle = "Inside View Global";
+let subtitle = "Raising the bar";
+---
+<!--
+    Standard meta
+ -->
+<meta charset="UTF-8" />
+<meta name="author" content="Yout name" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="viewport" content="width=device-width" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="keywords" content="Market intelligence; Business intelligence; Sales intelligence; Marketing intelligence; Competitive intelligence; B2B; data; IT consulting services; Services & Solutions; Data management; Data enrichment; Data integration; CRM; Account-based marketing; Go-to-market intelligence; Lead generation; Pipeline management; Digital transformation; Business process automation; Information management; Project management; Agile project management; Modernization services; Microsoft 365 consulting; SharePoint solutions; Business value consulting; Information architecture; Workshops and mentoring; Vendor management; Cloud technical specialist; Microsoft Power Platform; Azure consulting; Collaboration apps; Workplace modernization; Digital strategy advisory; Document management systems; Content migration; Governance and compliance; Teamwork and inclusion; Information Architecture; Content organization; Data structuring; Information structuring Content strategy Data architecture Knowledge architecture User experience design (UX design) Information design Content taxonomy; Navigation design; Site structure design; Data categorization; Information hierarchy; Information modelling; Information taxonomy; Products; Sales and marketing solutions; Market research tools; Customer data platform; Sales enablement software; Market insight tools; Advisory & digital strategy; Intranet Project & collaboration workspaces ; Target Audience; Sales professionals; Marketing professionals; Business development professionals; Data analysts B2B marketers; Account managers; IT professionals; Organizations seeking IT consulting services; Use Cases; Target account identification; Lead prioritization; Sales prospecting; Relationship mapping; Account-based sales; Personalized outreach; Competitive Differentiators; Data quality; Comprehensive data coverage; Real-time data updates; Industry-specific insights; Advanced data analytics; Assessment-led solutions; Analysis of people/process/technology; Design & architecture; Mentoring workshops; Project management; Rapid deployment;  Geographic Keywords; Global market insights; International business data; Regional market intelligence; Canadian; Canadian IT consulting; North American market insights; SEO Best Practices; Data-driven decision-making; Sales and marketing strategies; Improving sales performance; Marketing campaign optimization; Customer relationship management; Trending Terms; Big data analytics; AI in sales and marketing; Predictive analytics; Data visualization; Company’s Expertise and Authority; Thought leadership; Industry insights; Professional sales and marketing resources; Expert data management IT consulting expertise" />
+<!--
+    General meta for Open Graphs
+ -->
+<meta name="title" content={`${title} - ${subtitle}`} />
+<meta name="description" content={description} />
+<meta name="author" content={author} />
+<!---------------------
+    open graph standard
+--------------------->
+<meta property="og:title" content={`${title} - ${subtitle}`} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={url} />
+<!---------------------
+     open graph Meta
+--------------------->
+<meta
+  property="og:image"
+  content={Astro.site ? `${Astro.site}${socialImage}` : socialImage}
+/>
+<!---------------------
+    Open Graph Twitter
+ --------------------->
+
+<meta property="og:site_name" content={title} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content={description} />
+<meta
+  name="twitter:image"
+  content={Astro.site ? `${Astro.site}${twitterImage}` : twitterImage}
+/>
+<title>{shortTitle} - {subtitle}</title>

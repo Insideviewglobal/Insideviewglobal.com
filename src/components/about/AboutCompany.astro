@@ -1,0 +1,86 @@
+---
+import ProcessData from "@/data/AboutCompany.json";
+---
+
+<!-- Process Section -->
+
+    <div class="bg-slate-800 dark:bg-gray-900 dark:text-gray-10 py-5 lg:py-0 ">
+        <div
+            class="container mx-auto space-y-2 px-4 py-2 lg:px-8 lg:py-10 "
+        >
+            <!-- Heading -->
+            <div class="text-center">
+                <h2 class="mb-4 text-lg md:text-2xl lg:text-4xl font-black text-white">
+                    {ProcessData.headline}
+                </h2>
+                <h3
+                    class="mx-auto text-base md:text-lg lg:text-2xl font-semibold leading-relaxed text-sky-600 dark:text-gray-300 lg:w-2/3"
+                >
+                    {ProcessData.subtitle}
+                </h3>
+            </div>
+            <!-- END Heading -->
+        </div>
+    </div>
+    <div class="container mx-auto space-y-16 px-4 py-2 lg:px-8 lg:py-2 xl:max-w-7xl">
+        <div class="container bg-white dark:text-gray-300 mx-auto grid grid-cols-1 xl:grid-cols-2 px-4 text-center  lg:pt-10 lg:pb-2 ">
+            <!-- Features in Cards -->
+            <div class="flex-col ">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 px-4 text-center items-center lg:pt-10 lg:pb-2 "
+                >
+                    <div class="max-w-fit">
+                        <div class=" mx-5 py-4">
+                            <h3 class="mb-2 text-base lg:text-lg text-sky-950 font-bold">{ProcessData.phase_1.headline}</h3>
+                            <p class="leading-relaxed text-xs lg:text-sm text-gray-900 dark:text-gray-800">
+                                {ProcessData.phase_1.description}
+                            </p>
+                        </div>
+                        <div class=" mx-5 py-4">
+                            <h3 class="mb-2 text-base lg:text-lg text-sky-950 font-bold">{ProcessData.phase_2.headline}</h3>
+                            <p class="leading-relaxed text-xs lg:text-sm text-gray-900 dark:text-gray-800">
+                                {ProcessData.phase_2.description}
+                            </p>
+                        </div>
+    
+                    </div>
+                    <div class="max-w-fit">
+    
+                        <div class="mx-5 py-4">
+                            <h3 class="mb-2 text-base lg:text-lg text-sky-950 font-bold">
+                                {ProcessData.phase_3.headline}
+                            </h3>
+                            <p
+                                class="leading-relaxed text-xs lg:text-sm text-gray-900 dark:text-gray-800"
+                            >
+                                {ProcessData.phase_3.description}
+                            </p>
+                        </div>
+                        <div class="mx-5 py-4">
+                            <h3 class="mb-2 text-base lg:text-lg text-sky-950 font-bold">
+                                {ProcessData.phase_4.headline}
+                            </h3>
+                            <p
+                                class="leading-relaxed text-xs lg:text-sm text-gray-900 dark:text-gray-800"
+                            >
+                                {ProcessData.phase_4.description}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-none ">
+            
+                <div class="text-center bg-white py-2 lg:py-8">
+                    <img
+                        src="/assets/images/methodology.png"
+                        class="max-w-80 md:max-w-2xl lg:max-w-4xl xl:max-w-xl"
+                    />
+                </div>
+            </div>
+        </div>
+</div>
+
+    
+
+<!-- END Proess Section -->

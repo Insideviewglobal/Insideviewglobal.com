@@ -1,0 +1,87 @@
+{
+  "title": "Real People",
+  "subtitle": "Meet Our Team",
+  "byline": "They work tirelessly behind the scenes to help you build better products and enhance consulting services. Together with independent contractors, we are committed to creating sustainable and scalable solutions, ensuring we bring the best team every time.",
+  "members": [
+    {
+      "member_name": "Luis Juarez",
+      "profile_image": "/assets/team/LJ_P1B.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/luisnjuarez/",
+      "member_insta_link":"https://www.instagram.com/luisnjuarez/",
+      "role_order": 1,
+      "title": "CEO and Managing Director",
+      "bio": "As a CEO with an Enterprise Architect background, I champion teamwork and inclusion. My expertise fuels innovative IT solutions driving organizational growth and transformation."
+    },{
+      "member_name": "Zachary Oakes",
+      "profile_image": "/assets/team/profile_2023_oct_tight_sq.jpeg",
+      "member_linkedin_link":"https://www.linkedin.com/in/zacharyoakes/",
+      "member_insta_link":"https://www.instagram.com/ziptied/",
+      "role_order": 3,
+      "title": "Innovator & Enteprise Architect",
+      "bio": "I'm a tech innovator obsessed with cutting-edge solutions. Quality, customer-centricity, and simplicity drive everything I do. Technology must be open, sustainable, and ethical."
+    },
+    {
+      "member_name": "Maria Garcia",
+      "profile_image": "/assets/team/MJ_P1.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/mariagarciadelacorte/",
+      "member_insta_link":"https://www.instagram.com/delacortemg/",
+      "role_order": 2,
+      "title": "Business Growth Manager",
+      "bio": "I drive strategic growth and partnerships, expanding market reach, optimizing revenue, and fostering key client relationships. I thrive on creating opportunities and delivering results. "
+    },
+    
+    {
+      "member_name": "Hipatia Medina",
+      "profile_image": "/assets/team/HM_p2.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/hipatiamedina/",
+      "member_insta_link":"https://www.instagram.com/hipatiamedina/",
+      "role_order": 5,
+      "title": "Cultural-Driven, Human-Centered Marketer",
+      "bio": "With background in humanities, design, and digital marketing, I craft captivating brand stories, driving Inside View Global's vision."
+    },
+    {
+      "member_name": "Raul Martinez",
+      "profile_image": "/assets/team/Raul_p2.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/raulmartinez5/",
+      "member_insta_link":"https://www.instagram.com/5krustofsky/",
+      "role_order": 4,
+      "title": "Creative & Art Senior Manager",
+      "bio": "Passionate about creating and directing designs, capturing IVG essence and sharing the messages through visual communication."
+    },{
+      "member_name": "Balakrishna Saka",
+      "profile_image": "/assets/team/bk.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/bksaka/",
+      "member_insta_link":"https://www.instagram.com/bk.saka/",
+      "role_order": 6,
+      "title": "Senior Certified Solutions Architect ",
+      "bio": "Microsoft Enterprise and AWS certified, with a motto of \"Promoting Organizational Transformation and Digital Innovation.\" As an Enterprise Architect, I concentrate on the current state and the roadmap to achieve the desired future state."
+    },
+    {
+      "member_name": "Roman Karchenko",
+      "profile_image": "/assets/team/roman.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/roman-kharchenko-b56bb2171/",
+      "member_insta_link":"#",
+      "role_order": 8,
+      "title": "Senior Full Stack Software Engineer ",
+      "bio": "Creative Full Stack Developer with a passion for crafting seamless software solutions and extensive expertise in engineering."
+    }
+    ,{
+      "member_name": "Long Truong Cong",
+      "profile_image": "/assets/team/LongTruong.jpg",
+      "member_linkedin_link":"#",
+      "member_insta_link":"#",
+      "role_order": 7,
+      "title": "Microsoft Senior Software Engineer",
+      "bio": "Developing scalable software solutions with a track record of successful project delivery, I have expertise in all phases of the software development lifecycle, from concept through deployment and optimization."
+    },
+    {
+      "member_name": "Tri Tran Van",
+      "profile_image": "/assets/team/TrinTranVan.jpg",
+      "member_linkedin_link":"#",
+      "member_insta_link":"#",
+      "role_order": 9,
+      "title": "Senior Microsoft Power Platform Consultant",
+      "bio": "Driving digital transformation by harnessing the power of the Microsoft Power Platform, I analyze business requirements, design innovative solutions, and implement strategies that streamline operations, enhance productivity, and foster data-driven decision-making."
+    }
+  ]
+}

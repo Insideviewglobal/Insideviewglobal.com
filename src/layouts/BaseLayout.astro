@@ -1,0 +1,25 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Navigation from "@/components/global/Navigation.astro";
+import Footer from "@/components/global/Footer.astro";
+// Comment the line below to disable View Transitions
+import { ViewTransitions } from 'astro:transitions';
+---
+<!doctype html>
+<html
+  lang="en"
+  class="scroll-smooth selection:bg-accent-500 selection:text-white">
+  <head> <BaseHead />
+    <ViewTransitions fallback="swap" />
+  </head>
+  
+  <body class="antialiased text-default bg-page tracking-tight">
+  
+    <Navigation />
+    
+    <slot />
+  
+    <Footer />
+
+  </body>
+</html>

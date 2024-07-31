@@ -1,0 +1,78 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import EntriesOne from "@/components/entries/EntriesOne.astro";
+import Contact from "@/components/forms/ContactForm.astro";
+const allPosts = await getCollection("posts");
+const publishedPostsOnly = allPosts.filter(
+  (post) =>
+  post.data.status === "published",
+);
+const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+---
+<BaseLayout>
+  <section>
+    <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-32">
+      <div class="text-center lg:text-left">
+        <h1
+          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display">
+          Insights and perspectives
+        </h1>
+        <p
+          class="text-base mt-4 text-zinc-500 max-w-sm mx-auto lg:max-w-none lg:mx-0">
+          Exploring topics, tips, and trends in the world of communication and
+          privacy
+        </p>
+        <form class="max-w-sm mx-auto lg:mx-0 mt-4">
+          <div class="flex flex-col lg:flex-row gap-2">
+            <label class="sr-only" for="email-address">Email address</label>
+            <input
+              autocomplete="email"
+              class="block w-full px-4 py-2 h-10 border bg-chalk border-zinc-300 rounded-lg appearance-none text-accent-500 placeholder-zinc-300 focus:border-zinc-300 focus:outline-none focus:ring-zinc-300 duration-200 sm:text-sm"
+              id="email-address"
+              name="email"
+              placeholder="Enter your email"
+              required=""
+              type="email"
+            />
+            <button
+              class="rounded-lg px-4 py-2 text-sm font-semibold transition-all flex items-center justify-center bg-black text-white hover:bg-zinc-700 h-10"
+              type="submit">Subscribe</button
+            >
+          </div>
+        </form>
+      </div>
+      <ul class="flex flex-wrap gap-2 mt-12" role="list">
+        {
+          tags.map((tag) => (
+            <a href={`/tags/${tag}`}>
+              <li class=" rounded-lg px-4 border py-2 text-xs font-semibold transition-all flex items-center justify-center bg-white text-zinc-500 hover:text-accent-500 h-8 border-zinc-300">
+                {tag}
+              </li>
+            </a>
+          ))
+        }
+      </ul>
+      <ol
+        class="grid grid-cols-1 gap-8 lg:grid-cols-3 sm:grid-cols-2 mt-12 lg:mt-24"
+        role="list">
+        {
+          publishedPostsOnly
+            .slice()
+            .map((post) => (
+              <EntriesOne
+                url={"/posts/" + post.slug}
+                title={post.data.title}
+                description={post.data.description}
+                alt={post.data.title}
+                pubDate={post.data.pubDate.toString().slice(0, 10)}
+                author={post.data.author}
+                image={post.data.image.url}
+              />
+            ))
+        }
+      </ol>
+    </div>
+  </section>
+  <Contact />
+</BaseLayout>

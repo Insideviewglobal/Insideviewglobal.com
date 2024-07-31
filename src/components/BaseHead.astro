@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+import Metas from "./seo/Metas.astro";
+import Favicons from "./seo/Favicons.astro";
+const {
+  title = "Inside View Global",
+  description = "Innovation, Modernization, and Trust – Your Vision, Our Expertise, One Team.",
+  url = 'https://www.insideviewglobal.com',
+  socialImage = "/social-preview-image.png",
+  twitterImage = "/twitter-preview-image.png", // Assuming you have a separate image for Twitter
+  author = "Zachary Oakes; Luis Juarez",
+} = Astro.props;
+const sanitizedTitle = title.toLowerCase().replaceAll(" ", "-");
+---
+<Metas
+  title={title}
+  description={description.substring(0, 100)}
+  url={Astro.site
+    ? `${Astro.site}/${sanitizedTitle}`
+    : `Inside View Global`}
+  image={socialImage}
+  author={author}
+  twitterImage={twitterImage}
+/>
+<Favicons/>
+<!---
+Inter
+--->
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="https://cdn.usefathom.com/script.js" data-site="MGZPESHZ" defer></script>
+<!-- / Fathom -->
+
+<!---
+Alpine.js
+--->
+<!---- Alpine integrations -->
+<script defer src="https://unpkg.com/@alpinejs/ui@3.10.3-beta.3/dist/cdn.min.js"
+></script>
+<script defer src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"
+></script>
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+

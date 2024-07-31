@@ -1,0 +1,56 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Contact from "@/components/forms/ContactForm.astro";
+const { frontmatter } = Astro.props;
+---
+<BaseLayout>
+  <section>
+    <div class="px-8 pt-24 mx-auto md:px-12 lg:px-32 max-w-7xl lg:pt-36 pb-12">
+      <img
+        class="w-96 h-96 rounded-full mx-auto object-cover mt-12"
+        src={frontmatter.image.url}
+        alt={frontmatter.image.alt}
+      />
+      <div class="text-center mt-4">
+        <div
+          class="sm:items-center sm:inline-flex justify-center space-x-1 w-full">
+          <p class="font-medium text-black text-sm">
+            Written by: {frontmatter.author}
+          </p><span aria-hidden="true">·</span><div
+            class="flex text-zinc-500 text-sm">
+            <time datetime={frontmatter.pubDate}
+              >{frontmatter.pubDate.toString().slice(0, 10)}</time
+            >
+          </div>
+        </div>
+        <p
+          class="text-3xl mt-8 tracking-tight font-medium lg:text-5xl max-w-2xl mx-auto text-black font-display">
+          {frontmatter.title}
+        </p>
+        <p class="text-sm mt-4 text-zinc-500 max-w-xl mx-auto">
+          <em>{frontmatter.description}</em>
+        </p>
+        <ul class="flex flex-wrap justify-center gap-2 mt-8" role="list">
+          {
+            frontmatter.tags.map((tag) => (
+              <a href={`/tags/${tag}`}>
+                <li class=" rounded-lg px-4 border py-2 text-xs font-semibold transition-all flex items-center justify-center bg-white text-zinc-500 hover:text-accent-500 h-8 border-zinc-300">
+                  {tag}
+                </li>
+              </a>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="px-8 max-w-7xl md:px-12 lg:px-32 mx-auto py-12">
+      <div
+        class="prose mx-auto prose-blockquote:border-l-white prose-a:text-accent-500 hover:prose-a:text-black prose-headings:font-normal prose-headings:text-black prose-pre:border prose-li:marker:text-accent-500 text-zinc-500 prose-code:text-black prose-blockquote:text-black/70">
+        <slot />
+      </div>
+    </div>
+  </section>
+  <Contact />
+</BaseLayout>

@@ -1,0 +1,97 @@
+---
+
+import TeamMember from "@/components/team/TeamMember.astro";
+import TeamData from "@/data/team.json";
+// Step 1: Map to an array of objects with value and original index
+const mappedArray = TeamData.members.map((item, index) => {
+  return { index: index, value: item.role_order}; // Convert to lowercase for case-insensitive sorting
+});
+
+
+// Step 2: Sort the mapped array by the value (name in this case)
+
+mappedArray.sort((a, b) => {
+    return a.value - b.value;
+});
+// Step 3: Create a sorted array using the sorted indices
+const sortedArray = mappedArray.map(mappedItem => {
+  return TeamData.members[mappedItem.index];
+});
+
+---
+<!-- Team Section: Vertical Photos with Details -->
+<div class="bg-white dark:bg-gray-900 dark:text-gray-100">
+    <div
+      class="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-8 xl:max-w-7xl"
+    >
+      <!-- Heading -->
+      <div>
+        <h2 class="mb-2 text-4xl font-black text-black dark:text-white">
+            {TeamData.subtitle}
+        </h2>
+        <h3
+          class="text-xl font-medium leading-relaxed text-gray-700 dark:text-gray-300 lg:w-full"
+        >
+          {TeamData.byline}
+        </h3>
+      </div>
+      <!-- END Heading -->
+  
+      <!-- Team -->
+      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-20">
+        
+        {sortedArray.map(( memberProfile) => (
+            <div class="space-y-4 lg:flex lg:gap-6 lg:space-y-0">
+            <div class="flex-none lg:w-2/5">
+            <img
+              src={memberProfile.profile_image}
+              alt="User Avatar"
+              class="shadow"
+            />
+          </div>
+          <div>
+            <h4 class="mb-0.5 text-xl font-bold">{memberProfile.member_name}</h4>
+            <p class="mb-3 font-medium text-gray-600 dark:text-gray-400">
+                {memberProfile.title}
+            </p>
+            <div class="mb-3 space-x-1">
+              <a
+                href={memberProfile.member_linkedin_link}
+                class="text-gray-400 hover:text-gray-800 dark:hover:text-white"
+              >
+                <svg viewBox="0 0 32 32"  class="icon-linkedin inline-block size-5" xmlns="http://www.w3.org/2000/svg" id="fi_10092249"><g id="Layer_7"><g><path d="m16 0c-8.837 0-16 7.163-16 16 0 8.836 7.163 16 16 16s16-7.164 16-16c0-8.837-7.163-16-16-16z" fill="#999"></path></g><path d="m24.294 22.942v-6.137c0-3.288-1.755-4.818-4.096-4.818-1.889 0-2.735 1.039-3.206 1.768v-1.517h-3.558c.047 1.005 0 10.704 0 10.704h3.558v-5.978c0-.319.023-.639.117-.867.257-.639.842-1.301 1.825-1.301 1.288 0 1.803.981 1.803 2.42v5.727zm-14.609-12.165c1.24 0 2.013-.823 2.013-1.85-.023-1.05-.773-1.849-1.99-1.849s-2.012.799-2.012 1.849c0 1.028.772 1.85 1.967 1.85zm1.779 12.165v-10.704h-3.557v10.704z" fill="#fff">
+                  </path></g></svg>
+              </a>
+              <a
+                href={memberProfile.member_insta_link}
+                class="text-gray-400 hover:text-[#405de6]"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon-instagram inline-block size-5"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                  ></path>
+                </svg>
+              </a>
+              
+            </div>
+            <p class="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                {memberProfile.bio}
+            </p>
+          </div>
+        </div>
+        ))}
+        
+          
+       
+        
+      </div>
+      <!-- END Team -->
+    </div>
+  </div>
+  <!-- END Team Section: Vertical Photos with Details -->
+  

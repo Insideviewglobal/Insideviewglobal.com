@@ -1,0 +1,937 @@
+{
+  "title": "Real People",
+  "subtitle": "Meet our Team",
+  "byline": "They are working nonstop behind the scenes to help you build better products, web services and websites.",
+  "solutions": [
+    {
+      "solution_id": "Insights",
+      "solution_name": "Insights Workshops",
+      "gallery_title": "Most Popular Workshops",
+      "solution_servicetype": "Consulting",
+      "solution_engagement": "Fixed Cost",
+      "solution_icon": "/assets/solutions/check.svg",
+      "solution_image": "/assets/solutions/discovery_insights.jpg",
+      "solution_headline": "Our uniqueness begins with small engagements that unveil a strategic roadmap",
+      "solution_overview": "It is all about gathering information, analyzing the findings, and understanding your business goals, and challenges. The objective is to gain a fresh perspective and comprehensive overview of the current state. We will break the project into manageable pieces, making it easier to control, and adjust for unexpected challenges.",
+      "solution_approach": "Our approach is straightforward yet effective. We never proceed with execution without fully understanding the business case. We begin with a series of workshops aimed at comprehending your challenges, pain points, past experiences, and ultimate objectives. Afterward, we analyze the gathered information, identify suitable solutions, and create a visual roadmap. At the end of this brief engagement, we will present these deliverables to you, providing a clear picture for making informed decisions on the next steps.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Discovery & Assessment",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Collect and analyze data to understand the current state of your IT implementation"
+         },
+         {
+            "solution_item_name": "Intranet & Document Management System",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Looking to modernize your intranet, or implement a DMS"
+         },
+         {
+            "solution_item_name": "Business Process Automation",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Automate manual processes and reduce your costs"
+         },
+         {
+            "solution_item_name": "Microsoft 365 Governance",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Control access, MS Teams, and content sprawl"
+         },
+         {
+            "solution_item_name": "Content Migrations",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Centralize your content, move into a single-source-of-truth"
+         },
+         {
+            "solution_item_name": "Collaboration Workspaces",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Implement an Information Architecture that supportd your business long term"
+         },
+         {
+            "solution_item_name": "Collaboration Apps",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Maximize your Microsoft 365 investments by implementing apps with zero to low-code effort"
+         },
+         {
+            "solution_item_name": "Records Management",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "This definitely requires expert planning, whether for a new implementation or a platform migration"
+         }
+      ]
+   },
+    {
+      "solution_id": "rapiddeployment",
+      "solution_name": "Rapid Deployments",
+      "solution_servicetype": "Implementation",
+      "gallery_title": "Deployment Gallery",
+      "solution_engagement": "Fixed Cost",
+      "solution_icon": "/assets/solutions/hare.svg",
+      "solution_image": "/assets/solutions/RapidDeployments.jpg",
+      "solution_headline": "A dynamic launch configuration grounded in a proven baseline from the outset. An intelligent approach to reducing costs and time while maintaining uncompromised quality",
+      "solution_overview": "Over the years, we have successfully implemented various intranets, collaboration workspaces, document management systems, and other components of Enterprise Content Management (ECM). Our integrated solution, featured in our projects, significantly reduces time and provides our clients with substantial benefits and robust information architecture.",
+      "solution_approach": "See this is as a jump start for any ECM project. Our experience makes the difference and it is reflected in this product feature. In our first week, we will identify the best template from our solutions gallery that will fit your requirements and vision based on your industry, your content sharing requirements and your level of information management and classification. After we deploy the initial version, our workshops will be more efficient as you no longer have to imagine how would the end result look like.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+        {
+          "solution_item_name": "Intranets",
+          "solution_item_column": "left",
+          "solution_item_image": "/assets/solutions/logo_color.svg",
+          "solution_item_description": "Intranets are essential for any organization and we have mulitple solutions to share with you"
+       },
+       {
+        "solution_item_name": "Collaboration Workspaces",
+        "solution_item_column": "left",
+        "solution_item_image": "/assets/solutions/logo_color.svg",
+        "solution_item_description": "We introduce a new framework to organize and classify your information"
+     },
+     {
+      "solution_item_name": "Document Management System",
+      "solution_item_column": "right",
+      "solution_item_image": "/assets/solutions/logo_color.svg",
+      "solution_item_description": "Unlock Seamless Collaboration: Integrate Advanced Document Approval Features into Your Workflow"
+   },{
+    "solution_item_name": "Content Restructure",
+    "solution_item_column": "right",
+    "solution_item_image": "/assets/solutions/logo_color.svg",
+    "solution_item_description": "We will take your current content structure and apply our magic to provide better Governance"
+ }
+      ]
+   },
+    {
+      "solution_id": "intranet",
+      "solution_name": "Intranets",
+      "gallery_title": "Most Popular Workshops",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/network-hub.svg",
+      "solution_image": "/assets/solutions/intranet.jpg",
+      "solution_headline": "Create Intuitive Modern Intranet with a scalable and sustainable Information Architecture",
+      "solution_overview": "Consider these two crucial points: Firstly, the need to replace Intranets every 2-3 years arises from the ever-evolving technology landscape, making them essential tools for organizations to sustain competitiveness. Secondly, Intranets are tailored to meet employees' needs, emphasizing their central role in driving productivity. By acknowledging and acting upon these facts, you can ensure an improvement in both your team's productivity and that of your organization.",
+      "solution_approach": "While we may not wield a magic wand, our expertise discerns what works and what doesn't. Our jumpstart approach eliminates the need to reinvent the wheel by leveraging our standardized baseline intranets tailored to your industry. Initially, we ascertain the type of intranet aligning with your objectives and branding priorities. We seamlessly integrate out-of-the-box or third-party apps, followed by the implementation of our recommended information architecture. Lastly, we refine with meticulous attention to detail and establish governance protocols. This streamlined process significantly reduces time, hence lowering costs.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Greenfield projects",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "For many organizations without an existing intranet, we bring all the necessary components together to craft a tailor-made solution. Our value proposition is time and quality, Intranets should not be expensive projects"
+         },
+         {
+            "solution_item_name": "Intranet Upgrade",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Is your current intranet nearing the end of its lifecycle? We will design a new one tailored to your specifications and requirements, seamlessly migrating your existing content"
+         },
+         {
+            "solution_item_name": "Moving To Microsoft 365",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Bring your current intranet to Microsoft 365 with tactical steps that will be part of the long term strategy. Either integration or a full replatform project, we will guide you through the process"
+         },{
+            "solution_item_name": "Revamp your current Intranet",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "For existing Information Architectures that may be hindering your organization's progress, we adopt a step-by-step approach, prioritizing immediate wins to propel you forward"
+         }
+      ]
+   },
+    {
+      "solution_id": "bpa",
+      "solution_name": "Business Process Automations",
+      "gallery_title": "Most Popular Workshops",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/robotic-process-automation.svg",
+      "solution_image": "/assets/solutions/BusinessProcessAutomations.jpg",
+      "solution_headline": "From Manual to Automated: Improve your productive and reduce your expenses, it is all about efficiency",
+      "solution_overview": "Ever wondered how much time and money your organization could save with streamlined processes? Maximize efficiency and productivity with our Business Process Automation services <br/>—it is like having a team of productivity superheroes across Microsoft Power Platform: Power Automate, Power Apps, Power Apps Pages, Power BI, and Nintex. In short, we will ensure that any process automation needs are met.",
+      "solution_approach": "Our team conducts in-depth analyses of your current workflows, identifies automation opportunities, and implements tailored solutions to meet your unique needs. Comprehensive support is provided for integration, employee training, and ongoing management. Experience the transformation of your business processes, achieve significant cost savings, and maintain a competitive edge in today's fast-paced market.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Request Processing",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We transform manual and paper-bases processes "
+         },
+         {
+            "solution_item_name": "Reporting and Dashboards",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "IT revolves around information discovery and our focus is transforming your data into AUTOMATED visual reports"
+         },
+         {
+            "solution_item_name": "Provisioning and Governance",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Automate the provisioning of sites or MS Teams to ensure consistency and uphold governance standards"
+         },
+         {
+            "solution_item_name": "Onboarding process",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "It is a silence expense that organizations should automate as top priority"
+         }
+         ,
+         {
+            "solution_item_name": "Robotic Process Automation (RPA)",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Automate repetitive, rule-based tasks, enhance operational efficiency, and reduce human intervention"
+         }
+      ]
+   },
+    {
+      "solution_id": "contentmigrations",
+      "solution_name": "Content Migrations",
+      "gallery_title": "Migration Approach",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/data-migration.svg",
+      "solution_image": "/assets/solutions/ContentMigrations.jpg",
+      "solution_headline": "Our reputation in content migrations precedes us; where others shy away, we excel in overcoming challenges",
+      "solution_overview": "In this category, we've noted a notable incidence of project failures, often stemming from uncertainty. However, we've successfully executed migrations for thousands of documents, sites, and environments, serving over 1,000 users. Our expertise extends to cross-tenant migrations, replatforming, and content restructuring. Whether you need an as-is migration, a comprehensive content restructuring, or a hybrid approach, we're committed to guiding you through to successful completion.",
+      "solution_approach": "In every project migration, we dedicate time to refining our processes, always considering the advantages this will offer to each of our clients. This ongoing improvement has resulted in a solid and proven approach that consistently delivers successful outcomes. Our Methodology follows a comprehensive six-step process.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "1. Data Discovery",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We thoroughly analyze your data to understand its structure and requirements"
+         },
+         {
+            "solution_item_name": "2. Data Cleanup",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We ensure the accuracy and quality of your data by removing any inconsistencies or redundancies"
+         },
+         {
+            "solution_item_name": "3. Data Mapping",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We meticulously map your data to ensure seamless integration with the new system"
+         },{
+          "solution_item_name": "4. Content Migration",
+          "solution_item_column": "right",
+          "solution_item_image": "/assets/solutions/logo_color.svg",
+          "solution_item_description": "We transfer all relevant content while maintaining its integrity and organization"
+       },
+       {
+          "solution_item_name": "5. Application Migration",
+          "solution_item_column": "right",
+          "solution_item_image": "/assets/solutions/logo_color.svg",
+          "solution_item_description": "We migrate your applications to the new environment, ensuring functionality and performance"
+       },
+       {
+          "solution_item_name": "6. Cut-Over",
+          "solution_item_column": "right",
+          "solution_item_image": "/assets/solutions/logo_color.svg",
+          "solution_item_description": "We transition to the new environment, ensuring a smooth and efficient switch with minimal disruption"
+       }
+      ]
+   },
+    {
+      "solution_id": "licensingconsulting",
+      "solution_name": "Microsoft Licensing",
+      "gallery_title": "Some of our services ",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/certificate.svg",
+      "solution_image": "/assets/solutions/MicrosoftLicensing.jpg",
+      "solution_headline": "We simplify Microsoft Licensing with strategic guidance",
+      "solution_overview": "Did you know that up to 30% of IT budgets are wasted on inefficient Microsoft Licensing? Maximize the full potential of your Microsoft assets with specialized Microsoft Licensing Consulting. This service helps organizations navigate the intricate world of Microsoft Software Licenses, ensuring compliance, reducing costs, and aligning licensing with business goals.",
+      "solution_approach": "Our specialists conduct thorough assessments of your current licenses, uncover opportunities for optimization, and deliver strategic planning for future needs. Comprehensive support is provided for migrations, deployments, stakeholder training, and ongoing license management. Streamline license management, achieve substantial cost savings, and stay aligned with your strategic objectives. Simplify your Microsoft Licensing journey and maximize the value of your software investments.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+        {
+          "solution_item_name": "Consulting and Advisory",
+          "solution_item_column": "left",
+          "solution_item_image": "",
+          "solution_item_description": "We will review your current licensing model, identify the gaps, and cut down costs"
+       },{
+            "solution_item_name": "Licensing Negotiation",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We will do our best to find the right strategy and cost"
+         },
+         
+         {
+            "solution_item_name": "Microsoft Licensing Reseller",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We will get the right licenses for you and we are a phone call away"
+         },
+         
+         {
+            "solution_item_name": "ProvisionPoint Licensing",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Our partners for Governance. We work together to find you the right deployment for you"
+         }
+      ]
+   },
+    {
+      "solution_id": "m365governance",
+      "solution_name": "Microsoft 365 Governance",
+      "gallery_title": "Most Popular Workshops",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/government.svg",
+      "solution_image": "/assets/solutions/Microsoft365Governanced.jpg",
+      "solution_headline": "Governance does not have to be complex. We can start small and scale up efficiently",
+      "solution_overview": "Many consulting companies struggle with disorganized workspaces, slow adoption of new tools, and inefficient collaboration. Microsoft 365 Governance can solve these problems by preventing workspace sprawl and empowering users with self-service capabilities within defined boundaries. Clear governance policies help accelerate Office 365 adoption, making the transition smooth and efficient. By standardizing processes, these policies improve workplace collaboration, ensuring everyone has access to the tools and information they need. Implementing these governance policies not only enhances productivity but also keeps everything secure and compliant.",
+      "solution_approach": "First, we take the time to understand the challenges you face, assessing both their financial and productivity impacts. Then, we utilize our comprehensive set of tools and features to conduct a thorough analysis. This process enables us to develop a strategic execution plan tailored to your needs. Our goal is to deliver immediate value by identifying quick wins that can resolve significant issues efficiently. By focusing on these impactful solutions, we aim to provide swift improvements that make a substantial difference for your business.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Roadmap"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "SharePoint Governance",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Ensuring your SharePoint structure follows an Information Architecture "
+         },
+         {
+            "solution_item_name": "Microsoft Teams",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Prevent Microsoft Teams and Workspaces Sprawl"
+         },
+         {
+            "solution_item_name": "User Management",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Onboarding and offboarding are headaches without the right governance in place"
+         },{
+            "solution_item_name": "Power Platform Governance",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Ensure your users know the rules to publish solutions for your organization"
+         }
+      ]
+   },
+    {
+      "solution_id": "collabapps",
+      "solution_name": "Collaborations Apps",
+      "gallery_title": "Art of Possible",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/productivity.svg",
+      "solution_image": "/assets/solutions/CollaborationsApps.jpg",
+      "solution_headline": "Take team productivity to the next level and leverage Microsoft Apps without reinventing the wheel",
+      "solution_overview": "Most likely, your organization is looking for new solutions to existing challenges. We know that in-house development is expensive and that your teams may struggle to keep up with business demands. Therefore, we invite you to explore the Art of Possible and plan for the long term. We offer expertise in No-Code, Low-Code, and Code-First solutions.",
+      "solution_approach": "It is a 5-stage engagement beginning with a meticulous Assessment Phase, where the scope is defined, stakeholders are identified, and key business-scenarios are thoroughly examined. Next, in the Art of Possibility stage, creative exploration is encouraged to envision potential solutions and pinpoint scenarios with the greatest impact on user engagement and productivity. Building the plan involves prioritizing these scenarios, defining clear next steps, and establishing a realistic timeline for implementation. During the Execution Phase, the plan is diligently carried out with a focus on effective project management to ensure successful delivery. Finally, Adoption and Training are prioritized, recognizing that true success hinges on user acceptance and proficiency.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Roadmap"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Employee Interaction",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Surveys, Provides a way to know their feedback, improve your training and learning approach, replace paper based forms with apps"
+         },
+         {
+            "solution_item_name": "Task Management and Project Management",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Bring your favourite project management app and take it to the next level or simply 365 apps for task management"
+         },
+         {
+            "solution_item_name": "Frontline Workers, Inspections and Routine Checks",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Provide your users with the tools to complete their tasks faster, adding value to the quality of the information that is produced by these reports"
+         },
+         {
+            "solution_item_name": "Bots",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Automate your basic support operations and help your users to get things done with bots"
+         }
+      ]
+   },
+    {
+      "solution_id": "informationmanagement",
+      "solution_name": "Information Management",
+      "gallery_title": "Typical Inputs and Outputs",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/audit.svg",
+      "solution_image": "/assets/solutions/InformationManagement.jpg",
+      "solution_headline": "Information Technology revolves around data and the tactical and strategic planning needed to transform it into meaningful information throughout its lifecycle. We will help you plan yours",
+      "solution_overview": "Key Fact: According to a study by McKinsey, organizations that effectively use data and analytics in their decision-making processes are 23 times more likely to acquire customers, 6 times more likely to retain customers, and 19 times more likely to be profitable than organizations that do not. This highlights the critical importance of Information Management in driving business success.",
+      "solution_approach": "Our Architects Team will work with you to understand your business objectives. This will help us understand your current level of Information Management and its vulnerabilities. Then, we will focus on tactical solutions to remediate any current financial or security gaps. Finally, we will collaborate with you to create a strategy and roadmap for a long-term, sustainable, and scalable solution.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Roadmap"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Stakeholder Engagement",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Workshops, interviews, and surveys that will help with relationship-building to ensure that stakeholders' perspectives, needs, and concerns are considered and addressed effectively"
+         },
+         {
+            "solution_item_name": "Current State Assessment",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Analytical approach to gather as much information as possible that give us a clear view of the current Information Management"
+         },
+         {
+            "solution_item_name": "Information Architecture",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "The blueprint of the your Information Management"
+         },
+         {
+            "solution_item_name": "Governance",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "A governance plan can be either quite comprehensive or simple enough to enforce the Information Architecture"
+         }
+      ]
+   },
+    {
+      "solution_id": "recordsmanagement",
+      "solution_name": "Records Management",
+      "gallery_title": "Typical Inputs and Outputs",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/data-protection.svg",
+      "solution_image": "/assets/solutions/RecordsManagement.jpg",
+      "solution_headline": "Embrace Records Management: Whether with Microsoft Purview or other records management solutions, we will ensure that implementation is in place, so your organization is compliant",
+      "solution_overview": "This is for organizations that are required to achieve legal obligations and protect their data according to local regulations. We have worked with Microsoft Purview, as well as other applications that require integration with Microsoft 365 mailboxes, sites, or Microsoft Teams.",
+      "solution_approach": "Begin with an assessment of current practices and legal requirements, then develop policies and procedures aligned with organizational goals to create the file plan, records retention schedule. Recommend appropriate technology. Implement the technical process to tag records with metadata, and define retention and disposition policies. Monitor compliance and continuously improve the program based on feedback and changes in regulations. ",
+      "solution_type": [
+         "Workshops",
+         "Execution",
+         "Roadmap"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "File Plan and Retention Schedule Discovery",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Workshops to find the current state of the records management and the definition of the file plan, which is key to move forward to any other phase"
+         },
+         {
+            "solution_item_name": "Technical Records Management Discovery",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Cross check to identify the current level of implementation and its governance of the records management application"
+         },
+         {
+            "solution_item_name": "Enablement of Regulatory Compliance",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Configuration of the tools to help organizations meet regulatory compliance"
+         },
+         {
+            "solution_item_name": "Simplification of Records Management",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Auto-classification, records lifecyle and records normalization to simplify records management"
+         }
+      ]
+   },
+    {
+      "solution_id": "cloudsolutions",
+      "solution_name": "Cloud Solutions",
+      "gallery_title": "Our Approach",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/software.svg",
+      "solution_image": "/assets/solutions/CloudSolutions.jpg",
+      "solution_headline": "We understand that every organization requires different technology, so we believe in an agnostic replatforming approach",
+      "solution_overview": "Most organizations, including public entities, have adopted the cloud, involving large-scale migrations of infrastructure and information. Therefore, we believe your organization may be at a stage where this transition in technology is pertinent. Unfortunately, it is not easy, and it can be quite expensive. So, whether you are embarking on your Cloud journey or navigating through challenges from past Cloud endeavors, we will assist you and your team with a seamless transition.",
+      "solution_approach": "A Strategic Approach: Following our standard procedure, we will begin with discovery. Prior to any further actions with the application, we will identify the optimal path based on priority. Subsequently, we will establish the technical approach and implement the visual roadmap.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Roadmap"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Discovery",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Inventory of the legacy apps or apps that are moving to the cloud"
+         },
+         {
+            "solution_item_name": "Risk & Importance Assessment",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Answering questions like: Do you still need it? What are the current expenses? What is the impact level to the organization if not action is taken?"
+         },
+         {
+            "solution_item_name": "Define The Migration Approach",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Technically, a migration can have more than 4 solutions, so we will help you find the most cost-effective solution"
+         },
+         {
+            "solution_item_name": "Verification and UAT",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "As in any other IT development project, we will ensure that everything is ready before we launch and cut over from the old system to the new system, i.e., permissions, content, and user experience"
+         },
+         {
+            "solution_item_name": "Transition and Change Management",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Migrations like these bring changes to end-users; therefore, we will work with you to define an easy transition followed by a training plan. Let's ensure that user adoption is successful"
+         },
+         {
+            "solution_item_name": "Go-Live!",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We are ready to move to Production. Everything is tested, and the organization is ready to move forward. We will execute the final steps to complete the cutover together"
+         }
+      ]
+   },
+    {
+      "solution_id": "workspaces",
+      "solution_name": "Collaboration Workspaces",
+      "gallery_title": "Type of Workspaces",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/local-area-network.svg",
+      "solution_image": "/assets/solutions/CollaborationWorkspaces.jpg",
+      "solution_headline": "Over the years, we've developed a proven Information Architecture that organizations continue to adopt. Don't start from scratch",
+      "solution_overview": "We keep seeing organizations that are unclear about what and when to use MS Teams VS SharePoint Sites. Well, we have made it simple, and it works for everyone. We have worked across multiple industries to understand where the confusion lies, which eventually led us to a solution. This concept of collaboration workspaces is an addition to the use cases that cannot be met by MS Teams or MS Groups; most importantly, it resolves the questions of what to use and when to use it.",
+      "solution_approach": "First, run a series of workshops to understand the current level of adoption of Microsoft SharePoint Online across the organization. This will enable us to first assess the size of the organizational change and, secondly, to assess the effort involved in executing content restructuring followed by content migration. This change will make a significant impact on your organization.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Organizational Facing",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Publishing content that anyone in the organization should be able to see"
+         },
+         {
+            "solution_item_name": "Departmental Only",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Every department needs space to be creative. Do not hold your department back with strict governance that kills productivity"
+         },
+         {
+            "solution_item_name": "External Sharing",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Protect your organization and educate your staff about information security. It will save you from data leaks"
+         },
+         {
+            "solution_item_name": "Teams Workspaces",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We are not referring to MS Teams. These are SharePoint team sites that will fit use cases where MS Teams will not. So, you can help your organization eliminate redundant content"
+         }
+      ]
+   },
+    {
+      "solution_id": "spo",
+      "solution_name": "SharePoint Online",
+      "gallery_title": "Typical Solutions",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/user-generated-content.svg",
+      "solution_image": "/assets/solutions/SharePoint-Online.png",
+      "solution_headline": "When implemented effectively, this service streamlines applications, reduces costs, and simplifies management, making it an invaluable asset",
+      "solution_overview": "For many years, we have led numerous projects that had previously failed. We combine our technical knowledge and experience for the benefit of our clients. We are proud to be known as an organization with some of the best architects, proven to have experience in Australia, Canada, and the US.",
+      "solution_approach": "It is our experience that makes us unique. SharePoint serves as the hub for all services in Microsoft 365, so understanding this pivotal role is crucial, as our Information Architecture will always be centered around it. We will share our insights with you, which will expedite your Digital Transformation.",
+      "solution_type": [
+         "Workshops",
+         "Planning","Digital Transformation"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Platform Upgrade",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Move from previous SharePoint versions to the latest version to increase productivity"
+         },
+         {
+            "solution_item_name": "Platform Migrations",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Migrate your intranet and other collaboration workspaces to SharePoint, we will guide through the process"
+         },
+         {
+            "solution_item_name": "Integrations with other Apps",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Increase the potential of SharePoint and integrate with other Apps"
+         },
+         {
+            "solution_item_name": "Custom App Development",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Custom apps for your SharePoint Online —whether for branding, additional features, or simply a bespoke solution that integrates seamlessly with SharePoint"
+         },{
+            "solution_item_name": "Content Restructure & Migrations",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Normalize your information and adopt a new Information Architecture that helps your organization scale. Reduce content duplication and prevent data leaks"
+         },
+         {
+            "solution_item_name": "Ad-Hoc Support",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Some organizations can justify having their own full-time SharePoint resource, so we can work with you to become your preferred support partner"
+         },
+         {
+            "solution_item_name": "Governance",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Do not reinvent the wheel. We have done the hard work and can share with you best practices for managing your SharePoint services"
+         },
+         {
+            "solution_item_name": "Extended Team",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "If your organization is looking for a temporary resource to work on a project, we will collaborate with you to find the best resource aligned with your needs"
+         }
+      ]
+   },
+    {
+      "solution_id": "msteams",
+      "solution_name": "MS Teams",
+      "gallery_title": "Some of Our Offerings",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/collaboration.svg",
+      "solution_image": "/assets/solutions/MS-Teams.png",
+      "solution_headline": "One of the most widely-used services within Microsoft 365... Yet, without proper implementation, it can also lead to content sprawl",
+      "solution_overview": "MS Teams is the most popular service in Microsoft 365 because it is easy to use. However, the challenge arises when it is rolled out without proper governance. Why? It leads to content sprawl and creates a playground within the organization. Sooner than expected, it becomes a headache for the organization, resulting in higher costs for management and storage. We have seen it all, and we can help prevent or repair your current configuration.",
+      "solution_approach": "Through a series of workshops, we will identify how your organization currently uses MS Teams. Then, we will outline a path to transition for improved usage. Based on your timeline and budget, we can work on a tactical, strategic, or hybrid approach to ensure your organization gets the most out of your investment. As the cherry on top, we will lead the way to show you how to transform some of your business processes using native MS Teams apps.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Governance",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Define and apply Governance through approval processes, global policies and templates to prevent content sprawl"
+         },
+         {
+            "solution_item_name": "MS Teams transformation",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "This is for some organizations that have lost control of their MS Teams and are looking to implement a solution that leads to cost reduction "
+         }
+      ]
+   },
+    {
+      "solution_id": "copilot",
+      "solution_name": "Copilot for Microsoft 365",
+      "gallery_title": "Our 4-Step Approach",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/friends.svg",
+      "solution_image": "/assets/solutions/Copilot-for-Microsoft-365.png",
+      "solution_headline": "Microsoft Copilot: Revolutionizing AI-Assisted Productivity as a Game Changer",
+      "solution_overview": "Has your organization already adopted Copilot or is it in the process of doing so? Following Microsoft best practices, we will work with you to meet every requirement and ensure your information is well-structured, prevent data leaks, and avoid unnecessary license costs.",
+      "solution_approach": "We will first aim to understand your priority and the trigger driving your desire to adopt Copilot. Once you're comfortable with the approach, we will follow the steps outlined below.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Get Ready",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Understand the current environment, identify vulnerabilities, and complete a technical readiness assessment. This phase also involves defining principal objectives for adopting Copilot. Outputs include an information risk assessment and a detailed implementation roadmap"
+         },
+         {
+            "solution_item_name": "Execute Your Plan",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Focus on understanding the risk and impact associated with Copilot implementation, implement necessary tasks, assign licenses, and enhance content security"
+         },
+         {
+            "solution_item_name": "Understand Deliver Impact",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Ongoing monitoring to understand adoption during the initial transition"
+         },
+         {
+            "solution_item_name": "Adjust the Scope of your Deployment",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "After your initial monitoring, we can adjust the scope of the app and services to enhance productivity"
+         }
+      ]
+   },
+    {
+      "solution_id": "dynamics365",
+      "solution_name": "Dynamics 365",
+      "gallery_title": "Typical Solutions",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/integration.svg",
+      "solution_image": "/assets/solutions/Dynamics-365.png",
+      "solution_headline": "Set up a comprehensive CRM and ERP solutions with Dynamics 365",
+      "solution_overview": "We can help you enhance your business outcomes by leveraging the capabilities of Microsoft Dynamics 365 and automation with the Power Platform. Whether you are focused on ERP or CRM, we are here to assist you.",
+      "solution_approach": "We will seek to understand your focus and objectives, review your current apps and tools in production, and find a way to streamline your current ERP or CRM, depending on your objectives.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Business Central",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Integrate your sales, service, finance, and operations teams seamlessly. Drive intelligent decision-making and expedite growth using Business Central, the globally trusted all-in-one ERP cloud solution"
+         },
+         {
+            "solution_item_name": "Marketing",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Streamline marketing efforts, enhance customer engagement, and drive business growth within the Microsoft 365 ecosystem"
+         },
+         {
+            "solution_item_name": "Sales",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Utilize Microsoft 365 Platform and AI to optimize sales processes, enhance customer relationships, and boost overall sales performance"
+         },
+         {
+            "solution_item_name": "Customer Insights",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Collect, analyze, and interpret customer data, enabling businesses to gain valuable insights into customer behavior and preferences"
+         },{
+            "solution_item_name": "Customer Voice",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Provide businesses with tools to collect, analyze, and act on customer feedback, enabling them to gather valuable insights and enhance customer experiences"
+         },
+         {
+            "solution_item_name": "Customer Service",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Optimizing customer service processes, enhancing customer interactions, and improving overall service delivery"
+         },
+         {
+            "solution_item_name": "Field Service",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Streamline field service operations, optimize resource allocation, and improve service efficiency"
+         },
+         {
+            "solution_item_name": "Project Operations",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Streamline project management processes, optimize resource allocation, and enhance project efficiency"
+         }
+      ]
+   },
+    {
+      "solution_id": "viva",
+      "solution_name": "Microsoft Viva",
+      "gallery_title": "Our User-Centric Approach",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/people.svg",
+      "solution_image": "/assets/solutions/Microsoft-Viva.png",
+      "solution_headline": "The cherry of the cake for user adoption, social enterprise network and all within Microsoft 365",
+      "solution_overview": "Consisting of four key modules: Viva Connections for employee engagement, Viva Insights for personal productivity and well-being, Viva Learning for employee development, and Viva Topics for knowledge discovery and management. We will look for the positive impact that will empower your users, foster collaboration, and drive organizational success by providing a central hub for communication, learning, and knowledge sharing.",
+      "solution_approach": "We start with a full discovery involving user behavior and technical configuration of Microsoft Viva. We analyze the results and work with you to define a strategy that will create impact for your organization and users by leveraging the potential of Microsoft Viva and the native AI solutions that come with it.",
+      "solution_type": [
+         "Workshops",
+         "Planning"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Identify Key Use Cases",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "We will focus on positive and impactful implementations"
+         },
+         {
+            "solution_item_name": "Maximize the use of Microsoft Viva",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "In conjunction with your intranet and collaboration workspaces, leverage the full range of functionality available for you and your users"
+         }
+      ]
+   },
+    {
+      "solution_id": "powerplatform",
+      "solution_name": "Microsoft Power Platform",
+      "gallery_title": "Apps and Solutions",
+      "solution_servicetype": "Implementation",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/workflow.svg",
+      "solution_image": "/assets/solutions/Microsoft-Power-Platform.png",
+      "solution_headline": "Cut costs and development time, and resolve business problems cost-effectively with low-code all-in-one platform",
+      "solution_overview": "Most organizations are already taking advantage of this platform. Whether with good or not very good practices, it has been proven that no-code and low-code solutions make a difference by empowering your users to work independently and be more efficient.",
+      "solution_approach": "We will understand and validate the business requirements. We will bring our experience and apply an agile development approach with the objective of staying on target, within budget, and in compliance with the organization's governance.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Implementation"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Power Apps",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "A low-code application development platform that allows users to create custom apps for web and mobile devices without the need for extensive coding knowledge"
+         },
+         {
+            "solution_item_name": "Power Automate",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "A workflow automation tool that helps automate repetitive tasks and streamline business processes by integrating with various apps and services"
+         },
+         {
+            "solution_item_name": "Power BI",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "A business analytics tool that enables users to visualize data and share insights across the organization through interactive reports and dashboards"
+         },
+         {
+            "solution_item_name": "Power Virtual Agents",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "A no-code chatbot development platform that enables users to build intelligent virtual agents to engage with customers and employees, providing personalized assistance and support"
+         }
+      ]
+   },
+    {
+      "solution_id": "azure",
+      "solution_name": "Microsoft Azure",
+      "gallery_title": "Typical Projects",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/azure.svg",
+      "solution_image": "/assets/solutions/Amazon-Azure.png",
+      "solution_headline": "If you're using Microsoft 365, Azure Cloud as a service provider is a natural fit due to its seamless integration with Microsoft's suite of products and services.",
+      "solution_overview": "Moving legacy apps to the cloud? Or maybe cutting down costs in infrastructure? This is for organizations that are looking to stay competitive and want to make the transition in a cost-effective manner. Our Microsoft Certified Architects will show the way",
+      "solution_approach": "Following our Cloud Solutions Strategy, we will work with you to find the best plan, define the roadmap and make the transition with the less possible impact to your organization.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Cloud Computing"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Infrastructure Migration",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Move your entire infrastructure with a well-defined plan and control your costs in Microsoft Azure"
+         },
+         {
+            "solution_item_name": "App Migration",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Reverse engineering the process to identify the right app. Many times, the solution developed in-house can be easily replaced by processes and resources through Azure in a cost-effective manner"
+         },
+         {
+            "solution_item_name": "Process Automation",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Increase efficiency in your organization by taking advantage of Azure AI, functions, and services designed for productivity"
+         }
+      ]
+   },
+    {
+      "solution_id": "aws",
+      "solution_name": "Amazon AWS",
+      "gallery_title": "Most Popular Workshops",
+      "solution_servicetype": "Solution",
+      "solution_engagement": "Project",
+      "solution_icon": "/assets/solutions/aws.svg",
+      "solution_image": "/assets/solutions/Amazon AWS.png",
+      "solution_headline": "For many, it is considered it to be the most successful and extensively utilized Cloud Computing Platform",
+      "solution_overview": "Do you have a project in Amazon AWS and you do not know where to start? Our architect AWS will work with you to define the roadmap that will bring clarity in the execution.",
+      "solution_approach": "Amazon AWS is included in our range of Cloud Computing Services. As part of our Cloud Solutions Strategy, we will collaborate with you to identify the best plan, outline a clear roadmap, and ensure a seamless transition with minimal disruption to your organization.",
+      "solution_type": [
+         "Workshops",
+         "Planning",
+         "Cloud Computing"
+      ],
+      "solution_learnmorelink": "/solutions/home",
+      "solution_items": [
+         {
+            "solution_item_name": "Infrastructure Migration",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Transition your entire infrastructure strategically and manage your expenses efficiently with Amazon AWS"
+         },
+         {
+            "solution_item_name": "App Migration",
+            "solution_item_column": "right",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Reverse engineering the process to identify the right app. Many times, the solution developed in-house can be easily replaced by processes and resources through AWS in a cost-effective manner"
+         },
+         {
+            "solution_item_name": "Process Automation",
+            "solution_item_column": "left",
+            "solution_item_image": "/assets/solutions/logo_color.svg",
+            "solution_item_description": "Employ services like AWS Step functions, Lambda functions, and AWS Batch to automate various processes, whether it's scheduling routine tasks, orchestrating complex workflows, or implementing serverless computing solutions, thus optimizing operational efficiency and reducing manual effort"
+         }
+      ]
+   }
+   ]
+}

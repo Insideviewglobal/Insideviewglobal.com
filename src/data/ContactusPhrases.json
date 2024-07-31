@@ -1,0 +1,61 @@
+{
+  "phrases":  [
+      {
+        "phraseid": 1,
+        "phraseTitle": "Simplicity is the soul of efficiency.",
+        "phraseAuthor":"Austin Freeman"
+      },
+      {
+        "phraseid": 2,
+        "phraseTitle": "Quality is not an act, it is a habit.",
+        "phraseAuthor":"Aristotle"
+      },
+      {
+        "phraseid": 3,
+        "phraseTitle": "Whatever you are, be a good one.",
+        "phraseAuthor":"Abraham Lincoln"
+      },
+      {
+        "phraseid": 4,
+        "phraseTitle": "We shape our tools and thereafter our tools shape us.",
+        "phraseAuthor":"Marshall McLuhan"
+      },
+      {
+        "phraseid": 5,
+        "phraseTitle": "Make it work, make it right, make it fast.",
+        "phraseAuthor":"Kent Beck"
+      },
+      {
+        "phraseid": 6,
+        "phraseTitle": "Service to others is the rent you pay<br/>for your room here on Earth.",
+        "phraseAuthor":"Muhammad Ali"
+      },
+      {
+        "phraseid": 7,
+        "phraseTitle": "Be the change that you wish to see in the world." ,
+        "phraseAuthor":"Mahatma Gandhi"
+      },
+      {
+        "phraseid": 8,
+        "phraseTitle": "You must be the change you wish to see in the world.",
+        "phraseAuthor":"Mahatma Gandhi"
+      },
+      {
+        "phraseid": 9,
+        "phraseTitle": "Quality means doing it right<br/>when no one is looking.",
+        "phraseAuthor":"Henry Ford"
+      }
+      ,
+      {
+        "phraseid": 10,
+        "phraseTitle": "Integrity is doing the right thing, <br/>even when no one is watching.",
+        "phraseAuthor":"C.S. Lewis"
+      },
+      {
+        "phraseid": 11,
+        "phraseTitle": "Finding a purpose is not about choosing the right career;<br/> it's about learning how to serve more effectively.",
+        "phraseAuthor":"Luis Juarez"
+      }
+    ]
+  
+}

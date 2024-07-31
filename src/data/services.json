@@ -1,0 +1,74 @@
+{
+  "title": "Services",
+  "subtitle": "Your Complete Extended IT Team",
+  "byline": "Driving Excellence in Consulting, Project Management, and Managed Services",
+  "description": "At Inside View Global, we bring our best team to the table: industry expertise with a track record of success. Our services serve as the backbone for the solutions we deliver, ensuring they are scalable, sustainable, and fit your organization's vision. We make sure our clients find the sweet spot of technology, ensuring business goals are the drivers. We work with you to focus on a tactical quick win that is in alignment with a long-term goal.",
+  "services": [
+    {
+      "title": "Consulting & Advisory",
+      "url": "",
+      "image": "/assets/icons/004-meeting.svg",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 1,
+      "service_byline": "We believe consulting is an art!",
+      "description": "Our core service offering aligns with our organizational goals. Our challenges and concerns motivate us to provide solutions that offer answers, a roadmap, and a clear perspective for execution. Our unique approach is simple, yet consistently effective.",
+      "iconcolor": "orange"
+    },
+    {
+      "title": "Project Services",
+      "url": "",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 4,
+      "image": "/assets/icons/037-strategic%20consultant.svg",
+      "service_byline": "Turning your vision into impact is our project.",
+      "description": "Whether it's Application Development, Deployment Services, or Project Management, we're committed to collaborating with you, leveraging our expertise, best practices, and tools to contribute effectively to your team's success.",
+      "iconcolor": "rose"
+    },
+    {
+      "title": "Managed Services",
+      "url": "",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 2,
+      "image": "/assets/icons/036-strategic%20consulting.svg",
+      "service_byline": "We are your extended Team: Taking the Stress Out of IT Management.",
+      "description": "Our signature lies in proactive measures and continuous system monitoring. <br/>We prioritize ensuring smooth operations and rapid issue resolution to optimize performance and reliability for your organization.",
+      "iconcolor": "emerald"
+    },
+    {
+      "title": "Training Services",
+      "url": "",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 3,
+      "image": "/assets/icons/003-strategic%20consulting.svg",
+      "service_byline": "Count on us to upskill your team",
+      "description": "Over the years, we've refined our approach to share our Microsoft 365 expertise effectively. Our training is customized based on audience, expertise level, and goals. If you aim to boost your team's productivity, get in touch.",
+      "iconcolor": "emerald"
+    },
+    {
+      "title": "Cloud Services",
+      "url": "",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 5,
+      "image": "/assets/icons/033-growth.svg",
+      "service_byline": "Cloud solutions and replatforming with the best in the industry",
+      "description": "We embrace a technology-agnostic approach, be it Microsoft Azure, AWS, or any platform. Collaborating closely, we deliver sustainable, scalable infrastructure, and application solutions. Our unique value lies in leveraging our platform experience.",
+      "iconcolor": "rose"
+    },
+    {
+      "title": "Change Management",
+      "url": "",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 6,
+      "image": "/assets/icons/039-strategic%20consulting.svg",
+      "service_byline": "We collaborate with change management experts to facilitate seamless transitions.",
+      "description": "Technology implementation requires effective change management. Our expertise bridges technology and people-centric change, offering impact assessments, clear communication, employee engagement, and support throughout transitions.",
+      "iconcolor": "orange"
+    }
+  ]
+}

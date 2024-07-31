@@ -1,0 +1,546 @@
+{
+  "servicesLinks": [
+    {
+      "title": "Consulting & Advisory",
+      "url": "/services/ivg_services",
+      "image": "/assets/icons/004-meeting.svg",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 1,
+      "service_byline": "We believe consulting is an art!",
+      "service_description": "Our core service offering aligns with our organizational goals. Our challenges and concerns motivate us to provide solutions that offer answers, a roadmap, and clear perspective for execution. Our unique approach is simple,yet consistently effective."
+    },
+    {
+      "title": "Project Services",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 4,
+      "image": "/assets/icons/037-strategic%20consultant.svg",
+      "service_byline": "Turning your vision into impact is our project.",
+      "service_description": "Whether it's Application Development, Deployment Services, or Project Management, we're committed to collaborating with you, leveraging our expertise, best practices, and tools to contribute effectively to your team's success."
+    },
+    {
+      "title": "Managed Services",
+      "url": "/services/ivg_services",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 2,
+      "image": "/assets/icons/036-strategic%20consulting.svg",
+      "service_byline": "We are your extended Team: Taking the Stress Out of IT Management.",
+      "service_description": "Our signature lies in proactive measures and continuous system monitoring. We prioritize ensuring smooth operations and rapid issue resolution to optimize performance and reliability for your organization."
+    },
+    {
+      "title": "Training Services",
+      "url": "/services/ivg_services",
+      "column": "left",
+      "resolutionsize": "large",
+      "service_order": 3,
+      "image": "/assets/icons/003-strategic%20consulting.svg",
+      "service_byline": "Count on us to upskill your team",
+      "service_description": "Over the years, we've refined our approach to share our Microsoft 365 expertise effectively. Our training is customized based on audience, expertise level, and goals. If you aim to boost your team's productivity, get in touch."
+    },
+    {
+      "title": "Cloud Services",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 5,
+      "image": "/assets/icons/033-growth.svg",
+      "service_byline": "Cloud solutions and replatforming with the best in the industry",
+      "service_description": "We embrace a technology-agnostic approach, be it Microsoft Azure, AWS, or any platform. Collaborating closely, we deliver sustainable, scalable infrastructure and application solutions. Our unique value lies in leveraging our platform experience."
+    },
+    {
+      "title": "Change Management",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "large",
+      "service_order": 6,
+      "image": "/assets/icons/039-strategic%20consulting.svg",
+      "service_byline": "We collaborate with change management experts to facilitate seamless transitions.",
+      "service_description": "Technology implementation requires effective change management. Our expertise bridges technology and people-centric change, offering impact assessments, clear communication, employee engagement, and support throughout transitions."
+    },
+    {
+      "title": "Consulting & Advisory",
+      "url": "/services/ivg_services",
+      "image": "/assets/icons/004-meeting.svg",
+      "column": "left",
+      "resolutionsize": "small",
+      "service_order": 1,
+      "service_byline": "We believe consulting is an art!",
+      "service_description": "Our core service offering aligns with our organizational goals. Our challenges and concerns motivate us to provide solutions that offer answers, a roadmap, and clear perspective for execution. Our unique approach is simple,yet consistently effective."
+    },
+    {
+      "title": "Project Services",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "small",
+      "service_order": 4,
+      "image": "/assets/icons/037-strategic%20consultant.svg",
+      "service_byline": "Turning your vision into impact is our project.",
+      "service_description": "Whether it's Application Development, Deployment Services, or Project Management, we're committed to collaborating with you, leveraging our expertise, best practices, and tools to contribute effectively to your team's success."
+    },
+    {
+      "title": "Managed Services",
+      "url": "/services/ivg_services",
+      "column": "left",
+      "resolutionsize": "small",
+      "service_order": 2,
+      "image": "/assets/icons/036-strategic%20consulting.svg",
+      "service_byline": "We are your extended Team: Taking the Stress Out of IT Management.",
+      "service_description": "Our signature lies in proactive measures and continuous system monitoring. <br/>We prioritize ensuring smooth operations and rapid issue resolution to optimize performance and reliability for your organization."
+    },
+    {
+      "title": "Training Services",
+      "url": "/services/ivg_services",
+      "column": "left",
+      "resolutionsize": "small",
+      "service_order": 3,
+      "image": "/assets/icons/003-strategic%20consulting.svg",
+      "service_byline": "Count on us to upskill your team",
+      "service_description": "Over the years, we've refined our approach to share our Microsoft 365 expertise effectively. Our training is customized based on audience, expertise level, and goals. If you aim to boost your team's productivity, get in touch."
+    },
+    {
+      "title": "Cloud Services",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "small",
+      "service_order": 5,
+      "image": "/assets/icons/033-growth.svg",
+      "service_byline": "Cloud solutions and replatforming with the best in the industry",
+      "service_description": "We embrace a technology-agnostic approach, be it Microsoft Azure, AWS, or any platform. Collaborating closely, we deliver sustainable, scalable infrastructure and application solutions. Our unique value lies in leveraging our platform experience."
+    },
+    {
+      "title": "Change Management",
+      "url": "/services/ivg_services",
+      "column": "right",
+      "resolutionsize": "small",
+      "service_order": 6,
+      "image": "/assets/icons/039-strategic%20consulting.svg",
+      "service_byline": "We collaborate with change management experts to facilitate seamless transitions.",
+      "service_description": "Technology implementation requires effective change management. Our expertise bridges technology and people-centric change, offering impact assessments, clear communication, employee engagement, and support throughout transitions."
+    }
+  ],
+  "solutionslinks": [
+    {
+      "resolutionsize": "large",
+      "title": "Insights Workshops",
+      "url": "/solutions/Insights",
+      "type": "offering"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Rapid Deployments",
+      "url": "/solutions/rapiddeployment",
+      "type": "offering"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Intranets",
+      "url": "/solutions/intranet",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Business Process Automations",
+      "url": "/solutions/bpa",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Microsoft Licensing",
+      "url": "/solutions/licensingconsulting",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Microsoft 365 Governance",
+      "url": "/solutions/m365governance",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Collaborations Apps",
+      "url": "/solutions/collabapps",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Content Migrations",
+      "url": "/solutions/contentmigrations",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Information Management",
+      "url": "/solutions/informationmanagement",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Records Management",
+      "url": "/solutions/recordsmanagement",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Cloud Solutions",
+      "url": "/solutions/cloudsolutions",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Collaboration Workspaces",
+      "url": "/solutions/workspaces",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "SharePoint Online",
+      "url": "/solutions/spo",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "MS Teams",
+      "url": "/solutions/msteams",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Copilot for Microsoft 365",
+      "url": "/solutions/copilot",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Dynamics 365",
+      "url": "/solutions/dynamics365",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Microsoft Viva",
+      "url": "/solutions/viva",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Microsoft Power Platform",
+      "url": "/solutions/powerplatform",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Microsoft Azure",
+      "url": "/solutions/azure",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Amazon AWS",
+      "url": "/solutions/aws",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Insights Workshops",
+      "url": "/solutions/Insights",
+      "type": "offering"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Rapid Deployments",
+      "url": "/solutions/rapiddeployment",
+      "type": "offering"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Intranets",
+      "url": "/solutions/intranet",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Business Process Automations",
+      "url": "/solutions/bpa",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Microsoft Licensing",
+      "url": "/solutions/licensingconsulting",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Microsoft 365 Governance",
+      "url": "/solutions/m365governance",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Collaborations Apps",
+      "url": "/solutions/collabapps",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Content Migrations",
+      "url": "/solutions/contentmigrations",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Information Management",
+      "url": "/solutions/informationmanagement",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Records Management",
+      "url": "/solutions/recordsmanagement",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Cloud Solutions",
+      "url": "/solutions/cloudsolutions",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Collaboration Workspaces",
+      "url": "/solutions/workspaces",
+      "type": "solution"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "SharePoint Online",
+      "url": "/solutions/spo",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "MS Teams",
+      "url": "/solutions/msteams",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Copilot for Microsoft 365",
+      "url": "/solutions/copilot",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Dynamics 365",
+      "url": "/solutions/dynamics365",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Microsoft Viva",
+      "url": "/solutions/viva",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Microsoft Power Platform",
+      "url": "/solutions/powerplatform",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Microsoft Azure",
+      "url": "/solutions/azure",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Amazon AWS",
+      "url": "/solutions/aws",
+      "type": "technology"
+    }
+  ],
+  "industriesLinks": [
+    {
+      "resolutionsize": "large",
+      "title": "Finance & Banking",
+      "url": "/",
+      "image": "/assets/icons/mining-industry.svg",
+      "column": "left",
+      "order": "1"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Education & Training",
+      "url": "/",
+      "image": "/assets/icons/training.svg",
+      "column": "left",
+      "order": "2"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Construction",
+      "url": "/",
+      "image": "/assets/icons/building.svg",
+      "column": "left",
+      "order": "3"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Energy & Mining",
+      "url": "/",
+      "image": "/assets/icons/mining-industry.svg",
+      "column": "right",
+      "order": "4"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Healthcare",
+      "url": "/",
+      "image": "/assets/icons/medical-team.svg",
+      "column": "right",
+      "order": "5"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Retail & Goods",
+      "url": "/",
+      "image": "/assets/icons/supermarket.svg",
+      "column": "right",
+      "order": "6"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Finance & Banking",
+      "url": "/",
+      "image": "/assets/icons/mining-industry.svg",
+      "column": "left",
+      "order": "1"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Education & Training",
+      "url": "/",
+      "image": "/assets/icons/training.svg",
+      "column": "left",
+      "order": "2"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Construction",
+      "url": "/",
+      "image": "/assets/icons/building.svg",
+      "column": "left",
+      "order": "3"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Energy & Mining",
+      "url": "/",
+      "image": "/assets/icons/mining-industry.svg",
+      "column": "right",
+      "order": "4"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Healthcare",
+      "url": "/",
+      "image": "/assets/icons/medical-team.svg",
+      "column": "right",
+      "order": "5"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Retail & Goods",
+      "url": "/",
+      "image": "/assets/icons/supermarket.svg",
+      "column": "right",
+      "order": "6"
+    }
+  ],
+  "allaboutLinks": [
+    {
+      "resolutionsize": "large",
+      "title": "Our Team",
+      "url": "/about/TeamInfo",
+      "image": "/assets/icons/team.svg",
+      "column": "single",
+      "order": "1"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Our Methodology",
+      "url": "/",
+      "image": "/assets/icons/iteration.svg",
+      "column": "single",
+      "order": "2"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Our Values",
+      "url": "/about/OurValues",
+      "image": "/assets/icons/values.svg",
+      "column": "single",
+      "order": "3"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Partners",
+      "url": "/",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "4"
+    },
+    {
+      "resolutionsize": "large",
+      "title": "Van 365 View Community",
+      "url": "/about/Van365View",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "5"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Our Team",
+      "url": "/about/TeamInfo",
+      "image": "/assets/icons/team.svg",
+      "column": "single",
+      "order": "1"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Our Methodology",
+      "url": "/",
+      "image": "/assets/icons/iteration.svg",
+      "column": "single",
+      "order": "2"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Our Values",
+      "url": "/about/OurValues",
+      "image": "/assets/icons/values.svg",
+      "column": "single",
+      "order": "3"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Partners",
+      "url": "/",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "4"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Van 365 View Community",
+      "url": "/about/Van365View",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "5"
+    }
+  ]
+}

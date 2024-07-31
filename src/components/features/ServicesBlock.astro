@@ -1,0 +1,66 @@
+---
+import ServiceData from "@/data/services.json";
+---
+
+<!-- Services Section -->
+<div class="bg-white dark:bg-gray-900 dark:text-gray-100">
+    <div
+        class="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl"
+    >
+        <!-- Heading -->
+        <div class="sm:text-center md:text-left">
+            <div
+                class="md:border-b-2 mb-1 text-sm font-bold uppercase tracking-wider text-slate-400 dark:text-blue-500"
+            >
+                <h1 class="text-center md:text-left left-0">
+                    {ServiceData.subtitle}
+                </h1>
+            </div>
+            <h2
+                class="text-left mb-4 text-4xl font-black text-black dark:text-white"
+            >
+                {ServiceData.title}
+            </h2>
+            <span
+                class="mx-auto text-xl font-semibold leading-relaxed text-sky-800 dark:text-gray-300 lg:w-2/3"
+            >
+            <Fragment set:html= {ServiceData.byline}/>
+            </span>
+            <div
+                class="text-base font-medium py-5 leading-relaxed text-gray-700 dark:text-gray-300"
+            >
+            <Fragment set:html={ServiceData.description}/>
+            </div>
+        </div>
+        <!-- END Heading -->
+
+        <!-- Features -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5 xl:gap-6">
+            {
+                ServiceData.services.map((service) => (
+                    <div
+                        class={`group rounded-2xl p-5 text-center transition duration-200 ease-out hover:bg-${service.iconcolor}-50 dark:hover:bg-${service.iconcolor}-800/25 xl:p-6`}
+                    >
+                        <div class="relative m-5 mb-12 inline-flex size-12 items-center justify-center">
+                            <div
+                                class={`absolute inset-0 -m-5 rotate-3 rounded-3xl bg-${service.iconcolor}-300 transition duration-200 ease-out group-hover:-rotate-3 group-hover:scale-105 group-hover:shadow-lg`}
+                            />
+                            <div
+                                class={`absolute inset-0 -m-2 -rotate-3 rounded-2xl bg-${service.iconcolor}-700/75 shadow-inner transition duration-200 ease-out group-hover:rotate-2 group-hover:scale-105`}
+                            />
+                            <img
+                                src={service.image}
+                                class="hi-outline hi-adjustments-vertical relative inline-block size-8 text-white transition duration-200 ease-out group-hover:scale-110"
+                            />
+                        </div>
+                        <h4 class="mb-2 text-lg font-bold">{service.title}</h4>
+                        <p class="text-center leading-relaxed justify-center text-gray-600 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200">
+                            <Fragment set:html=  {service.description}/>
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</div>
+<!-- END Team Section -->

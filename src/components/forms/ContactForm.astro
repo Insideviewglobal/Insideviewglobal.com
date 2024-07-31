@@ -1,0 +1,271 @@
+---
+import phrasesData from "@/data/ContactusPhrases.json";
+
+// Frontmatter section
+// Component scripts goes here.
+const rndInt = Math.floor(Math.random() * 11) + 1
+
+const phrase =phrasesData.phrases.find(({ phraseid }) => phraseid === rndInt);
+---
+<!-- Features Section: Bento Grid Alternate -->
+<div class="bg-white dark:bg-gray-900 dark:text-gray-100">
+    <div
+      class="container mx-auto space-y-16 px-4 py-8 lg:px-8 lg:py-16 xl:max-w-7xl"
+    >
+      <!-- Features -->
+      <div class="grid grid-cols-12 gap-4 lg:gap-6 ">
+        <!-- Feature: Hero -->
+        <div
+          class="col-span-12 flex flex-col gap-8  overflow-hidden rounded-3xl bg-gray-900 p-4 dark:border-gray-700/25 dark:bg-gray-700/25 sm:p-6 lg:col-span-6  lg:p-16"
+        >
+            <div class="text-center">
+                <div
+                  class="relative mx-auto mb-10 inline-flex size-20 items-center justify-center text-lime-600 dark:text-lime-300"
+                >
+                  <div
+                    class="absolute inset-0 rotate-6 scale-105 rounded-xl bg-lime-200 dark:bg-lime-900"
+                  ></div>
+                  <div
+                    class="absolute inset-0 -rotate-6 scale-105 rounded-xl bg-lime-100 dark:bg-lime-800"
+                  ></div>
+                  <div class="relative">
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="hi-solid hi-fire inline-block size-10"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                
+              </div>
+                <div class=" text-center ">
+                  <div
+                    class="mb-1 text-base font-bold uppercase tracking-wider text-sky-600 dark:text-sky-500"
+                  >
+                    We reply in 24hrs
+                  </div>
+                  <h2 class="mb-4 text-3xl font-black text-white">
+                    Get in touch
+                  </h2>
+                  <span class="mb-4 text-xl font-black text-lime-600 ">
+                    <a href="mailto:connect@insideviewglobal.com">connect@insideviewglobal.com</a>
+                  </span>
+                  <h3
+                    class="pt-10 text-lg font-medium leading-relaxed text-gray-300"
+                  >
+                    If something does not make sense, <br/>feel free to contact us <br/>and we
+                    will get back to you <br/>as soon as possible.
+                  </h3>
+                  <div
+                    class="mb-1 text-sm font-bold flex justify-center tracking-wider py-9 text-center items-center  "
+                  ><div class="max-w-72 ">
+                    <span class="italic font:semibold text-sky-300">
+                      "<Fragment set:html= {phrase.phraseTitle}/>"
+                    </span> <br/> <span class=" text-white">
+                      <Fragment set:html= {phrase.phraseAuthor}/>
+                    </span>
+                  </div>
+                  </div>
+                </div>
+                 
+            
+          
+        </div>
+        <!-- END Feature: Hero -->
+  
+        
+  
+        <!-- Feature: contact form -->
+        <div
+          class=" text-sm col-span-12 flex flex-col gap-8 overflow-hidden rounded-3xl text-gray-200 bg-neutral-800 p-4 dark:bg-indigo-950/75 sm:p-6 md:col-span-12 lg:col-span-6  lg:p-8"
+        >
+          
+          <form id="contact-form" class="space-y-6 p-5 md:p-10">
+            
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
+            <div class="space-y-1">
+                <label for="fullname" class="font-medium"
+                    >Full Name</label
+                ><label></label>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required
+                    class="block w-full text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5 py-3 leading-6 placeholder-gray-500 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+                />
+            </div>
+            <div class="space-y-1">
+                <label for="emailaddress" class="font-medium"
+                    >Email</label
+                ><label></label>
+                <input
+                    type="email"
+                    id="emailaddress"
+                    required
+                    name="emailaddress"
+                    class="block w-full text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5 py-3 leading-6 placeholder-gray-500 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+                />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 ">
+          <div class="space-y-1">
+            <label for="Phone" class="font-medium">Phone</label>
+            <input
+                type="text"
+                id="Phone"
+                name="Phone"
+                class="block w-full text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5 py-3 leading-6 placeholder-gray-500 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+            />
+        </div>
+        <div class="space-y-1">
+            <label for="jobtitle" class="font-medium"
+                >Job Title</label
+            >
+            <input
+                type="text"
+                id="jobtitle"
+                name="jobtitle"
+                
+                class="block w-full text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5 py-3 leading-6 placeholder-gray-500 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+            />
+        </div>
+    </div>
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2" >
+        <div class="space-y-1">
+            <label for="companyname" class="font-medium"
+                >Company Name</label
+            >
+            <input
+                type="text"
+                id="companyname"
+                name="companyname"
+                class="block w-full text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5 py-3 leading-6 placeholder-gray-500 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+            />
+        </div>
+        <div class="space-y-1 ">
+            <label for="solutiontype" class="font-medium"
+                >I am interested in</label
+            >
+            <select
+                id="solutiontype"
+                name="solutiontype"
+                class="block w-full text-sm rounded-lg border text-gray-800 dark:text-gray-200 border-gray-200 px-5 py-3 leading-6 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:focus:border-sky-500"
+            >
+                <option>Discovery & Roadmap</option>
+                <option>Intranet</option>
+                <option>Business Proces Automation</option>
+                <option>Microsoft Copilot</option>
+                <option>Content Migration</option>
+                <option>Licensing Consulting</option>
+                <option>CRM and ERP</option>
+                <option>Other</option>
+            </select>
+            
+        </div>
+    </div>
+          <div class="space-y-1">
+            <label for="message" class="font-medium"
+                                >Message</label
+                            ><label></label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="6"
+                                class="block w-full  text-gray-800 dark:text-gray-200 rounded-lg border border-gray-200 px-5  leading-6 placeholder-gray-950 focus:border-sky-500 focus:ring focus:ring-sky-500/50 dark:border-gray-600 dark:bg-gray-800 dark:placeholder-gray-400 dark:focus:border-sky-500"
+                            ></textarea>
+          </div>
+          <div class="space-y-1 text-right">
+            
+            <input
+                name="ivg_validateSubmission"
+                class="invisible"
+                tabindex="-1"
+                autocomplete="off"
+            />
+          <button
+                                type="submit"
+                                class="inline-flex w-auto  items-center justify-center  gap-2 rounded-lg border border-sky-700 bg-sky-700 px-8 py-4 font-semibold leading-6 text-white hover:border-sky-600 hover:bg-sky-600 hover:text-white focus:ring focus:ring-sky-400/50 active:border-sky-700 active:bg-sky-700 dark:focus:ring-sky-400/90"
+                            >
+                                <svg
+                                    class="hi-mini hi-paper-airplane inline-block size-5 opacity-50"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
+                                    ></path>
+                                </svg>
+                                <span>Let's Chat</span>
+                            </button>
+                        </div>
+        </form>
+        <div id="contactform-result" class="text-gray-200 font-semibold text-center items-center justify-center "></div>
+        </div>
+        <!-- END Feature: Projects -->
+  
+        
+  
+        
+      </div>
+      <!-- END Features -->
+    </div>
+  </div>
+  <!-- END Features Section: Bento Grid Alternate -->
+  
+
+
+<script is:inline>
+                const contactForm = document.getElementById('contact-form');
+                const contactFormResult = document.getElementById('contactform-result');
+
+                contactForm.addEventListener('submit', function(e) {
+                
+                    const contactformData = new FormData(contactForm);
+                    e.preventDefault();
+
+                    const object = Object.fromEntries(contactformData);
+                    const json = JSON.stringify(object);
+                    contactForm.style.display = "none";
+                    contactFormResult.innerHTML = "Please wait..."
+                    
+                    fetch('https://insideforms.ibleedpixels.com/api/contact-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                        .then(async (response) => {
+                            let json = await response.json();
+                            if (response.status === 200) {
+                                contactFormResult.innerHTML = 'Thank you for contacting us!';
+                            } else {
+                                console.log(response);
+                                contactFormResult.innerHTML = json.message;
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+                            contactFormResult.innerHTML = "There was a problem sending your message";
+                        })
+                        .then(function() {
+                          contactForm.reset();
+                            setTimeout(() => {
+                                contactFormResult.style.display = "none";
+                                contactForm.style.display = "block";
+                            }, 8000);
+                        });
+                });
+            </script>
