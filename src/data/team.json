@@ -5,7 +5,7 @@
   "members": [
     {
       "member_name": "Luis Juarez",
-      "profile_image": "/assets/team/LJ_P1B.jpg",
+      "profile_image": "/assets/team/LJ_P1B.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/luisnjuarez/",
       "member_insta_link":"https://www.instagram.com/luisnjuarez/",
       "role_order": 1,
@@ -13,7 +13,7 @@
       "bio": "As a CEO with an Enterprise Architect background, I champion teamwork and inclusion. My expertise fuels innovative IT solutions driving organizational growth and transformation."
     },{
       "member_name": "Zachary Oakes",
-      "profile_image": "/assets/team/profile_2023_oct_tight_sq.jpeg",
+      "profile_image": "/assets/team/profile_2023_oct_tight_sq.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/zacharyoakes/",
       "member_insta_link":"https://www.instagram.com/ziptied/",
       "role_order": 3,
@@ -22,7 +22,7 @@
     },
     {
       "member_name": "Maria Garcia",
-      "profile_image": "/assets/team/MJ_P1.jpg",
+      "profile_image": "/assets/team/MJ_P1.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/mariagarciadelacorte/",
       "member_insta_link":"https://www.instagram.com/delacortemg/",
       "role_order": 2,
@@ -32,7 +32,7 @@
     
     {
       "member_name": "Hipatia Medina",
-      "profile_image": "/assets/team/HM_p2.jpg",
+      "profile_image": "/assets/team/HM_p2.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/hipatiamedina/",
       "member_insta_link":"https://www.instagram.com/hipatiamedina/",
       "role_order": 5,
@@ -41,7 +41,7 @@
     },
     {
       "member_name": "Raul Martinez",
-      "profile_image": "/assets/team/Raul_p2.jpg",
+      "profile_image": "/assets/team/Raul_p2.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/raulmartinez5/",
       "member_insta_link":"https://www.instagram.com/5krustofsky/",
       "role_order": 4,
@@ -49,7 +49,7 @@
       "bio": "Passionate about creating and directing designs, capturing IVG essence and sharing the messages through visual communication."
     },{
       "member_name": "Balakrishna Saka",
-      "profile_image": "/assets/team/bk.jpg",
+      "profile_image": "/assets/team/bk.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/bksaka/",
       "member_insta_link":"https://www.instagram.com/bk.saka/",
       "role_order": 6,
@@ -58,7 +58,7 @@
     },
     {
       "member_name": "Roman Karchenko",
-      "profile_image": "/assets/team/roman.jpg",
+      "profile_image": "/assets/team/roman.webp",
       "member_linkedin_link":"https://www.linkedin.com/in/roman-kharchenko-b56bb2171/",
       "member_insta_link":"#",
       "role_order": 8,
@@ -67,7 +67,7 @@
     }
     ,{
       "member_name": "Long Truong Cong",
-      "profile_image": "/assets/team/LongTruong.jpg",
+      "profile_image": "/assets/team/LongTruong.webp",
       "member_linkedin_link":"#",
       "member_insta_link":"#",
       "role_order": 7,
@@ -76,7 +76,7 @@
     },
     {
       "member_name": "Tri Tran Van",
-      "profile_image": "/assets/team/TrinTranVan.jpg",
+      "profile_image": "/assets/team/TrinTranVan.webp",
       "member_linkedin_link":"#",
       "member_insta_link":"#",
       "role_order": 9,
