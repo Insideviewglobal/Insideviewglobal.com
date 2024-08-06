@@ -17,13 +17,17 @@
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.0",
+    "@storyblok/astro": "^5.0.0",
     "@types/alpinejs": "^3.13.10",
     "alpinejs": "^3.13.8",
     "astro": "^4.12.3",
     "astro-icon": "^1.1.0",
     "astro-navbar": "^2.3.1",
+    "classnames": "^2.5.1",
+    "clone-deep": "^4.0.1",
     "npm": "^10.2.5",
-    "preact": "^10.19.3"
+    "preact": "^10.19.3",
+    "vite": "^5.3.5"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
