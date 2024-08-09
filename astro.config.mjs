@@ -26,6 +26,7 @@ export default defineConfig({
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(),
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,
+      bridge: env.STORYBLOK_IS_PREVIEW === 'yes',
       components: {
         // Add your components here
         blogPost: 'storyblok/BlogPost',
@@ -39,6 +40,14 @@ export default defineConfig({
         // Choose your Storyblok space region
         region: 'ca', // optional,  or 'eu' (default)
       },
+      output: env.STORYBLOK_IS_PREVIEW === 'yes' ? 'server' : 'static',
+  ...(env.STORYBLOK_ENV === 'development' && {
+    vite: {
+      plugins: [basicSsl()],
+      server: {
+        https: true
+      }
+    }
     }),
   ]
 });
