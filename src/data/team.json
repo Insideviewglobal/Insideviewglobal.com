@@ -82,6 +82,15 @@
       "role_order": 9,
       "title": "Senior Microsoft Power Platform Consultant",
       "bio": "Driving digital transformation by harnessing the power of the Microsoft Power Platform, I analyze business requirements, design innovative solutions, and implement strategies that streamline operations, enhance productivity, and foster data-driven decision-making."
+    },
+    {
+      "member_name": "Andres Lopez",
+      "profile_image": "/assets/team/andres-lopez.jpg",
+      "member_linkedin_link":"https://www.linkedin.com/in/andres-ldr/",
+      "member_insta_link":"#",
+      "role_order": 4,
+      "title": "Full Stack Software Engineer",
+      "bio": "A dynamic Full Stack Developer and Microsoft Consultant, I excel in building robust applications and optimizing Microsoft 365 solutions. Passionate about solving complex challenges and driving innovation, I'm here to elevate your tech landscape."
     }
   ]
 }
