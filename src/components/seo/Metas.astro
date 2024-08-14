@@ -1,5 +1,5 @@
 ---
-const { title, description, url, socialImage, twitterImage, author } =
+const { title, description, url, socialImage, author } =
   Astro.props;
 let shortTitle = "Inside View Global";
 let subtitle = "Raising the bar";
@@ -35,15 +35,8 @@ let subtitle = "Raising the bar";
   property="og:image"
   content={Astro.site ? `${Astro.site}${socialImage}` : socialImage}
 />
-<!---------------------
-    Open Graph Twitter
- --------------------->
 
 <meta property="og:site_name" content={title} />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:description" content={description} />
-<meta
-  name="twitter:image"
-  content={Astro.site ? `${Astro.site}${twitterImage}` : twitterImage}
-/>
+
 <title>{shortTitle} - {subtitle}</title>
+

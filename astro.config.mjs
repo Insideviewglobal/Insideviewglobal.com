@@ -22,7 +22,7 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://www.insideviewglobal.com',
+  site: 'https://insideviewglobal.com',
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(),
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,

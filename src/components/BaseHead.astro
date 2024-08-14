@@ -6,8 +6,7 @@ const {
   title = "Inside View Global",
   description = "Innovation, Modernization, and Trust – Your Vision, Our Expertise, One Team.",
   url = 'https://insideviewglobal.com',
-  socialImage = "/social-preview-image.png",
-  twitterImage = "/twitter-preview-image.png", // Assuming you have a separate image for Twitter
+  socialImage = "assets/Logo/logo white horizontal.png",
   author = "Zachary Oakes; Luis Juarez",
 } = Astro.props;
 const sanitizedTitle = title.toLowerCase().replaceAll(" ", "-");
@@ -17,10 +16,10 @@ const sanitizedTitle = title.toLowerCase().replaceAll(" ", "-");
   description={description.substring(0, 100)}
   url={Astro.site
     ? `${Astro.site}/${sanitizedTitle}`
-    : `Inside View Global`}
-  image={socialImage}
+    : `${url}/Inside View Global`}
+  socialImage={socialImage}
   author={author}
-  twitterImage={twitterImage}
+  
 />
 <Favicons/>
 <!---
