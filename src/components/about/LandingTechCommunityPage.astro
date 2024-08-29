@@ -1,0 +1,125 @@
+---
+
+
+import CommunitiesData from "@/data/CommunityData.json";
+// Step 1: Map to an array of objects with value and original index
+const communities = CommunitiesData.communities.map((item, index) => {
+  return { index: index, value: item.community_order}; // Convert to lowercase for case-insensitive sorting
+});
+
+
+// Step 2: Sort the mapped array by the value (name in this case)
+
+communities.sort((a, b) => {
+    return a.value - b.value;
+});
+// Step 3: Create a sorted array using the sorted indices
+const sortedArray = communities.map(mappedItem => {
+  return CommunitiesData.communities[mappedItem.index];
+});
+
+---
+<!-- Blog List Section: Full Width -->
+<div class="bg-gray-100 dark:bg-gray-900 dark:text-gray-100">
+  <div
+    class="container mx-auto space-y-16 px-4 py-16 lg:px-8 lg:py-32 xl:max-w-7xl"
+  >
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="mb-4 text-4xl font-black text-black dark:text-white">
+        <Fragment set:html=  {CommunitiesData.title}/>
+      </h2>
+      <h3
+        class="mx-auto text-xl font-medium leading-relaxed text-gray-700 lg:w-2/3 dark:text-gray-300"
+      >
+      <Fragment set:html=  {CommunitiesData.byline}/>
+      </h3>
+      <h4>
+        <a
+          href="javascript:void(0)"
+          class="text-sky-600 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
+          >follow us on X</a
+        >
+        or
+        <a
+          href="javascript:void(0)"
+          class="text-sky-600 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
+          >join us</a
+        >
+        to stay up to date about any new posts.
+      </h4 >
+    </div>
+    <!-- END Heading -->
+
+    <!-- Blog Posts -->
+    <div class="space-y-4 sm:space-y-10">
+      
+      {sortedArray.map((communityItem) => (
+      <div
+        class="flex flex-col overflow-hidden rounded-lg bg-white shadow-sm lg:flex-row dark:bg-gray-800"
+      >
+        <a
+          href="javascript:void(0)"
+          class="group relative block w-full overflow-hidden lg:w-2/5 xl:w-1/3"
+        >
+          <div
+            class="absolute inset-0 flex items-center justify-center bg-sky-700/75 opacity-0 transition duration-150 ease-out group-hover:opacity-100"
+          >
+            <svg
+              class="hi-solid hi-arrow-right inline-block size-10 -rotate-45 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <img
+            src={communityItem.community_logo}
+            class="h-full w-full object-cover object-center"
+            alt="Featured Image of blog post"
+          />
+        </a>
+        <div
+          class="w-full p-6 lg:w-3/5 lg:self-center lg:px-10 lg:py-8 xl:w-2/3"
+        >
+          <div class="mb-3 inline-flex flex-wrap items-center gap-1">
+            {communityItem.tags.map((communityTagItem) => (
+            <div
+              class="inline-flex rounded-full bg-sky-100 px-2 py-1 text-sm font-semibold leading-4 text-sky-800 dark:bg-sky-900/75 dark:text-sky-200"
+            >
+              {communityTagItem}
+            </div>
+            ))}
+            
+          </div>
+          <h4 class="mb-2 text-lg font-bold sm:text-xl">
+            <a
+              href="javascript:void(0)"
+              class="leading-7 text-gray-800 hover:text-gray-600 dark:text-gray-200 dark:hover:text-gray-400"
+            >
+            {communityItem.community_name}
+            </a>
+          </h4>
+          <p class="mb-3 text-sm text-gray-600 dark:text-gray-400">
+            <a
+              href={communityItem.communitySiteLink}
+              class="font-medium text-sky-600 hover:text-sky-400 dark:text-sky-400 dark:hover:text-sky-300"
+              >Join the community</a>
+          </p>
+          <p class="leading-relaxed text-gray-600 dark:text-gray-400">
+            <Fragment set:html=  {communityItem.description}/>
+          </p>
+        </div>
+      </div>
+      ))}
+    </div>
+    <!-- END Blog Posts -->
+  </div>
+</div>
+<!-- END Blog List Section: Full Width -->

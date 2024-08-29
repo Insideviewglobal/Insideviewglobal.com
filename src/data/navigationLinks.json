@@ -489,19 +489,12 @@
     {
       "resolutionsize": "large",
       "title": "Partners",
-      "url": "/",
+      "url": "/about/Partners",
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "4"
     },
-    {
-      "resolutionsize": "large",
-      "title": "Van 365 View Community",
-      "url": "/about/Van365View",
-      "image": "/assets/icons/startup.svg",
-      "column": "single",
-      "order": "5"
-    },
+    
     {
       "resolutionsize": "small",
       "title": "Our Team",
@@ -529,18 +522,28 @@
     {
       "resolutionsize": "small",
       "title": "Partners",
-      "url": "/",
+      "url": "/about/Partners",
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "4"
+    }
+  ],"techcommunityLinks": [
+    
+    {
+      "resolutionsize": "large",
+      "title": "Van 365 View",
+      "url": "/VanTechEcosystem/Van365View",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "1"
     },
     {
       "resolutionsize": "small",
       "title": "Van 365 View Community",
-      "url": "/about/Van365View",
+      "url": "/VanTechEcosystem/Van365View",
       "image": "/assets/icons/startup.svg",
       "column": "single",
-      "order": "5"
+      "order": "1"
     }
   ]
 }

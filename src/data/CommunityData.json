@@ -1,0 +1,73 @@
+{
+  "title": "VanTech Ecosystem",
+  "subtitle": "Support Vancouver Tech Growth",
+  "byline": "Embracing Vancouver’s Tech Renaissance: Join the Movement",
+  "communities": [
+    {
+      "community_id": "vanjs",
+      "community_name": "Van JS",
+      "community_logo": "/assets/communities/VanJS.avif",
+      "description": "VanJS is a monthly meetup for developers in Vancouver. The focus is on JavaScript, front-end technology, and the open web.",
+      "communitySiteLink": "https://lu.ma/gykjonp2",
+      "tags": [
+         "Vancouver",
+         "Javascript"
+      ],
+      "community_order": 4
+
+   },
+   {
+      "community_id": "van365view",
+      "community_name": "Van 365 View",
+      "community_logo": "/assets/communities/Asset 6Black_Van365View.png",
+      "description": "space for organizational leaders and professionals to connect and share about Microsoft 365, AI, ERP, CRM, and Enterprise Apps. Vancouver is growing, and communities are leading the way in building a stronger city.",
+      "communitySiteLink": "http://van365view.ca/",
+      "tags": [
+         "Vancouver",
+         "Microsoft 365"
+      ],
+      "community_order": 1
+
+   },
+   {
+      "community_id": "publiccloud",
+      "community_name": "Public Cloud Ninja",
+      "community_logo": "/assets/communities/MicrosoftAzure.jpeg",
+      "description": "If you are looking for a community run, community focused usergroup, talking about all things cloud, Microsoft and Azure, this is the group for you.",
+      "communitySiteLink": "www.PublicCloud.Ninja",
+      "tags": [
+         "Vancouver",
+         "Cloud Computing"
+      ],
+      "community_order": 2
+
+   },
+   {
+      "community_id": "aisummit",
+      "community_name": "AI Summit Vancouver",
+      "community_logo": "/assets/communities/AISummit.avif",
+      "description": "Learn about the latest innovation in AI, Cloud and Spatial computing live in-person. Elevating emerging tech trends and meetups in Vancouver.",
+      "communitySiteLink": "http://vanaisummit.com/",
+      "tags": [
+         "Vancouver",
+         "AI Summit"
+      ],
+      "community_order": 3
+
+   },
+   {
+      "community_id": "vancouverai",
+      "community_name": "Vancouver AI",
+      "community_logo": "/assets/communities/VancouverAI.avif",
+      "description": "Redefining Creative Mastery in the Age of Generative AI.",
+      "communitySiteLink": "https://lu.ma/xAI?tk=bvrspM",
+      "tags": [
+         "Vancouver",
+         "AI"
+      ],
+      "community_order": 5
+
+   }
+    
+   ]
+}
