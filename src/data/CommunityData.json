@@ -81,6 +81,20 @@
       "community_order": 6
 
    }
+   ,
+   {
+      "community_id": "founders",
+      "community_name": "Founders Mastermind",
+      "community_logo": "/assets/communities/Founders.avif",
+      "description": "​Hey there, fellow founder! Feeling the startup grind? Join our Founders Mastermind, where we're all about sharing the journey, from the highs to the hurdles. If you're a founder in the seed to pre-seed stage of your startups, this is your tribe.",
+      "communitySiteLink": "https://lu.ma/ajl40kgx?tk=r7xfM2",
+      "tags": [
+         "Vancouver",
+         "Founders"
+      ],
+      "community_order": 6
+
+   }
     
    ]
 }
