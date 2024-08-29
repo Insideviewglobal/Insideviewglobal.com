@@ -13,7 +13,7 @@
          "Vancouver",
          "Javascript"
       ],
-      "community_order": 4
+      "community_order": 5
 
    },
    {
@@ -27,6 +27,19 @@
          "Microsoft 365"
       ],
       "community_order": 1
+
+   },
+   {
+      "community_id": "awsday",
+      "community_name": "AWS Community Day",
+      "community_logo": "/assets/communities/awsday.jpg",
+      "description": "AWS Community Day is held every year across the globe and we are excited to be part of it. Join us as we bring together the local community around AWS, while donating any profits to local charity!",
+      "communitySiteLink": "https://www.awsday.ca/",
+      "tags": [
+         "Vancouver",
+         "AWS"
+      ],
+      "community_order": 3
 
    },
    {
@@ -52,7 +65,7 @@
          "Vancouver",
          "AI Summit"
       ],
-      "community_order": 3
+      "community_order": 4
 
    },
    {
@@ -65,7 +78,7 @@
          "Vancouver",
          "AI"
       ],
-      "community_order": 5
+      "community_order": 6
 
    }
     
