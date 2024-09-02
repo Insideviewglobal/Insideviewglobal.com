@@ -29,16 +29,6 @@
       "title": "Business Growth Manager",
       "bio": "I drive strategic growth and partnerships, expanding market reach, optimizing revenue, and fostering key client relationships. I thrive on creating opportunities and delivering results. "
     },
-    
-    {
-      "member_name": "Hipatia Medina",
-      "profile_image": "/assets/team/HM_p2.webp",
-      "member_linkedin_link":"https://www.linkedin.com/in/hipatiamedina/",
-      "member_insta_link":"https://www.instagram.com/hipatiamedina/",
-      "role_order": 5,
-      "title": "Cultural-Driven, Human-Centered Marketer",
-      "bio": "With background in humanities, design, and digital marketing, I craft captivating brand stories, driving Inside View Global's vision."
-    },
     {
       "member_name": "Raul Martinez",
       "profile_image": "/assets/team/Raul_p2.webp",
@@ -47,14 +37,6 @@
       "role_order": 4,
       "title": "Creative & Art Senior Manager",
       "bio": "Passionate about creating and directing designs, capturing IVG essence and sharing the messages through visual communication."
-    },{
-      "member_name": "Balakrishna Saka",
-      "profile_image": "/assets/team/bk.webp",
-      "member_linkedin_link":"https://www.linkedin.com/in/bksaka/",
-      "member_insta_link":"https://www.instagram.com/bk.saka/",
-      "role_order": 6,
-      "title": "Senior Certified Solutions Architect ",
-      "bio": "Microsoft Enterprise and AWS certified, with a motto of \"Promoting Organizational Transformation and Digital Innovation.\" As an Enterprise Architect, I concentrate on the current state and the roadmap to achieve the desired future state."
     },
     {
       "member_name": "Roman Karchenko",
@@ -73,15 +55,6 @@
       "role_order": 7,
       "title": "Microsoft Senior Software Engineer",
       "bio": "Developing scalable software solutions with a track record of successful project delivery, I have expertise in all phases of the software development lifecycle, from concept through deployment and optimization."
-    },
-    {
-      "member_name": "Tri Tran Van",
-      "profile_image": "/assets/team/TrinTranVan.webp",
-      "member_linkedin_link":"#",
-      "member_insta_link":"#",
-      "role_order": 9,
-      "title": "Senior Microsoft Power Platform Consultant",
-      "bio": "Driving digital transformation by harnessing the power of the Microsoft Power Platform, I analyze business requirements, design innovative solutions, and implement strategies that streamline operations, enhance productivity, and foster data-driven decision-making."
     },
     {
       "member_name": "Andres Lopez",
