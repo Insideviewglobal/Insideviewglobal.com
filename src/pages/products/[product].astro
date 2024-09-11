@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InCtaOne from '@/components/forms/ContactForm.astro';
+import * as productsJSON from '@/data/products.json';
+import type { Product } from '@/types/types';
+import ProductBlock from '@/components/products/Product.astro';
+
+export function getStaticPaths() {
+  return productsJSON.products.map(({ product_id }) => ({
+    params: { product: product_id },
+  }));
+}
+
+const { product } = Astro.params;
+
+const productData: Product | undefined = productsJSON.products.find(
+  ({ product_id }) => product_id === product
+);
+---
+
+<BaseLayout>
+  <ProductBlock product={productData} />
+  <InCtaOne />
+</BaseLayout>
