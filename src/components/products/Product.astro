@@ -1,0 +1,66 @@
+---
+import type { Product } from '@/types/types';
+import Card from '@/components/products/Card1.astro';
+import BigCard from '@/components/products/Card2.astro';
+import MainSection from '@/components/products/sections/MainSection.astro';
+import FeatureItem from '@/components/products/FeatureItem.astro';
+import PriceCard from '@/components/products/PriceCard.astro';
+import { trackAstroConfigZodError } from 'astro/dist/core/errors/errors';
+
+const { product } = Astro.props;
+
+const {
+  product_title,
+  features,
+  price,
+  full_description,
+  short_description,
+  image,
+  tags,
+  link,
+}: Product = product!;
+---
+
+<section class='dark:bg-gray-900'>
+  <MainSection
+    productTitle={product_title}
+    fullDescription={full_description}
+    shortDescription={short_description}
+    tags={tags}
+    image={image}
+  />
+  <!-- <section class='bg-gray-50 dark:bg-gray-800'>
+    <div class='max-w-[90%] mx-auto flex justify-center px-4 py-16'>
+      <BigCard />
+    </div>
+  </section> -->
+
+  <section class='dark:bg-gray-800'>
+    <section class='py-20 px-4 flex flex-col space-y-16 max-w-[90%] mx-auto'>
+      <h2 class='font-semibold text-xl text-center dark:text-white lg:text-3xl'>
+        Key Features
+      </h2>
+      <div class='grid lg:grid-cols-2'>
+        {
+          features.map(({ title, description, imagePath }) => (
+            <FeatureItem
+              imagePath={imagePath}
+              title={title}
+              description={description}
+            />
+          ))
+        }
+      </div>
+    </section>
+  </section>
+
+  <section
+    class='py-20 flex flex-col justify-center items-center max-w-[90%] mx-auto'
+  >
+    <PriceCard
+      productTitle={product_title}
+      price={price}
+      link={link}
+    />
+  </section>
+</section>
