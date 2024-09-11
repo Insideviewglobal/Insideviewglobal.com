@@ -1,0 +1,77 @@
+---
+const { productTitle, features, price, link } = Astro.props;
+---
+
+<div
+  class='flex flex-col justify-center lg:flex-row shadow-lg dark:shadow-2xl dark:bg-gray-950 rounded-3xl'
+>
+  <div
+    class='flex flex-col gap-5 justify-center items-center py-16 px-8 border-b-2 dark:border-b-gray-600 lg:border-none'
+  >
+    <span class='text-3xl font-semibold text-lime-700 text-center'
+      >{productTitle}</span
+    >
+    <p class='font-bold text-4xl dark:text-white'>{price}</p>
+    <!-- <span class='text-sm text-gray-400'>Renews annually</span> -->
+    <a
+      href={link}
+      class='py-2 px-4 bg-accent-950 text-white font-semibold rounded-full text-center w-1/3 md:w-4/6 shadow-xl hover:bg-slate-600 duration-300 lg:w-1/2'
+      >Know more</a
+    >
+  </div>
+
+  <!-- <div
+    class='w-1/2 flex flex-col gap-2 justify-center items-center px-8 py-6 dark:border-gray-600'
+  > -->
+
+  <!-- <p class='dark:text-gray-600'>product includes</p> -->
+  <!-- </div> -->
+
+  <!-- { features && (
+        <div class='flex flex-col gap-4 justify-center px-8 py-6'>
+          {features.map(({}) => (
+            <div class='flex gap-2 justify-between items-center'>
+              <span class='font-semibold text-sm dark:text-white'>
+                Filter by Text
+              </span>
+              <p class='dark:text-gray-600 text-sm'>
+                Quickly find individuals with keyword searches
+              </p>
+              <img src='' alt='' class='w-4 h-4 object-contain' />
+            </div>
+          ))}  -->
+
+  <!-- <div class='flex gap-2 justify-between items-center'>
+      <span class='font-semibold text-sm dark:text-white'>Filter by Text</span>
+      <p class='dark:text-gray-600 text-sm'>
+        Quickly find individuals with keyword searches
+      </p>
+      <img src='' alt='' class='w-4 h-4 object-contain' />
+    </div>
+    <div class='flex gap-2 justify-between items-center'>
+      <span class='font-semibold text-sm dark:text-white'
+        >Filter by Department</span
+      >
+      <p class='dark:text-gray-600 text-sm'>
+        avigate team members by department for better coordination
+      </p>
+      <img src='' alt='' class='w-4 h-4 object-contain' />
+    </div>
+    <div class='flex gap-2 justify-between items-center'>
+      <span class='font-semibold text-sm dark:text-white'
+        >Filter by Country</span
+      >
+      <p class='dark:text-gray-600 text-sm'>
+        Locate contacts by country for global teamss
+      </p>
+      <img src='' alt='' class='w-4 h-4 object-contain' />
+    </div>
+    <div class='flex gap-2 justify-between items-center'>
+      <span class='font-semibold text-sm dark:text-white'>Display Modes</span>
+      <p class='dark:text-gray-600 text-sm'>
+        Choose from cards, list, grid, hierarchy, or alphabetical views to suit
+        your preferences
+      </p>
+      <img src='' alt='' class='w-4 h-4 object-contain' />
+    </div> -->
+</div>
