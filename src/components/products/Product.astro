@@ -35,12 +35,12 @@ const {
     </div>
   </section> -->
 
-  <section class='dark:bg-gray-800'>
-    <section class='py-20 px-4 flex flex-col space-y-16 max-w-[90%] mx-auto'>
-      <h2 class='font-semibold text-xl text-center dark:text-white lg:text-3xl'>
-        Key Features
-      </h2>
-      <div class='grid lg:grid-cols-2'>
+  <section class='' '>
+    <section
+      class='py-20 px-4 flex flex-col max-w-[90%] lg:max-w-[80%] mx-auto'
+    >
+      <h2 class='font-semibold text-2xl text-sky-900'>Key Features</h2>
+      <div class='grid lg:grid-cols-2 mt-4'>
         {
           features.map(({ title, description, imagePath }) => (
             <FeatureItem
@@ -57,10 +57,6 @@ const {
   <section
     class='py-20 flex flex-col justify-center items-center max-w-[90%] mx-auto'
   >
-    <PriceCard
-      productTitle={product_title}
-      price={price}
-      link={link}
-    />
+    <PriceCard productTitle={product_title} price={price} link={link} />
   </section>
 </section>
