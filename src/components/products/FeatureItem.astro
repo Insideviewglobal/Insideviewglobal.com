@@ -2,10 +2,24 @@
 const { imagePath, title, description } = Astro.props;
 ---
 
-<div class='flex flex-col gap-2 p-4'>
-  <img src={imagePath} alt={`${title}-icon`} class='w-16 h-16 object-contain' />
+<div class='flex flex-col gap-4 p-4'>
+  <!-- <img src={imagePath} alt={`${title}-icon`} class='w-16 h-16 object-contain' /> -->
+  <svg
+    class='hi-outline hi-check-circle inline-block size-6 flex-none text-sky-600 dark:text-sky-400'
+    xmlns='http://www.w3.org/2000/svg'
+    fill='none'
+    viewBox='0 0 24 24'
+    stroke-width='1.5'
+    stroke='currentColor'
+    aria-hidden='true'
+  >
+    <path
+      stroke-linecap='round'
+      stroke-linejoin='round'
+      d='M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'></path>
+  </svg>
   <div>
-    <h4 class='font-semibold dark:text-white'>{title}</h4>
+    <span class='text-base font-semibold text-sky-700'>{title}</span>
     <p class='pt-4 dark:text-white'>
       {description}
     </p>
