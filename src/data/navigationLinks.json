@@ -243,6 +243,12 @@
       "type": "technology"
     },
     {
+      "resolutionsize": "large",
+      "title": "Organization Directory",
+      "url": "/products/OrgDirectory",
+      "type": "technology"
+    },
+    {
       "resolutionsize": "small",
       "title": "Insights Workshops",
       "url": "/solutions/Insights",
@@ -360,6 +366,12 @@
       "resolutionsize": "small",
       "title": "Amazon AWS",
       "url": "/solutions/aws",
+      "type": "technology"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Organization Directory",
+      "url": "/products/OrgDirectory",
       "type": "technology"
     }
   ],
@@ -494,7 +506,7 @@
       "column": "single",
       "order": "4"
     },
-    
+
     {
       "resolutionsize": "small",
       "title": "Our Team",
@@ -527,8 +539,8 @@
       "column": "single",
       "order": "4"
     }
-  ],"techcommunityLinks": [
-    
+  ],
+  "techcommunityLinks": [
     {
       "resolutionsize": "large",
       "title": "Van 365 View",
