@@ -1,0 +1,92 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InCtaOne from '@/components/forms/ContactForm.astro';
+---
+
+<BaseLayout>
+  <section class='dark:bg-gray-900'>
+    <div
+      class='bg-transparent pt-36 px-4 mx-auto container py-8 lg:px-8 xl:max-w-7xl'
+    >
+      <h2 class='text-3xl font-bold dark:text-white lg:text-4xl'>
+        Our Partners
+      </h2>
+      <p class='text-sm text-gray-600 mt-4 lg:w-1/2 lg:text-base'>
+        Welcome to our partnerships page! At Inside View Global, we value
+        collaborations that drive innovation and achieve great results. Let’s
+        create new opportunities and build a successful future together.
+      </p>
+      <div
+        class='flex flex-col flex-wrap gap-16 items-center justify-center mt-20 lg:flex-row'
+      >
+        <a
+          href='https://www.microsoft.com'
+          target='_blank'
+          class='w-4/6 lg:w-auto'
+        >
+          <img
+            src='/assets/partners/microsoft_logo.png'
+            alt='microsoft_logo'
+            class='filter grayscale opacity-70 object-cover'
+          /></a
+        >
+        <a
+          href='https://changechampionsconsulting.com/'
+          class='w-4/6 lg:w-auto'
+        >
+          <img
+            src='/assets/partners/cc_logo.png'
+            alt='change champions logo'
+            class='filter grayscale object-cover'
+          />
+        </a>
+        <a href='https://www.insights.com/ca/' class='w-4/6 lg:w-auto'>
+          <img
+            src='/assets/partners/insights_logo.png'
+            alt='insights logo'
+            class='object-cover'
+          /></a
+        >
+        <a href='https://www.itcloud.ca/en/' class='w-4/6 lg:w-auto'>
+          <img
+            src='/assets/partners/Logo-ITCloud.png'
+            alt='it cloud logo'
+            class='filter grayscale object-cover'
+          /></a
+        >
+        <a href='https://ltaddins.com/' class='w-4/6 lg:w-auto'>
+          <img
+            src='/assets/partners/lt_addin.png'
+            alt='lt addin logo'
+            class='filter grayscale object-cover'
+          /></a
+        >
+        <a href='https://mariposacg.com/' class='w-4/6 lg:w-auto'
+          ><img
+            src='/assets/partners/mariposa_logo.png'
+            alt='mariposa group logo'
+            class='brightness-200 grayscale object-cover'
+          /></a
+        >
+        <a href='https://www.northeastern.edu/' class='w-4/6 lg:w-auto'>
+          <img
+            src='/assets/partners/N_logo.png'
+            alt='northeastern logo'
+            class='filter grayscale object-cover'
+          /></a
+        >
+        <a
+          href='https://provisionpoint.com/?utm_term=m365%20provisioning&utm_campaign=Simple+PPC&utm_source=adwords&utm_medium=ppc&hsa_acc=7867144076&hsa_cam=21032620493&hsa_grp=162069832307&hsa_ad=691297302680&hsa_src=g&hsa_tgt=kwd-1152663474695&hsa_kw=m365%20provisioning&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SyfvF_9xGVlM3r7zOVh7DHO2oNeCepA8zMNL6pYSW7J5CJC2Sxc4JYaAvnnEALw_wcB'
+          class='w-4/6 lg:w-auto'
+        >
+          <img
+            src='/assets/partners/provision_point_logo.png'
+            alt='provision point logo'
+            class='object-cover'
+          /></a
+        >
+      </div>
+    </div>
+  </section>
+  <InCtaOne />
+</BaseLayout>
