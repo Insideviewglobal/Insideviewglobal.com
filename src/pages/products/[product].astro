@@ -13,9 +13,9 @@ export function getStaticPaths() {
 
 const { product } = Astro.params;
 
-const productData: Product | undefined = productsJSON.products.find(
+const productData = productsJSON.products.find(
   ({ product_id }) => product_id === product
-);
+) as Product | undefined;
 ---
 
 <BaseLayout>

@@ -1,17 +1,34 @@
+export interface Feature {
+  id: string;
+  title: string;
+  description: string;
+  imagePath: string;
+}
+
 export interface Product {
   product_id: string;
   product_title: string;
   short_description: string;
   full_description: string;
   image: string;
-  features: {
+  features_title: string;
+  features_description: string;
+  demo_link: string;
+  features: Feature[];
+  summary_features: {
+    id: string;
+    metric: string;
+    description: string;
+    color: string;
+  }[];
+  price: string;
+  link: string;
+  moreInfo: {
     id: string;
     title: string;
     description: string;
     imagePath: string;
   }[];
-  price: string;
-  link: string;
   tags: {
     id: string;
     title: string;

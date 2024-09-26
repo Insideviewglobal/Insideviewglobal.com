@@ -2,42 +2,69 @@
   "products": [
     {
       "product_id": "OrgDirectory",
-      "product_title": "Organizational Directory",
-      "short_description": "Streamline team connections with our intuitive Organizational Directory. Centralize contact info, boost communication, and stay updated—all in one place.",
-      "full_description": "Elevate your team’s connectivity with our Organizational Directory Product. Seamlessly centralize employee info, streamline communication, and access real-time updates—all in one intuitive platform. Stay connected and enhance collaboration effortlessly.",
-      "image": "/assets/solutions/discovery_insights.jpg",
+      "product_title": "Blink View Directory",
+      "short_description": "All your teammates in the blink of an eye.",
+      "full_description": "We have developed a unique and special add-in that can be added to the Microsoft 365 platform so that you can locate your coworkers in a second, send them messages, request days off, generate reports  for all employees and manage the areas of your company. And the best... it's free!",
+      "image": "/assets/products/org_directory/slice1.png",
+      "features_title": "Everything is easy when you have the right tools",
+      "features_description": "With this product we increase the productivity of your company, while other add-ins consume the performance of your computer, we add time so you can do other activities",
+      "demo_link": "/solutions/home",
       "features": [
         {
           "id": "Text Search Filtering",
           "title": "Text Search Filtering",
           "description": "Effortlessly locate individuals using keyword searches, ensuring quick and accurate access to specific contacts.",
-          "imagePath": "/public/assets/images/methodology.jpg"
+          "imagePath": "/public/assets/products/org_directory/slice2.png"
         },
         {
           "id": "Geographic Filtering",
           "title": "Geographic Filtering",
           "description": "Find contacts based on their country of residence, making it easier to manage and connect with a global workforce.",
-          "imagePath": "/public/assets/images/methodology.jpg"
+          "imagePath": "/public/assets/products/org_directory/slice3.png"
         },
         {
           "id": "Departmental Filterings",
           "title": "Departmental Filtering",
           "description": "Seamlessly navigate through team members by selecting their department, enhancing departmental coordination and efficiency.",
-          "imagePath": "/public/assets/images/methodology.jpg"
+          "imagePath": "/public/assets/products/org_directory/slice4.png"
         },
         {
           "id": "Flexible Display Modes",
-          "imagePath": "/public/assets/images/methodology.jpg",
+          "imagePath": "/public/assets/products/org_directory/slice5.png",
           "title": "Flexible Display Modes",
           "description": "Choose from various viewing options including cards, list, grid, hierarchy, or alphabetical order. Tailor the directory’s presentation to fit your preferences and needs, whether for detailed overviews or streamlined browsing."
         }
       ],
+      "summary_features": [
+        {
+          "id": "1",
+          "metric": "4x",
+          "description": "Faster boot time",
+          "color": "primaryBlue"
+        },
+        {
+          "id": "2",
+          "metric": "2.5x",
+          "description": "More responsive",
+          "color": "white"
+        },
+        {
+          "id": "3",
+          "metric": "5x",
+          "description": "More productive",
+          "color": "primaryGreen"
+        }
+      ],
+      "moreInfo": [
+        {
+          "id": "1",
+          "title": "Price:",
+          "description": "Free",
+          "imagePath": "/public/assets/products/org_directory/test.svg"
+        }
+      ],
       "price": "Free",
-      "link": "/solutions/home",
-      "tags": [
-        { "id": "MS Teams", "title": "MS Teams", "color": "text-sky-600 " },
-        { "id": "SharePoint", "title": "SharePoint", "color": "text-lime-700" }
-      ]
+      "link": "/solutions/home"
     }
   ]
 }

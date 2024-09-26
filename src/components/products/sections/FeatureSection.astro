@@ -1,0 +1,84 @@
+---
+import { Feature } from '@/types/types';
+const { featuresContent, features } = Astro.props;
+const { title, description, demoLink } = featuresContent;
+const { summaryFeatures } = Astro.props;
+
+const getColor = (color) => {
+  switch (color) {
+    case 'primaryGreen':
+      return 'text-[#C9D94E]';
+    case 'primaryBlue':
+      return 'text-[#0588A6]';
+    default:
+      return 'text-white';
+  }
+};
+---
+
+<section class='relative mt-20'>
+  <div
+    class='max-w-[60%] mx-auto flex flex-col items-center max-lg:max-w-[90%]'
+  >
+    <div
+      class='w-1/2 flex flex-col gap-10 justify-center text-center max-lg:w-full z-10'
+    >
+      <h3 class='font-bold text-2xl dark:text-white'>
+        {title}
+      </h3>
+      <p class='dark:text-white'>
+        {description}
+      </p>
+      <a
+        href={demoLink}
+        class='bg-white rounded-lg border-[3px] border-[#0588A6] uppercase font-semibold py-2 px-4 self-center text-xs hover:bg-[#0588A6] hover:text-white transition-all cursor-pointer'
+        >see how it works</a
+      >
+    </div>
+    <video class='w-full lg:w-4/6 z-10 mt-60' src="/public/assets/products/org_directory/video_demo.mp4" controls>
+      <source
+        src='/public/assets/products/org_directory/video.mp4'
+        type='video/mp4'
+      />
+      Your browser does not support the video tag.
+    </video>
+    <div class='flex flex-col gap-10 mt-20 w-full z-10'>
+      <h3 class='text-white font-bold text-2xl text-center dark:text-white'>
+        So, what are you getting then?
+      </h3>
+      <div class='flex flex-wrap justify-center gap-4 w-full'>
+        {
+          summaryFeatures.map(({ id, metric, description, color }) => (
+            <div class='rounded-xl bg-[#060E40] p-12 flex flex-col flex-grow gap-8 justify-center items-center'>
+              <h4 class={`${getColor(color)} font-bold text-6xl`}>{metric}</h4>
+              <p class='text-white'>{description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    <div class='mt-10 flex flex-col items-center gap-10 z-10'>
+      <h2 class='font-bold text-[#C9D94E] text-3xl'>Key features</h2>
+      <section
+        class='py-12 px-16 grid grid-cols-2 gap-4 bg-[#060E40] self-center rounded-3xl max-lg:grid-cols-1 max-lg:px-4'
+      >
+        {
+          features.map(({ id, title, description, imagePath }: Feature) => (
+            <div class='flex flex-col gap-4 text-white'>
+              <img src={imagePath} alt='' class='w-16 h-16 object-contain' />
+              <h3 class='font-bold'>{title}</h3>
+              <p class='text-gray-600'>{description}</p>
+            </div>
+          ))
+        }
+      </section>
+    </div>
+  </div>
+  <div class='absolute h-[90rem] w-full top-0'>
+    <img
+      src='/public/assets/products/org_directory/BG_SVG.svg'
+      alt=''
+      class='w-full h-full max-lg:object-cover'
+    />
+  </div>
+</section>
