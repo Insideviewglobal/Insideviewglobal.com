@@ -244,8 +244,8 @@
     },
     {
       "resolutionsize": "large",
-      "title": "Organization Directory",
-      "url": "/products/OrgDirectory",
+      "title": "Blink Directory",
+      "url": "/products/blink-directory",
       "type": "technology"
     },
     {
@@ -370,8 +370,8 @@
     },
     {
       "resolutionsize": "small",
-      "title": "Organization Directory",
-      "url": "/products/OrgDirectory",
+      "title": "Blink Directory",
+      "url": "/products/blink-directory",
       "type": "technology"
     }
   ],
