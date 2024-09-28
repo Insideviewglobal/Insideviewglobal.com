@@ -114,6 +114,7 @@ module.exports = {
           950: '#122d3f',
         },
         primaryGreen: '#C9D94E',
+        darkBlue: '#060E40',
         primaryBlue: '#0588A6',
       },
       borderRadius: {
