@@ -1,0 +1,112 @@
+{
+  "partners": [
+    {
+      "id": "1",
+      "name": "Mariposa Consulting Group Inc",
+      "logo": "/assets/partners/mariposa_logo.png",
+      "url": "https://mariposacg.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Microsoft",
+      "logo": "/public/assets/partners/microsoft-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Change Champions",
+      "logo": "/public/assets/partners/cc_logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Insights",
+      "logo": "/public/assets/partners/insights-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "5",
+      "name": "ITCloud",
+      "logo": "/public/assets/partners/it-cloud-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Northeastern University",
+      "logo": "/public/assets/partners/N-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Provision Point",
+      "logo": "/public/assets/partners/provision-point-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "8",
+      "name": "BHC Group",
+      "logo": "/public/assets/partners/bch_group_logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    },
+    {
+      "id": "9",
+      "name": "LT Addins",
+      "logo": "/public/assets/partners/lt-addins-logo.png",
+      "url": "https://microsoft.com/",
+      "description": "Description of Partner 1",
+      "contribution": "Contributions of Partner 1",
+      "contact": {
+        "phone": "+1-456-7890",
+        "email": "email@email.com"
+      }
+    }
+  ]
+}
