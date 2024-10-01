@@ -1,11 +1,86 @@
 ---
-import BaseLayout from "@/layouts/BaseLayout.astro";
-import Spacer from "@/components/utils/spacer.astro";
-import PartnersDetails from "@/components/about/Partners.astro";
-import Contact from "@/components/forms/ContactForm.astro";
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import InCtaOne from '@/components/forms/ContactForm.astro';
+import * as partnersJson from '@/data/partners.json';
+const partners = partnersJson.partners;
 ---
+
 <BaseLayout>
-  <Spacer />
-  <PartnersDetails/>
-  <Contact />
+  <main class='dark:bg-gray-900'>
+    <section class='px-4 mx-auto pt-36 container py-8 lg:px-8 xl:max-w-7xl'>
+      <section class='flex'>
+        <div class='flex flex-col gap-8'>
+          <h2 class='font-bold text-3xl'>
+            <span class='dark:text-white'>Partners</span>
+            <span class='text-sky-600'>Directory</span>
+          </h2>
+          <p class='font-semibold text-xl dark:text-white'>
+            To create great project sometimes we need <br /> partners, we work with
+            these companies
+          </p>
+          <p class='text-gray-400'>
+            Over the years we have built a strong relationship of trust with
+            other companies <br /> that have the same objective as us. These companies
+            are supported mainly by <br /> their employees and customers
+          </p>
+        </div>
+        <div class='flex items-center justify-center flex-1'>
+          <img
+            src='/public/assets/partners/globes2.png'
+            alt='partners hero'
+            class='object-cover w-3/6'
+          />
+        </div>
+      </section>
+      <section class='grid grid-cols-1 lg:grid-cols-2 gap-10 pt-20'>
+        {
+          partners.map(
+            ({ id, name, description, logo, url, contribution, contact }) => (
+              <div class='grid lg:grid-cols-2 grid-rows-2 gap-0 shadow-xl rounded-2xl'>
+                <div class='flex flex-col gap-4 bg-darkBlue p-8 lg:rounded-tl-2xl'>
+                  <h5 class='text-sky-600 font-semibold text-xl'>{name}</h5>
+                  <p class='text-gray-300 font-light text-sm'>{description}</p>
+                </div>
+                <div class='lg:rounded-tr-2xl flex items-center justify-center p-6 dark:bg-white'>
+                  <a href={url} target='_blank'>
+                    <img
+                      src={logo}
+                      alt='mariposa_consulting_logo'
+                      class='object-cover'
+                    />
+                  </a>
+                </div>
+                <div class='bg-neutral-800 text-white lg:rounded-bl-2xl flex flex-col justify-center items-center text-sm p-4'>
+                  {contact.phone && (
+                    <span>
+                      <strong>Contact:</strong> {contact.phone}
+                    </span>
+                  )}
+                  {contact && (
+                    <span>
+                      <strong>email:</strong> {contact.email}
+                    </span>
+                  )}
+                </div>
+                <div class='bg-primaryGreen lg:rounded-br-2xl p-6 flex flex-col gap-4 justify-center items-center'>
+                  <div class='flex justify-between'>
+                    <span class='text-primaryBlue font-semibold text-2xl'>
+                      They help us in many ways
+                    </span>
+                    <img
+                      src='/public/assets/partners/energy.jpg'
+                      class='w-8 h-8 object-cover'
+                    />
+                  </div>
+                  <p class='text-sm'>{contribution}</p>
+                </div>
+              </div>
+            )
+          )
+        }
+      </section>
+    </section>
+
+    <InCtaOne />
+  </main>
 </BaseLayout>
