@@ -1,112 +1,121 @@
 {
   "partners": [
     {
-      "id": "1",
+      "id": 8,
       "name": "Mariposa Consulting Group Inc",
       "logo": "/assets/partners/mariposa_logo.png",
-      "url": "https://mariposacg.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "url": "https://mariposaconsulting.ca/",
+      "description": "Mariposa Consulting is a group of independent consultants that partners with clients to transform their business technology. They specialize in network infrastructure audits, technical project management, and system implementations, along with vendor selection and business process reviews to enhance business goals.",
+      "contribution": "Enterprise Architecture Roadmaps, SharePoint Implementation, ERP Solutions",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Brenda McDougall",
+        "email": "info@mariposaconsulting.ca"
+      },
+      "display":"true"
     },
     {
-      "id": "2",
+      "id": 1,
       "name": "Microsoft",
-      "logo": "/public/assets/partners/microsoft-logo.png",
+      "logo": "/assets/partners/microsoft-logo.png",
       "url": "https://microsoft.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "description": "Microsoft is a global technology company that develops software, hardware, and cloud services. Known for products like Windows, Office, and Azure, it provides innovative solutions in computing, productivity, and artificial intelligence to empower individuals and businesses worldwide.",
+      "contribution": "We are Microsoft CSP partners, providing, managing, and supporting Microsoft cloud services directly.",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Microsoft",
+        "email": "https://support.microsoft.com"
+      },
+      "display":"true"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Change Champions",
-      "logo": "/public/assets/partners/cc_logo.png",
+      "logo": "/assets/partners/cc_logo.png",
       "url": "https://changechampionsconsulting.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "description": "hange Champions helps companies work more efficiently & securely by making software adoption, a cinch. And the result? Quick adoption, engaged users & a healthier bottom line. Change is not a 'nice-to-have' for organizations; it's a must in today's world.",
+      "contribution": "Information Architecture, User Adoption, Microsoft 365 Governance, Digital Transformation Roadmaps",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Agustin Del Vento",
+        "email": "changechampionsconsulting.com"
+      },
+      "display":"true"
     },
     {
-      "id": "4",
-      "name": "Insights",
-      "logo": "/public/assets/partners/insights-logo.png",
-      "url": "https://www.insights.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "id": 9,
+      "name": "Insight",
+      "logo": "/assets/partners/insights-logo.png",
+      "url": "https://ca.insight.com/",
+      "description": "Insight Canada is a global solutions integrator providing businesses with IT expertise, a broad range of solutions, and supply chain capabilities. They help companies achieve operational efficiency, enhance security, and drive digital transformation by offering consulting, managed services, and IT infrastructure solutions.",
+      "contribution": "Streamline technology procurement processes. Buying the tech our clients need is easier.",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Insight",
+        "email": "1.800.INSIGHT"
+      },
+      "display":"true"
     },
     {
-      "id": "5",
-      "name": "ITCloud",
-      "logo": "/public/assets/partners/it-cloud-logo.png",
+      "id": 2,
+      "name": "IT CLOUD",
+      "logo": "/assets/partners/it-cloud-logo.png",
       "url": "https://www.itcloud.ca/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "description": "ITCloud.ca is one of Canada's top providers of secure cloud backup services, Microsoft cloud computing products, and cybersecurity solutions, boasting a network of over 1,200 reseller partners nationwide and handling tens of thousands of backups every day.",
+      "contribution": "Indirect Microsoft Software and Services Provider that allows us to resell Microsoft Licenses and other products our clients.",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "IT CLOUD",
+        "email": "support-ms@itcloud.ca"
+      },
+      "display":"true"
     },
     {
-      "id": "6",
+      "id": 7,
       "name": "Northeastern University",
-      "logo": "/public/assets/partners/N-logo.png",
-      "url": "https://www.northeastern.edu/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "logo": "/assets/partners/N-logo.png",
+      "url": "https://vancouver.northeastern.edu/",
+      "description": "Northeastern University is a global research university located in Boston, Massachusetts, and Vancouver. Known for its co-op program, it combines academic rigor with experiential learning. The university offers a wide range of undergraduate and graduate programs across various fields, emphasizing innovation, entrepreneurship, and community engagement.",
+      "contribution": "Principal Partners for Microsoft Community Engagement, Student-Program and Research",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Northeastern campus in Vancouver",
+        "email": "vancouver@northeastern.edu"
+      },
+      "display":"true"
     },
     {
-      "id": "7",
+      "id": 5,
       "name": "Provision Point",
-      "logo": "/public/assets/partners/provision-point-logo.png",
+      "logo": "/assets/partners/provision-point-logo.png",
       "url": "https://provisionpoint.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "description": "ProvisionPoint is a software company that specializes in SharePoint governance and management solutions. Their platform enables organizations to manage and control SharePoint sites effectively, ensuring compliance and optimizing usage. ProvisionPoint offers tools for site provisioning, lifecycle management, and user permissions, enhancing collaboration and productivity.",
+      "contribution": "Microsoft 365 Governance SaaS Solution",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Peter Baddeley",
+        "email": "info@provisionpoint.com"
+      },
+      "display":"true"
     },
     {
-      "id": "8",
+      "id": 6,
       "name": "BHC Group",
-      "logo": "/public/assets/partners/bch_group_logo.png",
-      "url": "https://www.thebhconsultinggroup.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "logo": "/assets/partners/bch_group_logo.png",
+      "url": "https://www.thebhconsultinggroup.com",
+      "description": "The BH Consulting Group is a consulting firm specializing in IT and cybersecurity solutions. They provide strategic guidance and services to help organizations manage risks, improve security posture, and achieve compliance. With a focus on tailored solutions, they aim to empower clients to navigate the evolving technology landscape effectively.",
+      "contribution": "Solution Delivery. Integration with ERP Solutions and Microsoft SharePoint Online, MS Teams and OneDrive. Program Management.",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Bryan Hack ",
+        "email": "info@thebhconsultinggroup.com"
+      },
+      "display":"true"
     },
     {
-      "id": "9",
+      "id": 4,
       "name": "LT Addins",
-      "logo": "/public/assets/partners/lt-addins-logo.png",
+      "logo": "/assets/partners/lt-addins-logo.png",
       "url": "https://ltaddins.com/",
-      "description": "Description of Partner 1",
-      "contribution": "Contributions of Partner 1",
+      "description": "LT Addins is a software company that specializes in developing add-ins for Microsoft Outlook and Office. Their solutions enhance productivity by streamlining communication and collaboration. By offering innovative tools tailored to business needs, LT Addins aims to improve user experience and efficiency in various organizational workflows.",
+      "contribution": "Product Development. Microsoft Add-in and SharePoint Solution. Business Process Automation.",
       "contact": {
-        "phone": "+1-456-7890",
-        "email": "email@email.com"
-      }
+        "name": "Long Cong",
+        "email": "support@ltaddins.com"
+      },
+      "display":"true"
     }
   ]
 }

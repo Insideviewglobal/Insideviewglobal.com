@@ -3,7 +3,8 @@ import TeamMember from "@/components/team/TeamMember.astro";
 import TeamData from "@/data/team.json";
 
 // Step 1: Map to an array of objects with value and original index
-const mappedArray = TeamData.members.map((item, index) => {
+const filteredTeamData =TeamData.members.filter((member) => member.display === "true" );
+const mappedArray = filteredTeamData.map((item, index) => {
   return { index: index, value: item.role_order}; // Convert to lowercase for case-insensitive sorting
 });
 

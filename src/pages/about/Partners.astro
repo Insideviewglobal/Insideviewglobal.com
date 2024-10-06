@@ -1,8 +1,25 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import InCtaOne from '@/components/forms/ContactForm.astro';
-import * as partnersJson from '@/data/partners.json';
-const partners = partnersJson.partners;
+import PartnersJson from '@/data/partners.json';
+const partners = PartnersJson.partners;
+// Step 1: Map to an array of objects with value and original index
+const filteredPartnersData =PartnersJson.partners.filter((partner) => partner.display === "true" );
+const mappedArray = filteredPartnersData.map((item, index) => {
+  return { index: index, value: item.id}; // Convert to lowercase for case-insensitive sorting
+});
+
+
+// Step 2: Sort the mapped array by the value (name in this case)
+
+mappedArray.sort((a, b) => {
+    return a.value - b.value;
+});
+// Step 3: Create a sorted array using the sorted indices
+const sortedArray = mappedArray.map(mappedItem => {
+  return PartnersJson.partners[mappedItem.index];
+});
+
 ---
 
 <BaseLayout>
@@ -26,7 +43,7 @@ const partners = partnersJson.partners;
         </div>
         <div class='flex items-center justify-center flex-1'>
           <img
-            src='/public/assets/partners/globes2.png'
+            src='/assets/partners/globes2.png'
             alt='partners hero'
             class='object-cover w-3/6'
           />
@@ -34,7 +51,7 @@ const partners = partnersJson.partners;
       </section>
       <section class='grid grid-cols-1 lg:grid-cols-2 gap-10 pt-20'>
         {
-          partners.map(
+          sortedArray.map(
             ({ id, name, description, logo, url, contribution, contact }) => (
               <div class='grid lg:grid-cols-2 grid-rows-2 gap-0 shadow-xl rounded-2xl'>
                 <div class='flex flex-col gap-4 bg-darkBlue p-8 lg:rounded-tl-2xl'>
@@ -50,25 +67,25 @@ const partners = partnersJson.partners;
                     />
                   </a>
                 </div>
-                <div class='bg-neutral-800 text-white lg:rounded-bl-2xl flex flex-col justify-center items-center text-sm p-4'>
-                  {contact.phone && (
+                <div class='bg-neutral-800 text-white lg:rounded-bl-2xl flex flex-col text-sm p-8'>
+                  {contact.name && (
                     <span>
-                      <strong>Contact:</strong> {contact.phone}
+                      {contact.name}
                     </span>
                   )}
                   {contact.email && (
                     <span>
-                      <strong>email:</strong> {contact.email}
+                      {contact.email}
                     </span>
                   )}
                 </div>
                 <div class='bg-primaryGreen lg:rounded-br-2xl p-6 flex flex-col gap-4 justify-center items-center'>
                   <div class='flex justify-between'>
                     <span class='text-primaryBlue font-semibold text-2xl'>
-                      They help us in many ways
+                      We collaborate in many ways
                     </span>
                     <img
-                      src='/public/assets/partners/energy.jpg'
+                      src='/assets/partners/energy.jpg'
                       class='w-8 h-8 object-cover'
                     />
                   </div>

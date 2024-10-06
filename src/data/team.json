@@ -10,7 +10,8 @@
       "member_insta_link": "https://www.instagram.com/luisnjuarez/",
       "role_order": 1,
       "title": "CEO and Managing Director",
-      "bio": "As a CEO with an Enterprise Architect background, I champion teamwork and inclusion. My expertise fuels innovative IT solutions driving organizational growth and transformation."
+      "bio": "As a CEO with an Enterprise Architect background, I champion teamwork and inclusion. My expertise fuels innovative IT solutions driving organizational growth and transformation.",
+      "display": "true"
     },
     {
       "member_name": "Zachary Oakes",
@@ -19,7 +20,8 @@
       "member_insta_link": "https://www.instagram.com/ziptied/",
       "role_order": 3,
       "title": "Innovator & Enteprise Architect",
-      "bio": "I'm a tech innovator obsessed with cutting-edge solutions. Quality, customer-centricity, and simplicity drive everything I do. Technology must be open, sustainable, and ethical."
+      "bio": "I'm a tech innovator obsessed with cutting-edge solutions. Quality, customer-centricity, and simplicity drive everything I do. Technology must be open, sustainable, and ethical.",
+      "display": "true"
     },
     {
       "member_name": "Maria Garcia",
@@ -28,7 +30,8 @@
       "member_insta_link": "https://www.instagram.com/delacortemg/",
       "role_order": 2,
       "title": "Business Growth Manager",
-      "bio": "I drive strategic growth and partnerships, expanding market reach, optimizing revenue, and fostering key client relationships. I thrive on creating opportunities and delivering results. "
+      "bio": "I drive strategic growth and partnerships, expanding market reach, optimizing revenue, and fostering key client relationships. I thrive on creating opportunities and delivering results. ",
+      "display": "true"
     },
     {
       "member_name": "Raul Martinez",
@@ -37,43 +40,48 @@
       "member_insta_link": "https://www.instagram.com/5krustofsky/",
       "role_order": 4,
       "title": "Creative & Art Senior Manager",
-      "bio": "Passionate about creating and directing designs, capturing IVG essence and sharing the messages through visual communication."
+      "bio": "Passionate about creating and directing designs, capturing IVG essence and sharing the messages through visual communication.",
+      "display": "true"
     },
     {
       "member_name": "Roman Karchenko",
       "profile_image": "/assets/team/roman.webp",
       "member_linkedin_link": "https://www.linkedin.com/in/roman-kharchenko-b56bb2171/",
       "member_insta_link": "#",
-      "role_order": 8,
+      "role_order": 6,
       "title": "Senior Full Stack Software Engineer ",
-      "bio": "Creative Full Stack Developer with a passion for crafting seamless software solutions and extensive expertise in engineering."
+      "bio": "Creative Full Stack Developer with a passion for crafting seamless software solutions and extensive expertise in engineering.",
+      "display": "true"
     },
     {
       "member_name": "Long Truong Cong",
       "profile_image": "/assets/team/LongTruong.webp",
       "member_linkedin_link": "#",
       "member_insta_link": "#",
-      "role_order": 7,
+      "role_order": 5,
       "title": "Microsoft Senior Software Engineer",
-      "bio": "Developing scalable software solutions with a track record of successful project delivery, I have expertise in all phases of the software development lifecycle, from concept through deployment and optimization."
+      "bio": "Developing scalable software solutions with a track record of successful project delivery, I have expertise in all phases of the software development lifecycle, from concept through deployment and optimization.",
+      "display": "true"
     },
     {
       "member_name": "Andres Lopez",
       "profile_image": "/assets/team/andres-lopez.jpg",
       "member_linkedin_link": "https://www.linkedin.com/in/andres-ldr/",
       "member_insta_link": "#",
-      "role_order": 4,
+      "role_order": 7,
       "title": "Full Stack Software Engineer",
-      "bio": "A dynamic Full Stack Developer and Microsoft Consultant, I excel in building robust applications and optimizing Microsoft 365 solutions. Passionate about solving complex challenges and driving innovation, I'm here to elevate your tech landscape."
+      "bio": "A dynamic Full Stack Developer and Microsoft Consultant, I excel in building robust applications and optimizing Microsoft 365 solutions. Passionate about solving complex challenges and driving innovation, I'm here to elevate your tech landscape.",
+      "display": "true"
     },
     {
       "member_name": "Pablo Gudjemian",
       "profile_image": "/assets/team/pablo.jpg",
       "member_linkedin_link": "https://www.linkedin.com/in/pablogudjemian/",
       "member_insta_link": "#",
-      "role_order": 3,
-      "title": " Senior Project Manager",
-      "bio": "IT professional with passion for creating value through technical solutions. Experienced in the entire software development life cycle."
+      "role_order": 8,
+      "title": "Senior Project Manager",
+      "bio": "IT professional with passion for creating value through technical solutions. Experienced in the entire software development life cycle.",
+      "display": "false"
     }
   ]
 }
