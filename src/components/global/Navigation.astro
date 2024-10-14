@@ -59,7 +59,14 @@ const allaboutsmall = links.allaboutLinks.filter(
   (about) => about.resolutionsize === 'small'
 );
 
-//links to about
+//links to Products
+const productslarge = links.ProductsLinks.filter(
+  (product) => product.resolutionsize === 'large'
+);
+const productssmall = links.ProductsLinks.filter(
+  (product) => product.resolutionsize === 'small'
+);
+//links to Communities
 const techcommunitieslarge = links.techcommunityLinks.filter(
   (techcommunity) => techcommunity.resolutionsize === 'large'
 );
@@ -380,6 +387,65 @@ const techcommunitiessmall = links.techcommunityLinks.filter(
             </div>
             <!-- END Developers Menu -->
           </li>
+          <li class='group relative'>
+            <!-- Tech Community Link -->
+            <a
+              href='#'
+              class='inline-flex h-8 items-center gap-1 uppercase px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold group-hover:text-sky-500 dark:text-gray-100 dark:group-hover:text-sky-400'
+            >
+              <span>Products</span>
+              <svg
+                fill='currentColor'
+                viewBox='0 0 20 20'
+                xmlns='http://www.w3.org/2000/svg'
+                class='hi-solid hi-chevron-down inline-block size-5 opacity-80 transition duration-200 ease-out group-hover:rotate-180'
+              >
+                <path
+                  fill-rule='evenodd'
+                  d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z'
+                  clip-rule='evenodd'></path>
+              </svg>
+            </a>
+            <!-- END Tech Community Link -->
+
+            <!-- Tech community Menu -->
+
+            <div
+              class='invisible absolute text-sm left-1/5 top-8 z-1 pt-11 group-hover:visible lg:w-[250px]'
+            >
+              <div
+                class='origin-top scale-75 overflow-hidden bg-gray-100 rounded-lg opacity-0 shadow-xl ring-1 ring-black/5 transition duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 dark:bg-stone-800 dark:ring-white/10'
+              >
+                <div
+                  class='grid scale-90 grid-cols-1 opacity-0 transition duration-500 ease-out group-hover:scale-100 group-hover:opacity-100 py-2'
+                >
+                  <div class='space-y-1'>
+                    <nav class='flex flex-col'>
+                      {
+                        productslarge.map((product) => (
+                          <a
+                            href={product.url}
+                            class='flex items-center  rounded-xl m-2 px-4  text-gray-900 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25'
+                          >
+                            <img
+                              src='/assets/icons/link.svg'
+                              width='16'
+                              height='16'
+                            />
+                            <div class=' m-2 text-left'>
+                              {product.title}
+                            </div>
+                          </a>
+                        ))
+                      }
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END Resources Menu -->
+          </li>
           <li class='group px-2'>
             <!-- Resources Link -->
             <a
@@ -461,7 +527,7 @@ const techcommunitiessmall = links.techcommunityLinks.filter(
               href='/VanTechEcosystem/VanTechEcosystem'
               class='inline-flex h-8 items-center gap-1 uppercase px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold group-hover:text-sky-500 dark:text-gray-100 dark:group-hover:text-sky-400'
             >
-              <span>VanTech Communities</span>
+              <span>Communities</span>
               <svg
                 fill='currentColor'
                 viewBox='0 0 20 20'
@@ -747,36 +813,74 @@ const techcommunitiessmall = links.techcommunityLinks.filter(
               </nav>
             </div>
           </div>
-          <div class='grid grid-cols-1 gap-6'>
-            <h3
-              class='col-span-1 font-semibold uppercase dark:text-sky-400 text-sky-700'
+          <div class='grid gap-6'>
+            <div
+              class='gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center'
             >
-              Industries
-            </h3>
-            <div class='space-y-2'>
-              <nav class='flex flex-col gap-3'>
-                {
-                  allindustries.map((industry) => (
-                    <a
-                      href={industry.url}
-                      class='text-base font-medium text-gray-900 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700'
-                    >
-                      <div class=' ml-4 text-left font-medium'>
-                        <img
-                          src='/assets/icons/link.svg'
-                          class='inline-block pr-4'
-                          width='32'
-                          height='32'
-                        />
-                        {industry.title}
-                      </div>
-                    </a>
-                  ))
-                }
-              </nav>
+              <a href='#'
+                ><h3
+                  class='uppercase font-semibold dark:text-sky-400 text-sky-400'
+                >
+                  Products
+                </h3>
+              </a>
             </div>
+            <nav class='flex flex-col gap-3'>
+              {
+                productssmall.map((productlink) => (
+                  <a
+                    href={productlink.url}
+                    class='text-base font-medium text-gray-900 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700'
+                  >
+                    <div class=' ml-4 text-left font-medium'>
+                      <img
+                        src='/assets/icons/link.svg'
+                        class='inline-block pr-4'
+                        width='32'
+                        height='32'
+                      />
+                      {productlink.title}
+                    </div>
+                  </a>
+                ))
+              }
+            </nav>
           </div>
+          
 
+          <div class='grid gap-6'>
+            <div
+              class='gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center'
+            >
+              <a href='#'
+                ><h3
+                  class='uppercase font-semibold dark:text-sky-400 text-sky-400'
+                >
+                  Industries
+                </h3>
+              </a>
+            </div>
+            <nav class='flex flex-col gap-3'>
+              {
+                allindustries.map((industry) => (
+                  <a
+                    href={industry.url}
+                    class='text-base font-medium text-gray-900 hover:text-sky-600 dark:text-gray-200 dark:hover:text-sky-700'
+                  >
+                    <div class=' ml-4 text-left font-medium'>
+                      <img
+                        src='/assets/icons/link.svg'
+                        class='inline-block pr-4'
+                        width='32'
+                        height='32'
+                      />
+                      {industry.title}
+                    </div>
+                  </a>
+                ))
+              }
+            </nav>
+          </div>
           <div class='grid gap-6'>
             <div
               class='gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center'
@@ -785,7 +889,7 @@ const techcommunitiessmall = links.techcommunityLinks.filter(
                 ><h3
                   class='uppercase font-semibold dark:text-sky-400 text-sky-400'
                 >
-                  VanTech Communities
+                  Communities
                 </h3>
               </a>
             </div>

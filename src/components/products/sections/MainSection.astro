@@ -1,5 +1,5 @@
 ---
-const { productTitle, fullDescription, shortDescription, image } = Astro.props;
+const { productTitle,product_title_html, fullDescription, shortDescription, image } = Astro.props;
 ---
 
 <section
@@ -8,26 +8,18 @@ const { productTitle, fullDescription, shortDescription, image } = Astro.props;
   <img src={image} alt='' class='object-contain w-1/3 max-lg:w-full' />
   <div class='w-1/3 flex flex-col gap-6 max-lg:w-full'>
     <h2 class='font-bold text-2xl dark:text-white'>
-      Blink View <span class="text-sky-700">Directory</span>
+      <Fragment set:html=  {product_title_html}/></span>
     </h2>
-    <p class='text-2xl dark:text-white'>{shortDescription}</p>
-    <p class='text-gray-400 text-sm'>
-      We have developed a unique and special add-in that can be added to the
-      Microsoft 365 platform so that you can <span
-        class='text-gray-800 font-bold dark:text-gray-300'
-        >locate your coworkers</span
-      > in a second, send them <span
-        class='text-gray-800 font-bold dark:text-gray-300'
-        >messages, request days off,</span
-      > generate <span class='text-gray-800 font-bold dark:text-gray-300'
-        >reports</span
-      > for all employees and manage the areas of your company. <br /> And the best...
-      it's free!
+    
+      
+      <Fragment set:html=  {shortDescription}/>
+    <p class='text-gray-500 '>
+      <Fragment set:html=  {fullDescription}/></span>
     </p>
     <a
       href='#'
       class='self-center py-2 px-4 bg-sky-700 text-white font-semibold rounded-lg hover:bg-sky-800 transition-all cursor-pointer z-10'
-      >Download</a
+      >Microsoft Store</a
     >
   </div>
 </section>

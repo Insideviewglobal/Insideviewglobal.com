@@ -242,12 +242,7 @@
       "url": "/solutions/aws",
       "type": "technology"
     },
-    {
-      "resolutionsize": "large",
-      "title": "Blink Directory",
-      "url": "/products/blink-view-directory",
-      "type": "technology"
-    },
+    
     {
       "resolutionsize": "small",
       "title": "Insights Workshops",
@@ -367,13 +362,8 @@
       "title": "Amazon AWS",
       "url": "/solutions/aws",
       "type": "technology"
-    },
-    {
-      "resolutionsize": "small",
-      "title": "Blink View Directory",
-      "url": "/products/blink-view-directory",
-      "type": "technology"
     }
+    
   ],
   "industriesLinks": [
     {
@@ -538,6 +528,24 @@
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "4"
+    }
+  ],
+  "ProductsLinks": [
+    {
+      "resolutionsize": "large",
+      "title": "Blink View Directory",
+      "url": "/products/blink-view-directory",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "1"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Blink View Directory",
+      "url": "/products/blink-view-directory",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "1"
     }
   ],
   "techcommunityLinks": [

@@ -3,36 +3,38 @@
     {
       "product_id": "blink-view-directory",
       "product_title": "Blink View Directory",
-      "short_description": "All your teammates in the blink of an eye.",
-      "full_description": "We have developed a unique and special add-in that can be added to the Microsoft 365 platform so that you can locate your coworkers in a second, send them messages, request days off, generate reports  for all employees and manage the areas of your company. And the best... it's free!",
+      "product_title_html": "Blink View <span class='text-sky-700'>Directory</span>",
+      "short_description": "<span class='text-stone-900 text-lg'>Find your <span class='font-bold text-[#2580b3]'>teammates</span>  at a <span class='font-bold text-[#9fb60d]'>blink</span>.</span>",
+      "full_description": "<p><strong>Blink View Directory</strong> is a powerful add-in designed for <strong>SharePoint Online</strong> and <strong>Microsoft Teams</strong>, focusing on organizational connectivity and communication.</p><p> This app streamlines access to your entire company directory, enabling employees to easily find colleagues through intuitive search features.</p><p>Overall, Blink View Directory not only simplifies the process of locating team members but also enriches the collaborative environment within your organization. It’s a valuable tool for enhancing productivity and ensuring everyone is connected.</p>",
       "image": "/assets/products/org_directory/slice1.png",
+      "product_message":"Enhance effortless connections with Blink View Directory! Find teammates, visualize your org chart, and communicate instantly—elevating collaboration effectively!",
       "features_title": "Everything is easy when you have the right tools",
-      "features_description": "With this product we increase the productivity of your company, while other add-ins consume the performance of your computer, we add time so you can do other activities",
+      "features_description": "Blink View Directory is an essential add-in for SharePoint and Microsoft Teams that enhances connectivity and communication across your organization. With intuitive search features, employees can easily find colleagues by location or department, while the organizational chart offers a clear view of team structures. The tool promotes instant communication through Microsoft Teams and provides comprehensive reporting to assist HR functions. By showcasing employee profiles and fostering connections, Blink View Directory enriches collaboration and boosts productivity, ensuring everyone stays connected, no matter where they are.",
       "demo_link": "/solutions/home",
       "features": [
         {
-          "id": "Text Search Filtering",
-          "title": "Text Search Filtering",
-          "description": "Effortlessly locate individuals using keyword searches, ensuring quick and accurate access to specific contacts.",
-          "imagePath": "/public/assets/products/org_directory/slice2.png"
+          "id": "ComprehensiveReporting",
+          "title": "Comprehensive Reporting",
+          "description": "Generate insightful reports on employee data and interactions, which can assist in HR functions and resource allocation.",
+          "imagePath": "/assets/products/org_directory/slice2.png"
         },
         {
-          "id": "Geographic Filtering",
-          "title": "Geographic Filtering",
-          "description": "Find contacts based on their country of residence, making it easier to manage and connect with a global workforce.",
-          "imagePath": "/public/assets/products/org_directory/slice3.png"
+          "id": "InstantCommunication",
+          "title": "Instant Communication",
+          "description": "The add-in allows users to initiate Microsoft Teams chats directly from the directory, facilitating quick and seamless communication with colleagues.",
+          "imagePath": "/assets/products/org_directory/slice3.png"
         },
         {
           "id": "Departmental Filterings",
           "title": "Departmental Filtering",
           "description": "Seamlessly navigate through team members by selecting their department, enhancing departmental coordination and efficiency.",
-          "imagePath": "/public/assets/products/org_directory/slice4.png"
+          "imagePath": "/assets/products/org_directory/slice4.png"
         },
         {
-          "id": "Flexible Display Modes",
-          "imagePath": "/public/assets/products/org_directory/slice5.png",
-          "title": "Flexible Display Modes",
-          "description": "Choose from various viewing options including cards, list, grid, hierarchy, or alphabetical order. Tailor the directory’s presentation to fit your preferences and needs, whether for detailed overviews or streamlined browsing."
+          "id": "OrganizationVisualization",
+          "imagePath": "/assets/products/org_directory/slice5.png",
+          "title": "Organization Visualization",
+          "description": "Users can view the organizational chart, providing a clear understanding of team structures and reporting lines. This feature helps employees identify key contacts and navigate their company’s hierarchy effectively."
         }
       ],
       "summary_features": [
@@ -51,7 +53,7 @@
         {
           "id": "3",
           "metric": "5x",
-          "description": "More productive",
+          "description": "Increase Productivity",
           "color": "primaryGreen"
         }
       ],
@@ -60,7 +62,7 @@
           "id": "1",
           "title": "Price:",
           "description": "Free",
-          "imagePath": "/public/assets/products/org_directory/test.svg"
+          "imagePath": "/assets/products/org_directory/test.svg"
         }
       ],
       "price": "Free",

@@ -21,7 +21,7 @@ const getColor = (color) => {
     class='max-w-[60%] mx-auto flex flex-col items-center max-lg:max-w-[90%]'
   >
     <div
-      class='w-1/2 flex flex-col gap-10 justify-center text-center max-lg:w-full z-10'
+      class=' flex flex-col gap-10 justify-center text-center max-lg:w-full z-10'
     >
       <h3 class='font-bold text-2xl dark:text-white'>
         {title}
@@ -32,7 +32,7 @@ const getColor = (color) => {
       <a
         href={demoLink}
         class='bg-white rounded-lg border-[3px] border-[#0588A6] uppercase font-semibold py-2 px-4 self-center text-xs hover:bg-[#0588A6] hover:text-white transition-all cursor-pointer'
-        >see how it works</a
+        >See How It Works</a
       >
     </div>
     <iframe
@@ -44,7 +44,7 @@ const getColor = (color) => {
       allowfullscreen></iframe>
     <div class='flex flex-col gap-10 mt-20 w-full z-10'>
       <h3 class='text-white font-bold text-2xl text-center dark:text-white'>
-        So, what are you getting then?
+        This what you are getting
       </h3>
       <div class='flex flex-wrap justify-center gap-4 w-full'>
         {
@@ -58,16 +58,16 @@ const getColor = (color) => {
       </div>
     </div>
     <div class='mt-10 flex flex-col items-center gap-10 z-10'>
-      <h2 class='font-bold text-[#C9D94E] text-3xl'>Key features</h2>
+      
       <section
         class='py-12 px-16 grid grid-cols-2 gap-4 bg-[#060E40] self-center rounded-3xl max-lg:grid-cols-1 max-lg:px-8'
-      >
+      ><div class='flex flex-col col-span-2 pb-8 text-white'><h2 class='font-bold text-3xl self-center'>Key Features</h2></div>
         {
           features.map(({ id, title, description, imagePath }: Feature) => (
-            <div class='flex flex-col gap-4 text-white max-lg:items-center'>
+            <div class='flex flex-col col-span-2 lg:col-span-1 gap-4 text-white max-lg:items-center'>
               <img src={imagePath} alt='' class='w-16 h-16 object-contain' />
               <h3 class='font-bold'>{title}</h3>
-              <p class='text-gray-600'>{description}</p>
+              <p class='text-gray-200 mx-3'>{description}</p>
             </div>
           ))
         }
@@ -76,7 +76,7 @@ const getColor = (color) => {
   </div>
   <div class='absolute h-[90rem] w-full top-0'>
     <img
-      src='/public/assets/products/org_directory/BG_SVG.svg'
+      src='/assets/products/org_directory/BG_SVG.svg'
       alt=''
       class='w-full h-full max-lg:object-cover'
     />
