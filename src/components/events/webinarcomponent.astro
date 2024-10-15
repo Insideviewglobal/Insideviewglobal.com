@@ -12,7 +12,7 @@ const eventsall = eventsJSON.Events.filter(
   (event) => event.event_status === 'active' && event.event_type === 'webinar'
 );
 const mappedArray = eventsall.map((item, index) => {
-  return { index: index, value: item.event_order}; // Convert to lowercase for case-insensitive sorting
+  return { index: index, value: item.event_order,itemId: item.event_id}; // Convert to lowercase for case-insensitive sorting
 });
 
 
@@ -23,7 +23,7 @@ mappedArray.sort((a, b) => {
 });
 // Step 3: Create a sorted array using the sorted indices
 const sortedArray = mappedArray.map(mappedItem => {
-  return eventsJSON.Events[mappedItem.index];
+  return eventsJSON.Events.find(event => event.event_id === mappedItem.itemId);
 });
 
 
@@ -91,32 +91,43 @@ const sortedArray = mappedArray.map(mappedItem => {
           <!-- Timeline -->
           <ul class="relative space-y-4 pl-10 md:pl-12 lg:pl-0">
             <!-- Event -->
-            {
-              sortedArray.map((event) => (
-                <li class={`relative lg:w-1/2 ${event.event_side}`}>
-                  <div
-                    class={`absolute bottom-0 left-0 top-0 mt-5 flex w-10 -translate-x-full justify-center md:w-12 ${event.ring_location}`}
-                  >
-                    <div
-                      class={`size-3 rounded-full bg-${event.event_color}-500 ring ring-${event.event_color}-100  ring-offset-2 dark:bg-${event.event_color}-300 dark:ring-${event.event_color}-900 dark:ring-offset-gray-900`}
+          {
+            sortedArray.map((event) => (
+              <li class={`relative lg:w-1/2 ${event.event_side}`}>
+                <div
+                  class={`absolute bottom-0 top-0 mt-5 flex w-10 -translate-x-full justify-center md:w-12 ${event.logo_location}`}
+                >
+                  <div class="ring-offset-2">
+                    <img
+                      src={event.event_organizer_logo}
+                      alt={event.event_organizer_name}
+                      
                     />
                   </div>
-                  <a href={`${event.event_link}`}>
-                    <div
-                      class={`rounded-xl bg-${event.event_color}-50 p-4 text-${event.event_color}-900 hover:ring hover:ring-${event.event_color}-100 hover:ring-offset-2 dark:bg-${event.event_color}-900/50 dark:ring-${event.event_color}-900 dark:text-${event.event_color}-100  dark:ring-offset-gray-900 dark:hover:ring-${event.event_color}-800`}
-                    >
-                      <h4 class="mb-2 font-semibold">{event.event_name}</h4>
-                      <p class="text-sm font-bold py-2 leading-relaxed">
-                        {event.event_date} {event.event_time}
-                      </p>
-                      <p class="text-sm leading-relaxed">
-                        <Fragment set:html={event.event_description} />
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              ))
-            }
+                </div>
+                <div
+                  class={`absolute bottom-0 left-0 top-0 mt-5 flex w-10 -translate-x-full justify-center md:w-12 ${event.ring_location}`}
+                >
+                  <div
+                    class={`size-3 rounded-full bg-${event.event_color}-500 ring ring-${event.event_color}-100  ring-offset-2 dark:bg-${event.event_color}-300 dark:ring-${event.event_color}-900 dark:ring-offset-gray-900`}
+                  />
+                </div>
+                <a href={`${event.event_link}`} target="_blank" >
+                  <div
+                    class={`rounded-xl bg-${event.event_color}-50 p-4 text-${event.event_color}-900 hover:ring hover:ring-${event.event_color}-100 hover:ring-offset-2 dark:bg-${event.event_color}-900/50 dark:ring-${event.event_color}-900 dark:text-${event.event_color}-100  dark:ring-offset-gray-900 dark:hover:ring-${event.event_color}-800`}
+                  >
+                    <h4 class="mb-2 font-semibold">{event.event_name}</h4>
+                    <p class="text-sm font-bold py-2 leading-relaxed">
+                      {event.event_date} {event.event_time}
+                    </p>
+                    <p class="text-sm leading-relaxed">
+                      <Fragment set:html={event.event_description} />
+                    </p>
+                  </div>
+                </a>
+              </li>
+            ))
+          }
           </ul>
           <!-- END Timeline -->
         </div>
