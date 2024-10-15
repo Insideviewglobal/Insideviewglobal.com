@@ -548,11 +548,27 @@
       "order": "1"
     }
   ],
-  "techcommunityLinks": [
+  "eventsLinks": [
+    {
+      "resolutionsize": "large",
+      "title": "Webinars",
+      "url": "/events/webinars",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "1"
+    },
     {
       "resolutionsize": "large",
       "title": "Van 365 View",
       "url": "/VanTechEcosystem/Van365View",
+      "image": "/assets/icons/startup.svg",
+      "column": "single",
+      "order": "2"
+    },
+    {
+      "resolutionsize": "small",
+      "title": "Webinars",
+      "url": "/events/webinars",
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "1"
@@ -563,7 +579,7 @@
       "url": "/VanTechEcosystem/Van365View",
       "image": "/assets/icons/startup.svg",
       "column": "single",
-      "order": "1"
+      "order": "2"
     }
   ]
 }

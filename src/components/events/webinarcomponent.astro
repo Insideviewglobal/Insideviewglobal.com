@@ -1,0 +1,126 @@
+---
+import * as eventsJSON from '@/data/events.json';
+
+export function getStaticPaths() {
+  return eventsJSON.Events.map(({ event_id }) => ({
+    params: { event: event_id },
+  }));
+}
+
+//links to Events
+const eventsall = eventsJSON.Events.filter(
+  (event) => event.event_status === 'active' && event.event_type === 'webinar'
+);
+const mappedArray = eventsall.map((item, index) => {
+  return { index: index, value: item.event_order}; // Convert to lowercase for case-insensitive sorting
+});
+
+
+// Step 2: Sort the mapped array by the value (name in this case)
+
+mappedArray.sort((a, b) => {
+    return a.value - b.value;
+});
+// Step 3: Create a sorted array using the sorted indices
+const sortedArray = mappedArray.map(mappedItem => {
+  return eventsJSON.Events[mappedItem.index];
+});
+
+
+
+---
+<span
+  class="-left-10 lg:-translate-x-6 lg:ml-auto lg:pl-6 text-blue-900 bg-blue-50 bg-blue-500 ring-blue-100 hover:ring-blue-100 dark:bg-blue-900/50 dark:text-blue-100 dark:ring-offset-gray-900 dark:hover:ring-blue-800 dark:bg-blue-300 dark:ring-blue-900"
+></span>
+<span
+  class="lg:left-auto lg:right-0 lg:mr-auto lg:pr-6 lg:-translate-x-6 text-orange-900 bg-orange-50 bg-orange-500 ring-orange-100 hover:ring-orange-100 dark:bg-orange-900/50 dark:text-orange-100 dark:hover:ring-orange-800 dark:bg-orange-300 dark:ring-orange-900"
+></span>
+<span
+  class="lg:translate-x-6 lg:-right-10 text-rose-900 bg-rose-50 bg-rose-500 ring-rose-100 hover:ring-rose-100 dark:bg-rose-900/50 dark:text-rose-100 dark:hover:ring-rose-800 dark:bg-rose-300 dark:ring-rose-900"
+></span>
+<span
+  class="text-emerald-900 bg-emerald-50 bg-emerald-500 ring-emerald-100 hover:ring-emerald-100 dark:bg-emerald-900/50 dark:text-emerald-100 dark:hover:ring-emerald-800 dark:bg-emerald-300 dark:ring-emerald-900"
+></span>
+<span
+  class="text-fuchsia-900 bg-fuchsia-50 bg-fuchsia-500 ring-fuchsia-100 hover:ring-fuchsia-100 dark:bg-fuchsia-900/50 dark:text-fuchsia-100 dark:hover:ring-fuchsia-800 dark:bg-fuchsia-300 dark:ring-fuchsia-900"
+></span>
+
+<span
+  class="text-purple-900 bg-purple-50 bg-purple-500 ring-purple-100 hover:ring-purple-100 dark:bg-purple-900/50 dark:text-purple-100 dark:hover:ring-purple-800 dark:bg-purple-300 dark:ring-purple-900"
+></span>
+<span
+  class="text-yellow-900 bg-yellow-50 bg-yellow-500 ring-yellow-100 hover:ring-yellow-100 dark:bg-yellow-900/50 dark:text-yellow-100 dark:hover:ring-yellow-800 dark:bg-yellow-300 dark:ring-yellow-900"
+></span>
+<!-- Responsive Table Container -->
+  <section>
+  
+    <div  class="px-8 pt-24 mx-auto md:px-12 lg:px-32 max-w-7xl lg:py-36" >
+      <!-- Heading -->
+      <div class="text-center text-sky-800 dark:text-white">
+        <h2 class="mb-2 text-4xl font-black ">
+          {eventsJSON.title}
+        </h2>
+        <h3
+          class="text-xl font-medium leading-relaxed text-gray-700 dark:text-gray-300 lg:w-full"
+        >
+          {eventsJSON.subtitle}
+        </h3>
+      </div>
+      <div class="flex mx-auto lg:p-3  xl:max-w-7xl">
+        <!-- Tables: Column Sorting -->
+
+        <!-- Timeline: Centered Contextual -->
+        <div class="relative py-5 dark:text-gray-100">
+          <!-- Vertical Guide -->
+          <div
+            class="absolute bottom-0 left-0 top-0 flex w-10 flex-col justify-center md:w-12 lg:left-1/2 lg:-ml-6"
+            aria-hidden="true"
+          >
+            <div
+              class="mx-auto h-2.5 w-1 grow-0 rounded-t bg-gradient-to-b from-transparent to-gray-100 dark:to-gray-800"
+            >
+            </div>
+            <div class="mx-auto w-1 grow bg-gray-100 dark:bg-gray-800"></div>
+            <div
+              class="mx-auto h-2.5 w-1 grow-0 rounded-b bg-gradient-to-t from-transparent to-gray-100 dark:to-gray-800"
+            >
+            </div>
+          </div>
+          <!-- END Vertical Guide -->
+
+          <!-- Timeline -->
+          <ul class="relative space-y-4 pl-10 md:pl-12 lg:pl-0">
+            <!-- Event -->
+            {
+              sortedArray.map((event) => (
+                <li class={`relative lg:w-1/2 ${event.event_side}`}>
+                  <div
+                    class={`absolute bottom-0 left-0 top-0 mt-5 flex w-10 -translate-x-full justify-center md:w-12 ${event.ring_location}`}
+                  >
+                    <div
+                      class={`size-3 rounded-full bg-${event.event_color}-500 ring ring-${event.event_color}-100  ring-offset-2 dark:bg-${event.event_color}-300 dark:ring-${event.event_color}-900 dark:ring-offset-gray-900`}
+                    />
+                  </div>
+                  <a href={`${event.event_link}`}>
+                    <div
+                      class={`rounded-xl bg-${event.event_color}-50 p-4 text-${event.event_color}-900 hover:ring hover:ring-${event.event_color}-100 hover:ring-offset-2 dark:bg-${event.event_color}-900/50 dark:ring-${event.event_color}-900 dark:text-${event.event_color}-100  dark:ring-offset-gray-900 dark:hover:ring-${event.event_color}-800`}
+                    >
+                      <h4 class="mb-2 font-semibold">{event.event_name}</h4>
+                      <p class="text-sm font-bold py-2 leading-relaxed">
+                        {event.event_date} {event.event_time}
+                      </p>
+                      <p class="text-sm leading-relaxed">
+                        <Fragment set:html={event.event_description} />
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <!-- END Timeline -->
+        </div>
+      </div>
+    </div>
+    <!-- END Timeline: Centered Contextual -->
+</section>

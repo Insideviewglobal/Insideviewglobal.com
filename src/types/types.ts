@@ -41,3 +41,4 @@ export interface Product {
 export interface ProductsData {
   products: Product[];
 }
+

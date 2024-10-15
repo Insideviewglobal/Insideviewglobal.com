@@ -1,0 +1,149 @@
+{
+    "title": "Where Events Unite: The Timeline",
+    "subtitle": "Your Go-To Guide for Keeping Up with All the Action!",
+    "byline": "We wanted to make it easier for everyone to keep track of things.",
+    "Events": [
+      {
+        "event_id": "octber17_van365view",
+        "event_name": "🚀 October: Microsoft Copilot | AI - Information Security",
+        "event_description": "🔑 Information Security & Understanding the Business Impacts<br/> Is your organization ready to adopt AI? Understanding the business impact, data loss prevention and more.<br/><br/> 🤖 AI for everything you do Work smarter<br/> be more productive, boost creativity, and stay connected to the people and things in your life with Copilot—an AI companion that works everywhere you do and intelligently adapts to your needs.",
+        "event_date": "Thursday, October 17, 2024",
+        "event_time": "5:30 PM to 7:30 PM PDT",
+        "event_color":"blue",
+        "logo_location":"lg:-translate-x-6 -left-10",
+        "ring_location":"lg:left-auto lg:right-0 lg:translate-x-6",
+        "event_organizer_name": "Van 365 View",
+        "event_organizer_logo": "/assets/Logo/1xAsset 3white_Van365View.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.meetup.com/van365view/events/302283073",
+        "event_status":"active",
+        "event_type":"community",
+        "event_side":"lg:mr-auto lg:pr-6",
+        "event_order":1
+        
+     },
+     {
+        "event_id": "octber18_MicrosoftAICommunity",
+        "event_name": "🤖 AI Capabilities in Microsoft 365: A Game Changer for Startups",
+        "event_description": "🎯 Our goal is to do more with less, improve productivity while safeguarding critical data. <br/> <br/> 🌎 My plan is to put together a collection of tips, stories, and insights on how AI, despite being around for decades, can still revolutionize the way we operate today. ",
+        "event_date": "Friday, October 18, 2024",
+        "event_time": "9:45 AM to 10:30 AM PDT",
+        "event_color":"emerald",
+        "logo_location":"-left-10 lg:left-auto  lg:-right-10 lg:translate-x-6 ",
+        "ring_location":"lg:-translate-x-6",
+        "event_organizer_name": "Microsoft",
+        "event_organizer_logo": "/assets/Logo/1xAsset 5white_insideView.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.communitydays.org/event/2024-10-18/ai-community-conference-vancouver-2024",
+        "event_status":"active",
+        "event_type":"community",
+        "event_side":"lg:ml-auto lg:pl-6",
+        "event_order":2
+        
+     },
+     
+
+     {
+        "event_id": "octber22_webinar",
+        "event_name": "Copilot for Microsoft 365 Briefings Webinar - Do more with less",
+        "event_description": "Join us for a live briefing based on real-world scenarios where we’ll demonstrate how you can safely run your business from anywhere with a secure, comprehensive, AI-powered cloud solution that makes hybrid work, work.",
+        "event_date": "Tuesday, October 22, 2024",
+        "event_time": "8:30 AM to 10:00 AM PDT",
+        "event_color":"purple",
+        "logo_location":"lg:-translate-x-6 -left-10",
+        "ring_location":"lg:left-auto lg:right-0 lg:translate-x-6",
+        "event_organizer_name": "Inside View Global",
+        "event_organizer_logo": "/assets/Logo/1xAsset 5white_insideView.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.linkedin.com/events/7251682821105233920/",
+        "event_status":"active",
+        "event_type":"webinar",
+        "event_side":"lg:mr-auto lg:pr-6",
+        "event_order":3
+        
+     },
+     {
+        "event_id": "octber28_webinar",
+        "event_name": "Copilot for Microsoft 365 Adoption Accelerator",
+        "event_description": "Ready to be more creative, and productive with the power of AI so you can focus on what matters? Find out how Copilot for Microsoft 365 can help in a 90-minute briefing featuring a live demo and real-life scenarios.",
+        "event_date": "Monday, October 28, 2024",
+        "event_time": "8:30 AM to 10:00 AM PDT",
+        "event_color":"orange",
+        "logo_location":"-left-10 lg:left-auto lg:-right-10 lg:translate-x-6 ",
+        "ring_location":"lg:-translate-x-6",
+        "event_organizer_name": "Inside View Global",
+        "event_organizer_logo": "/assets/Logo/1xAsset 5white_insideView.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.linkedin.com/events/7251698772173275137/",
+        "event_status":"active",
+        "event_type":"webinar",
+        "event_side":"lg:ml-auto lg:pl-6",
+        "event_order":4
+        
+     },
+
+     {
+        "event_id": "Nov2_AISummit",
+        "event_name": "🤖 AI Capabilities in Microsoft 365: A Game Changer for Startups",
+        "event_description": "🎯 Our goal is to do more with less, improve productivity while safeguarding critical data. <br/> <br/> 🌎 My plan is to put together a collection of tips, stories, and insights on how AI, despite being around for decades, can still revolutionize the way we operate today. ",
+        "event_date": "Saturday, November 2, 2024",
+        "event_time": "9:00 AM to 10:00 AM PDT",
+        "event_color":"fuchsia",
+        "logo_location":"lg:-translate-x-6 -left-10",
+        "ring_location":"lg:left-auto lg:right-0 lg:translate-x-6",
+        "event_organizer_name": "AI Summit",
+        "event_organizer_logo": "/assets/Logo/1xAsset 5white_insideView.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://vanaisummit.com/",
+        "event_status":"active",
+        "event_type":"community",
+        "event_side":"lg:mr-auto lg:pr-6",
+        "event_order":5
+        
+     },
+
+
+     {
+        "event_id": "november14_van365view",
+        "event_name": "💪 November: Microsoft 365 Governance & 🤖 Business Process Automation",
+        "event_description": "🏛 Microsoft 365 Governance Talk<br/> Microsoft 365 Governance Talk. Let's go through some good practices and quick wins that you can easily apply to keep your data secure and ensure everyone is using tools like SharePoint and Teams effectively. This session is all about practical tips that make sure your team gets the most out of Microsoft 365.<br/><br/> 🔁 Business Process Automation with Microsoft Power Platform and Microsoft 365 <br/> We’ll discuss practical ways to automate processes using tools like Power Automate, SharePoint, and Teams, making it easier for your team to collaborate and get work done. You’ll discover simple tips and real-life examples that can help reduce manual work, minimize errors, and save time, allowing your organization to focus on what really matters.",
+        "event_date": "Thursday, November 14, 2024",
+        "event_time": "5:30 PM to 7:30 PM PDT",
+        "event_color":"rose",
+        "logo_location":"-left-10 lg:left-auto lg:-right-10 lg:translate-x-6 ",
+        "ring_location":"lg:-translate-x-6",
+        
+        "event_organizer_name": "Van 365 View",
+        "event_organizer_logo": "/assets/Logo/1xAsset 3white_Van365View.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.meetup.com/van365view/events/303775752",
+        "event_status":"active",
+        "event_type":"community",
+        "event_side":"lg:ml-auto lg:pl-6",
+        "event_order":6
+        
+     },
+     {
+        "event_id": "december12_van365view",
+        "event_name": "🎄 December: Christmas Season",
+        "event_description": "Fun Night Networking 🎂 <br/> This is an opportunity to celebrate together, have some time slow down and enjoy some trivia games, networking, snacks, drinks and have great fun night.There will be surprises and gifts for the night",
+        "event_date": "Thursday, October 17, 2024",
+        "event_time": "5:30 PM to 7:30 PM PDT",
+        "event_color":"yellow",
+        "logo_location":"lg:-translate-x-6 -left-10",
+        "ring_location":"lg:left-auto lg:right-0 lg:translate-x-6",
+        "event_organizer_name": "Van 365 View",
+        "event_organizer_logo": "/assets/Logo/1xAsset 3white_Van365View.png",
+        "event_icon_logo": "/assets/events/stalking.svg",
+        "event_link": "https://www.meetup.com/van365view/events/303775803",
+        "event_status":"active",
+        "event_type":"community",
+        "event_side":"lg:mr-auto lg:pr-6",
+        
+        "event_order":7
+        
+     }
+
+    ]
+  }
+  
