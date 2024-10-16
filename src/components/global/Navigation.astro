@@ -162,7 +162,7 @@ const eventssmall = links.eventsLinks.filter(
           <li class='group relative'>
             <!-- Resources Link -->
             <a
-              href='javascript:void(0)'
+              href='#'
               class='inline-flex h-8 items-center gap-1 uppercase px-2.5 text-base font-light text-white hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold group-hover:text-sky-500 dark:text-gray-100 dark:group-hover:text-sky-400'
             >
               <span>About</span>
@@ -196,7 +196,7 @@ const eventssmall = links.eventsLinks.filter(
                       {
                         allaboutlarge.map((linkAbout) => (
                           <a
-                            href={linkAbout.url}
+                            href={linkAbout.url} aria-label={linkAbout.title}
                             class='flex items-center  rounded-xl m-2 px-4  text-gray-900 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25'
                           >
                             <img
@@ -298,7 +298,7 @@ const eventssmall = links.eventsLinks.filter(
           <li class='group px-2'>
             <!-- Solutions Link -->
             <a
-              href='javascript:void(0)'
+              href='#'
               class='inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400'
             >
               <span>Solutions</span>
@@ -449,7 +449,7 @@ const eventssmall = links.eventsLinks.filter(
           <li class='group px-2'>
             <!-- Resources Link -->
             <a
-              href='javascript:void(0)'
+              href='#'
               class='inline-flex h-8 items-center uppercase gap-1 px-2.5 text-base font-light text-white hover:text-sky-500 group-hover:text-sky-500 group-dark:hover:text-sky-600 group-hover:font-bold dark:text-gray-100 dark:group-hover:text-sky-400'
             >
               <span>Industries</span>
@@ -482,7 +482,7 @@ const eventssmall = links.eventsLinks.filter(
                       {
                         industriesLeftlarge.map((industry) => (
                           <a
-                            href='javascript:void(0)'
+                            href='#'
                             class='flex items-center rounded-xl m-2 px-9 text-gray-900 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25'
                           >
                             <img
@@ -501,7 +501,7 @@ const eventssmall = links.eventsLinks.filter(
                       {
                         industriessRightlarge.map((industry) => (
                           <a
-                            href='javascript:void(0)'
+                            href='#'
                             class='flex items-center rounded-xl m-2 px-9 text-gray-900 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25'
                           >
                             <img
@@ -628,7 +628,7 @@ const eventssmall = links.eventsLinks.filter(
           <!-- Logo -->
           <a
             id='tkMobileNavLabel'
-            href='javascript:void(0)'
+            href='#'
             class='group inline-flex items-center font-semibold space-x-2 text-lg tracking-wide text-gray-900 hover:text-gray-600 dark:text-gray-100 dark:hover:text-gray-300'
           >
             <img src='/assets/logo_color.svg' class='h-8' />
@@ -662,7 +662,7 @@ const eventssmall = links.eventsLinks.filter(
             <div
               class='gap-6 bg-neutral-800 my-6 py-6 pl-5 items-center text-left justify-center'
             >
-              <a href='javascript:void(0)'
+              <a href='#'
                 ><h3
                   class='uppercase font-semibold dark:text-sky-400 text-sky-400'
                 >
@@ -887,7 +887,7 @@ const eventssmall = links.eventsLinks.filter(
             >
               <a href='/events/allevents'
                 ><h3
-                  class='uppercase font-semibold dark:text-sky-400 text-sky-400'
+                  class='uppercase font-semibold dark:text-sky-400 text-sky-400' aria-label="Events"
                 >
                   Events
                 </h3>
