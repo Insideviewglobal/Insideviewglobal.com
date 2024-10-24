@@ -6,6 +6,7 @@
 - @astrojs/mdx - https://docs.astro.build/en/guides/markdown-content/
 - @astrojs/rss - https://docs.astro.build/en/guides/rss/
 - @astrojs/prism - https://docs.astro.build/en/reference/api-reference/#prism-
+- astro-seo - https://github.com/jonasmerlin/astro-seo
 
 ## Template Structure
 

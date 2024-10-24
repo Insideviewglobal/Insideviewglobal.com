@@ -1,0 +1,162 @@
+{
+    "Insights": {
+        "description": "Gather information, analyze findings, and understand business goals and challenges. Gain a fresh perspective and comprehensive overview. Break the project into manageable pieces for better control and adjustment to unexpected challenges.",
+        "smallDescription": "Our uniqueness begins with small engagements that unveil a strategic roadmap.",
+        "title": "Insights Workshops"
+    },
+    "allevents": {
+        "description": "Where Events Unite: The Timeline.",
+        "smallDescription": "Your Go-To Guide for Keeping Up with All the Action.",
+        "title": "All Events"
+    },
+    "aws": {
+        "description": "Have an AWS project but unsure where to start? Our AWS architect will help define a clear execution roadmap.",
+        "smallDescription": "Many consider it the most successful and widely used Cloud Computing Platform.",
+        "title": "Amazon AWS"
+    },
+    "azure": {
+        "description": "Moving legacy apps to the cloud or cutting infrastructure costs? Stay competitive with our Microsoft Certified Architects guiding your cost-effective transition.",
+        "smallDescription": "Using Microsoft 365? Azure Cloud is a natural fit with seamless integration into Microsoft’s suite of products and services.",
+        "title": "Microsoft Azure"
+    },
+    "blinkview": {
+        "description": "Blink View Directory is a powerful add-in designed for SharePoint Online and Microsoft Teams, focusing on organizational connectivity and communication.",
+        "smallDescription": "Add-in for SharePoint and Teams, enhancing connectivity and communication.",
+        "title": "Blink View Directory"
+    },
+    "blog": {
+        "description": "Exploring topics, tips, and trends in the world of communication and privacy.",
+        "smallDescription": "Insights and perspectives.",
+        "title": "Blog"
+    },
+    "bpa": {
+        "description": "Save time and money with streamlined processes. Our Business Process Automation services maximize efficiency and productivity using Microsoft Power Platform: Power Automate, Power Apps, Power Apps Pages, Power BI, and Nintex. We ensure all your process automation needs are met.",
+        "smallDescription": "Improve your productive and reduce your expenses, it is all about efficiency.",
+        "title": "Process Automations"
+    },
+    "cloudsolutions": {
+        "description": "Many organizations, including public entities, have adopted the cloud, involving large-scale migrations. Your organization may be ready for this transition, though it can be challenging and costly. Whether starting your Cloud journey or facing challenges from past endeavors, we will assist you and your team for a seamless transition.",
+        "smallDescription": "We recognize that each organization needs different technology, so we advocate for an agnostic replatforming approach.",
+        "title": "Cloud Solutions"
+    },
+    "collabapps": {
+        "description": "In-house development is costly, and teams may struggle to meet demands. Explore the Art of Possible and plan long-term with our expertise in No-Code, Low-Code, and Code-First solutions.",
+        "smallDescription": "Take team productivity to the next level and leverage Microsoft Apps without reinventing the wheel.",
+        "title": "Collaborations Apps"
+    },
+    "contacts": {
+        "description": "Based in Vancouver, we work with companies of any size and location, regardless of project scope. Let's connect and discuss about your project, a call can make the difference.",
+        "smallDescription": "Let's connect and discuss about your project.",
+        "title": "Contact us"
+    },
+    "contentmigrations": {
+        "description": "We’ve migrated thousands of documents, sites, and environments for over 1,000 users. Our expertise includes cross-tenant migrations, replatforming, and content restructuring.",
+        "smallDescription": "Our reputation in content migrations precedes us where others shy away.",
+        "title": "Content Migrations"
+    },
+    "copilot": {
+        "description": "Has your organization adopted Copilot? We’ll ensure requirements are met and prevent data leaks.",
+        "smallDescription": "Microsoft Copilot: Revolutionizing AI-Assisted Productivity as a Game Changer.",
+        "title": "Copilot for Microsoft 365"
+    },
+    "dynamics365": {
+        "description": "Enhance business outcomes with Microsoft Dynamics 365 and Power Platform automation. We assist with ERP and CRM.",
+        "smallDescription": "Set up a comprehensive CRM and ERP solutions with Dynamics 365.",
+        "title": "Dynamics 365"
+    },
+    "home": {
+        "description": "We craft creative, scalable, and sustainable solutions with a user-centric approach, quickly. Our experienced architects, tired of incorrect IT practices, found a solution. We specialize in Microsoft 365, IT, and Enterprise Architecture.",
+        "smallDescription": "Revolutionizing IT Challenges with a Positive Vision.",
+        "title": "Home"
+    },
+    "informationmanagement": {
+        "description": "Our Architects Team will understand your business objectives and current Information Management vulnerabilities. We’ll focus on tactical solutions to address financial or security gaps and collaborate with you to create a long-term, sustainable, and scalable strategy and roadmap.",
+        "smallDescription": "We will help you on transforming data into meaningful information through strategic planning.",
+        "title": "Information Management"
+    },
+    "intranet": {
+        "description": "Replace Intranets every 2-3 years to stay competitive in the evolving tech landscape. Tailored Intranets meet employees’ needs, driving productivity. Acting on these facts boosts team and organizational productivity.",
+        "smallDescription": "Create Intuitive Modern Intranet with a scalable and sustainable Information Architecture.",
+        "title": "Intranets"
+    },
+    "licensingconsulting": {
+        "description": "Up to 30% of IT budgets are wasted on inefficient Microsoft Licensing. Specialized consulting maximizes asset potential, ensures compliance, reduces costs, and aligns licensing with business goals.",
+        "smallDescription": "We simplify Microsoft Licensing with strategic guidance.",
+        "title": "Microsoft Licensing"
+    },
+    "m365governance": {
+        "description": "Microsoft 365 Governance prevents workspace sprawl, empowers users with self-service within boundaries, and accelerates Office 365 adoption. It standardizes processes, improves collaboration, and ensures security and compliance.",
+        "smallDescription": "Governance does not have to be complex. We can start small and scale up efficiently.",
+        "title": "Microsoft 365 Governance"
+    },
+    "msteams": {
+        "description": "MS Teams is popular in Microsoft 365 due to its ease of use. However, without proper governance, it leads to content sprawl and higher management and storage costs. We can help prevent or repair your current configuration.",
+        "smallDescription": "One of the most widely-used services within Microsoft 365... Yet, without proper implementation, it can lead to content sprawl.",
+        "title": "MS Teams"
+    },
+    "partners": {
+        "description": "Over the years we have built a strong relationship of trust with other companies that have the same objective as us. These companies are supported mainly by their employees and customers",
+        "smallDescription": "We collaborate with these companies",
+        "title": "Our Partners"
+    },
+    "powerplatform": {
+        "description": "Most organizations use this platform. No-code and low-code solutions empower users to work independently and efficiently.",
+        "smallDescription": "Cut costs and development time, and resolve business problems cost-effectively with low-code all-in-one platform.",
+        "title": "Microsoft Power Platform"
+    },
+    "rapiddeployment": {
+        "description": "Over the years, we’ve implemented intranets, collaboration workspaces, document management systems, and other ECM components. Our integrated solutions reduce time and offer substantial benefits and robust information architecture.",
+        "smallDescription": "An intelligent approach to reducing costs and time while maintaining uncompromised quality.",
+        "title": "Rapid Deployments"
+    },
+    "recordsmanagement": {
+        "description": "For organizations needing to meet legal obligations and protect data per local regulations, we work with Microsoft Purview and other applications integrated with Microsoft 365 mailboxes, sites, and Teams.",
+        "smallDescription": "Using Microsoft Purview or other solutions, we’ll ensure your organization is compliant through effective implementation.",
+        "title": "Records Management"
+    },
+    "services": {
+        "description": "At Inside View Global, we leverage industry expertise and a successful track record. Our scalable, sustainable services align with your organization’s vision. We ensure technology supports business goals, focusing on tactical quick wins aligned with long-term objectives.",
+        "smallDescription": "Driving Excellence in Consulting, Project Management, and Managed Services.",
+        "title": "Services"
+    },
+    "solutions": {
+        "description": "Workshops to understand your priorities and needs. We have compiled a list of workshops under a fixed-rate engagement to create a current state definition.",
+        "smallDescription": "Expand your capabilities, streamline business processes, and enhance your organization productivity.",
+        "title": "Solutions"
+    },
+    "spo": {
+        "description": "For years, we’ve led and revived numerous failed projects, leveraging our technical knowledge and experience for our clients’ benefit. We’re proud to be known for having some of the best architects, with proven experience in Australia, Canada, and the US.",
+        "smallDescription": "Effectively implemented, this service streamlines applications, reduces costs, and simplifies management, making it an invaluable asset.",
+        "title": "SharePoint Online"
+    },
+    "team": {
+        "description": "Our team works tirelessly behind the scenes to build better products and enhance consulting services. With independent contractors, we create sustainable, scalable solutions, ensuring we bring the best team every time.",
+        "smallDescription": "They support product development and consulting.",
+        "title": "Meet Our Team"
+    },
+    "values": {
+        "description": "Inside View Global exists because of our consistency and integrity in following our values. It is our spirit that drives our desire to raise the standards",
+        "smallDescription": "We follow our Principles & Values without exception",
+        "title": "Our Values"
+    },
+    "van365": {
+        "description": "Microsoft 365 user group in Vancouver.",
+        "smallDescription": "Join Our Community.",
+        "title": "Van 365 View"
+    },
+    "viva": {
+        "description": "Viva has four key modules: Connections for engagement, Insights for productivity, Learning for development, and Topics for knowledge.",
+        "smallDescription": "The cherry of the cake for user adoption, social enterprise network and all within Microsoft 365.",
+        "title": "Microsoft Viva"
+    },
+    "webinars": {
+        "description": "Where Events Unite: The Timeline.",
+        "smallDescription": "Do more with less.",
+        "title": "All Webinars"
+    },
+    "workspaces": {
+        "description": "Organizations often struggle with when to use MS Teams vs. SharePoint Sites. We’ve simplified this through our concept of collaboration workspaces, addressing use cases that MS Teams or Groups can’t meet. This solution clarifies what to use and when, based on insights from multiple industries.",
+        "smallDescription": "Over the years, we've developed a proven Information Architecture that organizations continue to adopt.",
+        "title": "Collaboration Workspaces"
+    }
+}

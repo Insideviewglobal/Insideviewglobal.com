@@ -3,23 +3,27 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import EntriesOne from "@/components/entries/EntriesOne.astro";
 import Contact from "@/components/forms/ContactForm.astro";
+import MetaJson from "@/data/meta.json";
+
 const allPosts = await getCollection("posts");
 const publishedPostsOnly = allPosts.filter(
-  (post) =>
-  post.data.status === "published",
+  (post) => post.data.status === "published",
 );
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 ---
-<BaseLayout>
+
+<BaseLayout headProps={MetaJson.blog}>
   <section>
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-32">
       <div class="text-center lg:text-left">
         <h1
-          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display">
+          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display"
+        >
           Insights and perspectives
         </h1>
         <p
-          class="text-base mt-4 text-zinc-500 max-w-sm mx-auto lg:max-w-none lg:mx-0">
+          class="text-base mt-4 text-zinc-500 max-w-sm mx-auto lg:max-w-none lg:mx-0"
+        >
           Exploring topics, tips, and trends in the world of communication and
           privacy
         </p>
@@ -55,7 +59,8 @@ const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
       </ul>
       <ol
         class="grid grid-cols-1 gap-8 lg:grid-cols-3 sm:grid-cols-2 mt-12 lg:mt-24"
-        role="list">
+        role="list"
+      >
         {
           publishedPostsOnly
             .slice()

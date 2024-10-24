@@ -3,9 +3,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 
 import ServicesBlock from "@/components/features/ServicesBlock.astro";
 import Spacer from "@/components/utils/spacer.astro";
+import MetaJson from "@/data/meta.json";
 ---
-<BaseLayout>
-    <Spacer/>
+
+<BaseLayout headProps={MetaJson.services}>
+    <Spacer />
     <ServicesBlock />
-  
 </BaseLayout>

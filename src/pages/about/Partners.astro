@@ -1,98 +1,91 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import InCtaOne from '@/components/forms/ContactForm.astro';
-import PartnersJson from '@/data/partners.json';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import InCtaOne from "@/components/forms/ContactForm.astro";
+import PartnersJson from "@/data/partners.json";
+import MetaJson from "@/data/meta.json";
 const partners = PartnersJson.partners;
 // Step 1: Map to an array of objects with value and original index
-const filteredPartnersData =PartnersJson.partners.filter((partner) => partner.display === "true" );
+const filteredPartnersData = PartnersJson.partners.filter(
+  (partner) => partner.display === "true",
+);
 const mappedArray = filteredPartnersData.map((item, index) => {
-  return { index: index, value: item.id}; // Convert to lowercase for case-insensitive sorting
+  return { index: index, value: item.id }; // Convert to lowercase for case-insensitive sorting
 });
-
 
 // Step 2: Sort the mapped array by the value (name in this case)
 
 mappedArray.sort((a, b) => {
-    return a.value - b.value;
+  return a.value - b.value;
 });
 // Step 3: Create a sorted array using the sorted indices
-const sortedArray = mappedArray.map(mappedItem => {
+const sortedArray = mappedArray.map((mappedItem) => {
   return PartnersJson.partners[mappedItem.index];
 });
-
 ---
 
-<BaseLayout>
-  <main class='dark:bg-gray-900'>
-    <section class='px-4 mx-auto pt-36 container py-8 lg:px-8 xl:max-w-7xl'>
-      <section class='flex'>
-        <div class='flex flex-col gap-8'>
-          <h2 class='font-bold text-3xl'>
-            <span class='dark:text-white'>Partners</span>
-            <span class='text-sky-600'>Directory</span>
+<BaseLayout headProps={MetaJson.partners}>
+  <main class="dark:bg-gray-900">
+    <section class="px-4 mx-auto pt-36 container py-8 lg:px-8 xl:max-w-7xl">
+      <section class="flex">
+        <div class="flex flex-col gap-8">
+          <h2 class="font-bold text-3xl">
+            <span class="dark:text-white">Partners</span>
+            <span class="text-sky-600">Directory</span>
           </h2>
-          <p class='font-semibold text-xl dark:text-white'>
+          <p class="font-semibold text-xl dark:text-white">
             To create great project sometimes we need <br /> partners, we work with
             these companies
           </p>
-          <p class='text-gray-400'>
+          <p class="text-gray-400">
             Over the years we have built a strong relationship of trust with
             other companies <br /> that have the same objective as us. These companies
             are supported mainly by <br /> their employees and customers
           </p>
         </div>
-        <div class='flex items-center justify-center flex-1'>
+        <div class="flex items-center justify-center flex-1">
           <img
-            src='/assets/partners/globes2.png'
-            alt='partners hero'
-            class='object-cover w-3/6'
+            src="/assets/partners/globes2.png"
+            alt="partners hero"
+            class="object-cover w-3/6"
           />
         </div>
       </section>
-      <section class='grid grid-cols-1 lg:grid-cols-2 gap-10 pt-20'>
+      <section class="grid grid-cols-1 lg:grid-cols-2 gap-10 pt-20">
         {
           sortedArray.map(
             ({ id, name, description, logo, url, contribution, contact }) => (
-              <div class='grid lg:grid-cols-2 grid-rows-2 gap-0 shadow-xl rounded-2xl'>
-                <div class='flex flex-col gap-4 bg-darkBlue p-8 lg:rounded-tl-2xl'>
-                  <h5 class='text-sky-600 font-semibold text-xl'>{name}</h5>
-                  <p class='text-gray-300 font-light text-sm'>{description}</p>
+              <div class="grid lg:grid-cols-2 grid-rows-2 gap-0 shadow-xl rounded-2xl">
+                <div class="flex flex-col gap-4 bg-darkBlue p-8 lg:rounded-tl-2xl">
+                  <h5 class="text-sky-600 font-semibold text-xl">{name}</h5>
+                  <p class="text-gray-300 font-light text-sm">{description}</p>
                 </div>
-                <div class='lg:rounded-tr-2xl flex items-center justify-center p-6 dark:bg-white'>
-                  <a href={url} target='_blank'>
+                <div class="lg:rounded-tr-2xl flex items-center justify-center p-6 dark:bg-white">
+                  <a href={url} target="_blank">
                     <img
                       src={logo}
-                      alt='mariposa_consulting_logo'
-                      class='object-cover'
+                      alt="mariposa_consulting_logo"
+                      class="object-cover"
                     />
                   </a>
                 </div>
-                <div class='bg-neutral-800 text-white lg:rounded-bl-2xl flex flex-col text-sm p-8'>
-                  {contact.name && (
-                    <span>
-                      {contact.name}
-                    </span>
-                  )}
-                  {contact.email && (
-                    <span>
-                      {contact.email}
-                    </span>
-                  )}
+                <div class="bg-neutral-800 text-white lg:rounded-bl-2xl flex flex-col text-sm p-8">
+                  {contact.name && <span>{contact.name}</span>}
+                  {contact.email && <span>{contact.email}</span>}
                 </div>
-                <div class='bg-primaryGreen lg:rounded-br-2xl p-6 flex flex-col gap-4 justify-center items-center'>
-                  <div class='flex justify-between'>
-                    <span class='text-primaryBlue font-semibold text-2xl'>
+                <div class="bg-primaryGreen lg:rounded-br-2xl p-6 flex flex-col gap-4 justify-center items-center">
+                  <div class="flex justify-between">
+                    <span class="text-primaryBlue font-semibold text-2xl">
                       We collaborate in many ways
                     </span>
                     <img
-                      src='/assets/partners/energy.jpg'
-                      class='w-8 h-8 object-cover'
+                      src="/assets/partners/energy.jpg"
+                      class="w-8 h-8 object-cover"
                     />
                   </div>
-                  <p class='text-sm'>{contribution}</p>
+                  <p class="text-sm">{contribution}</p>
                 </div>
               </div>
-            )
+            ),
           )
         }
       </section>

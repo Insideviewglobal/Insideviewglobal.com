@@ -1,15 +1,11 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import Events from '@/components/events/allevents.astro';
-import InCtaOne from '@/components/forms/ContactForm.astro';
-
-
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Events from "@/components/events/allevents.astro";
+import InCtaOne from "@/components/forms/ContactForm.astro";
+import MetaJson from "@/data/meta.json";
 ---
 
-<BaseLayout>
-  
+<BaseLayout headProps={MetaJson.allevents}>
     <Events />
-
     <InCtaOne />
-  
 </BaseLayout>

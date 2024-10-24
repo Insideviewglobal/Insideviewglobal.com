@@ -3,41 +3,37 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import InCtaOne from "@/components/forms/ContactForm.astro";
 
 import SolutionProfile from "@/components/solutions/Solution.astro";
+import MetaJson from "@/data/meta.json";
+
 export function getStaticPaths() {
   return [
-  {params: {solution: 'Insights'}},
-{params: {solution: 'rapiddeployment'}},
-{params: {solution: 'intranet'}},
-{params: {solution: 'bpa'}},
-{params: {solution: 'licensingconsulting'}},
-{params: {solution: 'm365governance'}},
-{params: {solution: 'collabapps'}},
-{params: {solution: 'contentmigrations'}},
-{params: {solution: 'informationmanagement'}},
-{params: {solution: 'recordsmanagement'}},
-{params: {solution: 'cloudsolutions'}},
-{params: {solution: 'workspaces'}},
-{params: {solution: 'spo'}},
-{params: {solution: 'msteams'}},
-{params: {solution: 'copilot'}},
-{params: {solution: 'dynamics365'}},
-{params: {solution: 'viva'}},
-{params: {solution: 'powerplatform'}},
-{params: {solution: 'azure'}},
-{params: {solution: 'aws'}}
-
+    { params: { solution: "Insights" } },
+    { params: { solution: "rapiddeployment" } },
+    { params: { solution: "intranet" } },
+    { params: { solution: "bpa" } },
+    { params: { solution: "licensingconsulting" } },
+    { params: { solution: "m365governance" } },
+    { params: { solution: "collabapps" } },
+    { params: { solution: "contentmigrations" } },
+    { params: { solution: "informationmanagement" } },
+    { params: { solution: "recordsmanagement" } },
+    { params: { solution: "cloudsolutions" } },
+    { params: { solution: "workspaces" } },
+    { params: { solution: "spo" } },
+    { params: { solution: "msteams" } },
+    { params: { solution: "copilot" } },
+    { params: { solution: "dynamics365" } },
+    { params: { solution: "viva" } },
+    { params: { solution: "powerplatform" } },
+    { params: { solution: "azure" } },
+    { params: { solution: "aws" } },
   ];
 }
 
-
-
-
-
-
+const { solution } = Astro.params;
 ---
 
-<BaseLayout>
-  <SolutionProfile/>
+<BaseLayout headProps={MetaJson[solution]}>
+  <SolutionProfile />
   <InCtaOne />
-
 </BaseLayout>

@@ -1,8 +1,9 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import HomeComponent from '@/components/products/Home.astro';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import HomeComponent from "@/components/products/Home.astro";
+import MetaJson from "@/data/meta.json";
 ---
 
-<BaseLayout>
+<BaseLayout headProps={MetaJson.home}>
   <HomeComponent />
 </BaseLayout>

@@ -6,8 +6,10 @@ import Team from "@/components/team/Team.astro";
 import InFeatureFour from "@/components/features/InFeatureFour.astro";
 import AboutCompany from "@/components/about/AboutCompany.astro";
 import InCtaOne from "@/components/forms/ContactForm.astro";
+import MetaJson from "@/data/meta.json";
 ---
-<BaseLayout>
+
+<BaseLayout headProps={MetaJson.home}>
   <InPageHeader />
   <InHeroOne />
   <InFeatureFour />

@@ -1,9 +1,10 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro';
-import InCtaOne from '@/components/forms/ContactForm.astro';
-import * as productsJSON from '@/data/products.json';
-import type { Product } from '@/types/types';
-import ProductBlock from '@/components/products/Product.astro';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import InCtaOne from "@/components/forms/ContactForm.astro";
+import * as productsJSON from "@/data/products.json";
+import type { Product } from "@/types/types";
+import ProductBlock from "@/components/products/Product.astro";
+import MetaJson from "@/data/meta.json";
 
 export function getStaticPaths() {
   return productsJSON.products.map(({ product_id }) => ({
@@ -14,11 +15,11 @@ export function getStaticPaths() {
 const { product } = Astro.params;
 
 const productData = productsJSON.products.find(
-  ({ product_id }) => product_id === product
+  ({ product_id }) => product_id === product,
 ) as Product | undefined;
 ---
 
-<BaseLayout>
+<BaseLayout headProps={MetaJson.blinkview}>
   <ProductBlock product={productData} />
   <InCtaOne />
 </BaseLayout>

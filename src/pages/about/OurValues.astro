@@ -3,8 +3,10 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import Spacer from "@/components/utils/spacer.astro";
 import Values from "@/components/about/ourvalues.astro";
 import Contact from "@/components/forms/ContactForm.astro";
+import MetaJson from "@/data/meta.json";
 ---
-<BaseLayout>
+
+<BaseLayout headProps={MetaJson.values}>
   <Spacer />
   <Values />
   <Contact />
