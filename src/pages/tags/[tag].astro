@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   ];
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post) =>
-      post.data.tags.includes(tag)
+      post.data.tags.includes(tag),
     );
     return {
       params: { tag },
@@ -17,20 +17,22 @@ export async function getStaticPaths() {
     };
   });
 }
-const { tag } = Astro.params;
+
 const { posts } = Astro.props;
 ---
 
-<BaseLayout pageTitle={tag}>
+<BaseLayout>
   <section>
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-32">
       <div class="text-center lg:text-left">
         <h1
-          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display">
+          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display"
+        >
           Insights and perspectives
         </h1>
         <p
-          class="text-base mt-4 text-zinc-500 max-w-sm mx-auto lg:max-w-none lg:mx-0">
+          class="text-base mt-4 text-zinc-500 max-w-sm mx-auto lg:max-w-none lg:mx-0"
+        >
           Exploring topics, tips, and trends in the world of communication and
           privacy
         </p>
@@ -55,7 +57,8 @@ const { posts } = Astro.props;
       </div>
       <ol
         class="grid grid-cols-1 gap-8 lg:grid-cols-3 sm:grid-cols-2 mt-12 lg:mt-24"
-        role="list">
+        role="list"
+      >
         {
           posts.map((post) => (
             <EntriesOne

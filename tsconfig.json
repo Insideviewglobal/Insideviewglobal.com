@@ -3,9 +3,10 @@
       "strictNullChecks": true,
       // Enable top-level await, and other modern ESM features.
       "target": "ESNext",
-      "module": "ESNext",
+      "module": "Node16",
       // Enable node-style module resolution, for things like npm package imports.
-      "moduleResolution": "node",
+      "moduleResolution": "node16",
+      "allowSyntheticDefaultImports": true,
       // Enable JSON imports.
       "resolveJsonModule": true,
       // Enable stricter transpilation for better output.

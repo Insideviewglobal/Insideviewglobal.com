@@ -2,26 +2,26 @@
 import solutionData from "@/data/solutionsData.json";
 export function getStaticPaths() {
   return [
-  {params: {solution: 'Insights'}},
-{params: {solution: 'rapiddeployment'}},
-{params: {solution: 'intranet'}},
-{params: {solution: 'bpa'}},
-{params: {solution: 'licensingconsulting'}},
-{params: {solution: 'm365governance'}},
-{params: {solution: 'collabapps'}},
-{params: {solution: 'contentmigrations'}},
-{params: {solution: 'informationmanagement'}},
-{params: {solution: 'recordsmanagement'}},
-{params: {solution: 'cloudsolutions'}},
-{params: {solution: 'workspaces'}},
-{params: {solution: 'spo'}},
-{params: {solution: 'msteams'}},
-{params: {solution: 'copilot'}},
-{params: {solution: 'dynamics365'}},
-{params: {solution: 'viva'}},
-{params: {solution: 'powerplatform'}},
-{params: {solution: 'azure'}},
-{params: {solution: 'aws'}}
+    { params: { solution: "Insights" } },
+    { params: { solution: "rapiddeployment" } },
+    { params: { solution: "intranet" } },
+    { params: { solution: "bpa" } },
+    { params: { solution: "licensingconsulting" } },
+    { params: { solution: "m365governance" } },
+    { params: { solution: "collabapps" } },
+    { params: { solution: "contentmigrations" } },
+    { params: { solution: "informationmanagement" } },
+    { params: { solution: "recordsmanagement" } },
+    { params: { solution: "cloudsolutions" } },
+    { params: { solution: "workspaces" } },
+    { params: { solution: "spo" } },
+    { params: { solution: "msteams" } },
+    { params: { solution: "copilot" } },
+    { params: { solution: "dynamics365" } },
+    { params: { solution: "viva" } },
+    { params: { solution: "powerplatform" } },
+    { params: { solution: "azure" } },
+    { params: { solution: "aws" } },
   ];
 }
 
@@ -29,29 +29,35 @@ const { solution } = Astro.params;
 const solutionProfile = solutionData.solutions.find(
   ({ solution_id }) => solution_id === solution,
 );
-const solutionTypes = solutionProfile.solution_type;
-const solutionstasksleft =solutionProfile.solution_items.filter((solution) => solution.solution_item_column === "left" );
-const solutionstasksright =solutionProfile.solution_items.filter((solution) => solution.solution_item_column === "right" );
+const solutionTypes = solutionProfile?.solution_type;
+const solutionstasksleft = solutionProfile?.solution_items.filter(
+  (solution) => solution.solution_item_column === "left",
+);
+const solutionstasksright = solutionProfile?.solution_items.filter(
+  (solution) => solution.solution_item_column === "right",
+);
 ---
 
 <!-- Features Section: Featured Image Side Alternate -->
 <div class="overflow-hidden bg-white dark:bg-gray-900 dark:text-gray-100">
-  <div class="container mx-auto px-4 pt-16 pb-8 lg:px-8 lg:pt-32 lg:pb-12 xl:max-w-7xl">
+  <div
+    class="container mx-auto px-4 pt-16 pb-8 lg:px-8 lg:pt-32 lg:pb-12 xl:max-w-7xl"
+  >
     <div
       class="flex flex-col gap-12 lg:flex-row-reverse lg:items-center lg:gap-0"
     >
       <div class="group relative flex-none lg:ml-16 lg:w-1/2 xl:ml-28">
         <div
-          class="absolute left-0 top-0 block h-64 w-full scale-105 rounded-xl bg-[#d0ce38] opacity-40 blur-2xl "
+          class="absolute left-0 top-0 block h-64 w-full scale-105 rounded-xl bg-[#d0ce38] opacity-40 blur-2xl"
         >
         </div>
         <div
-          class="absolute bottom-0 left-0 block h-64 w-full scale-105 rounded-xl bg-[#2383b6] opacity-40 blur-2xl "
+          class="absolute bottom-0 left-0 block h-64 w-full scale-105 rounded-xl bg-[#2383b6] opacity-40 blur-2xl"
         >
         </div>
         <img
           class="relative mx-auto rounded-br-3xl rounded-tl-3xl scale-x-[-1]"
-          src={solutionProfile.solution_image}
+          src={solutionProfile?.solution_image}
           alt="Preview Feature Image"
         />
       </div>
@@ -62,18 +68,18 @@ const solutionstasksright =solutionProfile.solution_items.filter((solution) => s
             class="mb-3 inline-flex rounded bg-sky-100 px-2 py-1 text-sm font-semibold leading-4 dark:bg-sky-950 dark:text-sky-200"
           >
             <span class="mx-1 text-sky-600"
-              >{solutionProfile.solution_servicetype}
+              >{solutionProfile?.solution_servicetype}
             </span> - <span class="mx-1 text-lime-700">
-              {solutionProfile.solution_engagement}</span
+              {solutionProfile?.solution_engagement}</span
             >
           </div>
           <h2 class="mb-4 text-4xl font-black text-black dark:text-white">
-            {solutionProfile.solution_name}
+            {solutionProfile?.solution_name}
           </h2>
           <div class="flex grow flex-col items-left justify-start pb-6">
             <div class="flex items-center gap-1 sm:gap-2">
               {
-                solutionTypes.map((solution_type) => (
+                solutionTypes?.map((solution_type) => (
                   <div class="inline-flex items-center gap-1.5 rounded border border-gray-200 px-3 py-2 text-sm font-semibold leading-4 text-gray-600 shadow-sm dark:border-gray-700 dark:text-gray-400">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -102,104 +108,101 @@ const solutionstasksright =solutionProfile.solution_items.filter((solution) => s
           prose-p:text-left prose-img:rounded-xl prose-p:mb-0 prose-p:text-base prose-ul:m-0 prose-li:m-0
           mx-0 text-lg font-medium leading-relaxed dark:text-gray-200 prose-blockquote:border-l-white prose-a:text-accent-500 hover:prose-a:text-black prose-headings:font-normal prose-headings:text-black prose-pre:border prose-li:marker:text-accent-500 text-zinc-500 prose-code:text-black prose-blockquote:text-black/70"
           >
-
             <span class="pb-5 text-[#a19f16] dark:text-gray-200 font-semibold">
-              <Fragment set:html=  {solutionProfile.solution_headline}/></span>
+              <Fragment set:html={solutionProfile?.solution_headline} /></span
+            >
             <h2 class="pb-5">Overview</h2>
             <p>
-              <Fragment set:html=  {solutionProfile.solution_overview}/>
+              <Fragment set:html={solutionProfile?.solution_overview} />
             </p>
 
             <h2 class="pb-5">How It Works</h2>
             <p>
-              <Fragment set:html=  {solutionProfile.solution_approach}/>
-              
+              <Fragment set:html={solutionProfile?.solution_approach} />
             </p>
 
-           
             <!-- Features -->
           </div>
-          
         </div>
         <!-- END Heading -->
 
         <!-- END Features -->
       </div>
-      
     </div>
-    
   </div>
-  
-  <div class="container mx-auto px-4 lg:px-8  xl:max-w-7xl">
-    <h2 class="pb-5 text-2xl text-sky-900 font-bold mb-0">{solutionProfile.gallery_title}</h2>
-    <div class="container grid grid-cols-1 md:grid-cols-2 mx-auto px-4 lg:px-8 xl:max-w-7xl">
-    <div class="flex-col mx-4">
-    
-    <ul class="space-y-1">
-      {
-        solutionstasksleft.map((serviceFeature) => (
-          <li class="flex gap-3 hover:bg-sky-100 py-2" >
-            <svg
-              class="hi-outline hi-check-circle inline-block size-6 flex-none text-sky-600 dark:text-sky-400 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <div>
-          <span class="text-base text-sky-700 font-semibold">{serviceFeature.solution_item_name}</span>
-          <div
-            class="text-sm font-medium leading-relaxed text-gray-600 dark:text-gray-400"
-          >
-            {serviceFeature.solution_item_description}
-          </div>
-        </div>
-            
-          </li>
-        ))
-      }
-    </ul></div>
-    <div class="flex-col mx-4">
-      {
-        solutionstasksright.map((serviceFeature) => (
-          <li class="flex gap-3 hover:bg-sky-100 py-2" >
-            <svg
-              class="hi-outline hi-check-circle inline-block size-6 flex-none text-sky-600 dark:text-sky-400 "
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <div>
-          <span class="text-base text-sky-700 font-semibold">{serviceFeature.solution_item_name}</span>
-          <div
-            class="text-sm font-medium leading-relaxed text-gray-600 dark:text-gray-400"
-          >
-            {serviceFeature.solution_item_description}
-          </div>
-        </div>
-            
-          </li>
-        ))
-      }
 
-    </div></div>
+  <div class="container mx-auto px-4 lg:px-8 xl:max-w-7xl">
+    <h2 class="pb-5 text-2xl text-sky-900 font-bold mb-0">
+      {solutionProfile?.gallery_title}
+    </h2>
+    <div
+      class="container grid grid-cols-1 md:grid-cols-2 mx-auto px-4 lg:px-8 xl:max-w-7xl"
+    >
+      <div class="flex-col mx-4">
+        <ul class="space-y-1">
+          {
+            solutionstasksleft?.map((serviceFeature) => (
+              <li class="flex gap-3 hover:bg-sky-100 py-2">
+                <svg
+                  class="hi-outline hi-check-circle inline-block size-6 flex-none text-sky-600 dark:text-sky-400 "
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <div>
+                  <span class="text-base text-sky-700 font-semibold">
+                    {serviceFeature.solution_item_name}
+                  </span>
+                  <div class="text-sm font-medium leading-relaxed text-gray-600 dark:text-gray-400">
+                    {serviceFeature.solution_item_description}
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="flex-col mx-4">
+        {
+          solutionstasksright?.map((serviceFeature) => (
+            <li class="flex gap-3 hover:bg-sky-100 py-2">
+              <svg
+                class="hi-outline hi-check-circle inline-block size-6 flex-none text-sky-600 dark:text-sky-400 "
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <div>
+                <span class="text-base text-sky-700 font-semibold">
+                  {serviceFeature.solution_item_name}
+                </span>
+                <div class="text-sm font-medium leading-relaxed text-gray-600 dark:text-gray-400">
+                  {serviceFeature.solution_item_description}
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </div>
+    </div>
   </div>
 </div>
 <!-- END Features Section: Featured Image Side Alternate -->

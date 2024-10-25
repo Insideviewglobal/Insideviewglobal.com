@@ -1,15 +1,30 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
+interface Props {
+  headProps?: {
+    title: string;
+    description: string;
+    smallDescription: string;
+    image: string;
+  };
+}
 
+const {
+  headProps = {
+    title: "Raising the bar",
+    description: "",
+    smallDescription: "",
+    image: "",
+  },
+} = Astro.props;
 ---
 
 <html
   lang="en"
-  class="scroll-smooth selection:bg-accent-500 selection:text-white">
-  <head> <BaseHead /></head>
+  class="scroll-smooth selection:bg-accent-500 selection:text-white"
+>
+  <head> <BaseHead headProps={headProps} /></head>
   <body class="bg-white">
-
     <slot />
-
   </body>
 </html>

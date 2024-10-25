@@ -34,6 +34,7 @@ const { solution } = Astro.params;
 ---
 
 <BaseLayout headProps={MetaJson[solution]}>
+  <!-- @ts-ignore -->
   <SolutionProfile />
   <InCtaOne />
 </BaseLayout>

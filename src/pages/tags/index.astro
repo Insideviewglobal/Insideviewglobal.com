@@ -3,15 +3,15 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 const allPosts = await getCollection("posts");
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
-const pageTitle = "Tag Index";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout>
   <section>
     <div class="max-w-7xl px-8 md:px-12 lg:px-32 mx-auto py-12 lg:py-32">
       <div>
         <h1
-          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display">
+          class="text-4xl tracking-tight font-medium text-black md:text-7xl font-display"
+        >
           Blog index
         </h1>
         <p class="text-base lg:text-lg max-w-xl mt-4 text-zinc-500">
@@ -27,12 +27,14 @@ const pageTitle = "Tag Index";
       </div>
       <ul
         class="flex flex-col divide-y divide-zinc-300 mt-12 lg:mt-24"
-        role="list">
+        role="list"
+      >
         {
           tags.map((tag) => (
             <a
               class="text-lg text-black capitalize hover:text-accent-500 duration-200 py-3"
-              href={`/tags/${tag}`}>
+              href={`/tags/${tag}`}
+            >
               {" "}
               <li class=" inline-flex items-center w-full justify-between">
                 <p class="text-3xl font-normal tracking-tight  font-display">

@@ -1,13 +1,13 @@
 import { useStoryblokApi } from '@storyblok/astro'
-import isPreview from './isPreview'
-import { languages } from './langs'
+import isPreview from './isPreview.js'
+import { languages } from './langs.js'
  
 export default async function generateStaticPaths() {
   const storyblokApi = useStoryblokApi()
   const links = await storyblokApi.getAll('cdn/links', {
     version: isPreview() ? 'draft' : 'published',
   })
-  let paths = []
+  let paths:Array<{}> = []
   links
     .filter((link) => !link.is_folder)
     .forEach((link: { slug: string }) => {
