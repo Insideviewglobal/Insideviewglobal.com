@@ -242,7 +242,6 @@
       "url": "/solutions/aws",
       "type": "technology"
     },
-    
     {
       "resolutionsize": "small",
       "title": "Insights Workshops",
@@ -363,7 +362,6 @@
       "url": "/solutions/aws",
       "type": "technology"
     }
-    
   ],
   "industriesLinks": [
     {
@@ -496,7 +494,6 @@
       "column": "single",
       "order": "4"
     },
-
     {
       "resolutionsize": "small",
       "title": "Our Team",
@@ -560,7 +557,7 @@
     {
       "resolutionsize": "large",
       "title": "Van 365 View",
-      "url": "/VanTechEcosystem/Van365View",
+      "url": "https://van365view.ca/",
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "2"
@@ -572,14 +569,6 @@
       "image": "/assets/icons/startup.svg",
       "column": "single",
       "order": "1"
-    },
-    {
-      "resolutionsize": "small",
-      "title": "Van 365 View Community",
-      "url": "/VanTechEcosystem/Van365View",
-      "image": "/assets/icons/startup.svg",
-      "column": "single",
-      "order": "2"
     }
   ]
 }
