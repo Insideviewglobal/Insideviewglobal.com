@@ -13,7 +13,7 @@ interface Props {
 const { headProps } = Astro.props;
 const { title, description, smallDescription, image } = headProps;
 
-const standardImage = "/assets/Logo/1xAsset 5white_insideView.png";
+const standardImage = "/assets/Logo/Inside-View-Global.png";
 const socialImage = image ? image : standardImage;
 ---
 
@@ -27,7 +27,6 @@ const socialImage = image ? image : standardImage;
       image: socialImage,
     },
     optional: { description: smallDescription },
-    image: { width: 50, height: 50 },
   }}
   extend={{
     link: [
