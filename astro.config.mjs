@@ -6,6 +6,8 @@ import alpinejs from "@astrojs/alpinejs";
 import icon from "astro-icon";
 import { loadEnv } from 'vite';
 
+import robotsTxt from "astro-robots-txt";
+
 const env = loadEnv("", process.cwd());
 
 // https://astro.build/config
@@ -22,5 +24,5 @@ export default defineConfig({
     drafts: true
   },
   site: 'https://insideviewglobal.com',
-  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon()]
+  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(), robotsTxt()]
 });
