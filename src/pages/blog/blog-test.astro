@@ -1,0 +1,64 @@
+---
+import axios from 'axios';
+import * as qs from 'qs';
+import { ConfidentialClientApplication } from '@azure/msal-node';
+
+const config = {
+  auth: {
+    clientId: '',
+    authority:
+      'https://login.microsoftonline.com/TENANT_ID', // Replace with your tenant ID
+    clientSecret: '',
+  },
+};
+
+const msalClient = new ConfidentialClientApplication(config);
+
+async function getAccessToken() {
+  try {
+    const response = await msalClient.acquireTokenByClientCredential({
+      scopes: ['https://graph.microsoft.com/.default'], // 'https://xxx.sharepoint.com/.default'
+    });
+
+    return response.accessToken;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+// Replace with your SharePoint site and page URL
+const siteUrl = 'https://xdvxr.sharepoint.com/sites/iViewHubBlogs';
+const pageUrl = 'SitePages/First-Blog.aspx'; // Relative URL of the page
+
+
+// Function to get HTML content of a SharePoint page
+async function getPageHtml() {
+  try {
+    // Construct the full URL for the REST API call
+    const fullUrl = `${siteUrl}/_api/lists/getbytitle('Site%20Pages')/items`;
+    // https://xdvxr.sharepoint.com/_api/lists/getbytitle('Site%20Pages')/items
+    const yourAccessToken = await getAccessToken();
+
+    const response = await fetch(fullUrl, {
+      method: 'GET',
+      headers: {
+        Accept: 'text/html;odata=verbose',
+        Authorization: `Bearer ${yourAccessToken}`, // Use appropriate authentication method
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Error: ${response.status} ${response.statusText}`);
+    }
+
+    // Get the HTML content
+    const htmlContent = await response.text();
+    console.log(htmlContent); // Display the HTML in console or process it further
+  } catch (error) {
+    console.error('Failed to fetch page HTML:', error);
+  }
+}
+
+// Call the function
+getPageHtml();
+---
