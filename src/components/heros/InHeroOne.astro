@@ -1,59 +1,56 @@
 ---
 import heroData from "@/data/InHeroOne.json";
-
 ---
 
 <!-- Hero Content -->
 <div
-        class="container bg-white dark:text-gray-300 mx-auto grid grid-cols-1 gap-16 px-4 pb-1 text-center lg:grid-cols-2 lg:px-8 lg:py-10 lg:pb-1 lg:text-left xl:max-w-7xl"
+  class="container bg-white dark:text-gray-300 mx-auto grid grid-cols-1 gap-16 px-4 pb-1 text-center lg:grid-cols-2 lg:px-8 lg:py-10 lg:pb-1 lg:text-left xl:max-w-7xl"
 >
-        <div class="lg:flex lg:justify-center">
-                <div class="top-0 w-full">
-                        <div class=" pt-6 lg:pt-0  pb-3">
-                                <a
-                                        href="javascript:void(0)"
-                                        class="mb-2 font-semibold inline-flex text-sm items-center gap-3 rounded-xl border border-sky-800 bg-gray-100/60 px-3 py-1 text-sky-800 transition hover:bg-sky-100/60   sm:gap-4 sm:px-4"
-                                >
-                                <img
-                                        src="/assets/icons/badge.svg"
-                                        class="h-6"
-                                      />
-                                        
-                                        <div class="grow text-left">
-                                                <p class=" leading-4">
-                                                        Microsoft-Certified Professionals
-                                                </p>
-                                        </div>
-                                        <div
-                                                class="inline-flex flex-none items-center text-sm font-bold"
-                                        >
-                                                
-                                        
-                                        </div>
-                                </a></div>
-                        <h2
-                                class="mb-4 text-4xl md:text-3xl lg:text-4xl lg:mt-2 mt-3 font-black tracking-tight text-sky-700 dark:text-sky-700"
-                        >
-                                {heroData.socialstatementtitle}
-                        </h2>
-                        
-                        <div
-                                class="flex text-base flex-col space-y-2 leading-relaxed text-gray-600 dark:text-gray-400"
-                        >
-                                {heroData.socialstatement}<br/><br/>{heroData.socialstatementpart2}
-                        </div>
-                </div>
-        </div>
-        <div class="items-center lg:flex lg:justify-center">
-                <div class="top-0 w-full">
-                        <video controls autoplay muted>
-                                <source
-                                        src="https://webassets.insideviewglobal.com/main_video__87pct__compressed.mp4"
-                                        type="video/mp4"
-                                />
-                        </video>
-                </div>
-        </div>
+  <div class="lg:flex lg:justify-center">
+    <div class="top-0 w-full">
+      <div class="pt-6 lg:pt-0 pb-3">
+        <a
+          href="javascript:void(0)"
+          class="mb-2 font-semibold inline-flex text-sm items-center gap-3 rounded-xl border border-sky-800 bg-gray-100/60 px-3 py-1 text-sky-800 transition hover:bg-sky-100/60 sm:gap-4 sm:px-4"
+        >
+          <img
+            width="24"
+            height="24"
+            src="/assets/icons/badge.svg"
+            class="h-6"
+            alt="badge"
+          />
+
+          <div class="grow text-left">
+            <p class="leading-4">Microsoft-Certified Professionals</p>
+          </div>
+          <div class="inline-flex flex-none items-center text-sm font-bold">
+          </div>
+        </a>
+      </div>
+      <h2
+        class="mb-4 text-4xl md:text-3xl lg:text-4xl lg:mt-2 mt-3 font-black tracking-tight text-sky-700 dark:text-sky-700"
+      >
+        {heroData.socialstatementtitle}
+      </h2>
+
+      <div
+        class="flex text-base flex-col space-y-2 leading-relaxed text-gray-600 dark:text-gray-400"
+      >
+        {heroData.socialstatement}<br /><br />{heroData.socialstatementpart2}
+      </div>
+    </div>
+  </div>
+  <div class="items-center lg:flex lg:justify-center">
+    <div class="top-0 w-full">
+      <video controls autoplay muted>
+        <source
+          src="https://webassets.insideviewglobal.com/main_video__87pct__compressed.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  </div>
 </div>
 <!-- END Hero Content -->
 
