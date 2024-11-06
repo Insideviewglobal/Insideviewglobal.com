@@ -26,6 +26,8 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props as { post: Post };
 
+const { Title, Created, CanvasContent1, Author } = await fetchPostByTitle(post.Title);
+
 // const authorImageUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_catalogs/users/Photos/${post.Author.Title.toLowerCase().replace(/\s+/g, '.')}.jpg`;
 ---
 
@@ -134,21 +136,21 @@ const { post } = Astro.props as { post: Post };
 
 <BaseLayout>
   <main class='py-48 max-w-[40%] mx-auto'>
-    <h1 class='text-4xl font-bold'>{post.Title}</h1>
+    <h1 class='text-4xl font-bold'>{Title}</h1>
     <div class='flex gap-4 items-center'>
       <!-- <img
         src={authorImageUrl}
         alt={post.Author.Title}
         class='w-12 h-12 rounded-full'
       /> -->
-      <p class='text-sm font-semibold'>{post.Author.Title}</p>
+      <p class='text-sm font-semibold'>{Author.Title}</p>
     </div>
     <p class='text-sm font-thin'>
-      {moment(post.Created).format('MMMM D, YYYY')}
+      {moment(Created).format('MMMM D, YYYY')}
     </p>
     <hr />
     <div class='flex items-center gap-4 py-8'>
-      <article set:html={`${post.CanvasContent1}`} />
+      <article set:html={`${CanvasContent1}`} />
     </div>
   </main>
 </BaseLayout>
