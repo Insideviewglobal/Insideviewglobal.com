@@ -92,7 +92,7 @@ const eventssmall = links.eventsLinks.filter(
         class='container relative mx-auto flex items-center justify-between px-4 lg:px-20 lg:max-w-7xl'
       >
         <a
-          href='/blog/blog'
+          href='/blog'
           class='text-muted px-5 hover:text-sky-700 dark:text-slate-400 text-slate-100 font-medium'
           >Blog</a
         >
@@ -196,7 +196,8 @@ const eventssmall = links.eventsLinks.filter(
                       {
                         allaboutlarge.map((linkAbout) => (
                           <a
-                            href={linkAbout.url} aria-label={linkAbout.title}
+                            href={linkAbout.url}
+                            aria-label={linkAbout.title}
                             class='flex items-center  rounded-xl m-2 px-4  text-gray-900 hover:bg-sky-200  dark:text-gray-200 dark:hover:bg-sky-400/25'
                           >
                             <img
@@ -432,9 +433,7 @@ const eventssmall = links.eventsLinks.filter(
                               width='16'
                               height='16'
                             />
-                            <div class=' m-2 text-left'>
-                              {product.title}
-                            </div>
+                            <div class=' m-2 text-left'>{product.title}</div>
                           </a>
                         ))
                       }
@@ -566,9 +565,7 @@ const eventssmall = links.eventsLinks.filter(
                               width='16'
                               height='16'
                             />
-                            <div class=' m-2 text-left'>
-                              {event.title}
-                            </div>
+                            <div class=' m-2 text-left'>{event.title}</div>
                           </a>
                         ))
                       }
@@ -846,7 +843,6 @@ const eventssmall = links.eventsLinks.filter(
               }
             </nav>
           </div>
-          
 
           <div class='grid gap-6'>
             <div
@@ -887,7 +883,8 @@ const eventssmall = links.eventsLinks.filter(
             >
               <a href='/events/allevents'
                 ><h3
-                  class='uppercase font-semibold dark:text-sky-400 text-sky-400' aria-label="Events"
+                  class='uppercase font-semibold dark:text-sky-400 text-sky-400'
+                  aria-label='Events'
                 >
                   Events
                 </h3>
