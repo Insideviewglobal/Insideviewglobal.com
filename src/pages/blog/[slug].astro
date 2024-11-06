@@ -1,0 +1,154 @@
+---
+import moment from 'moment';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { fetchAllPosts } from '@/utils/sharepoint';
+import { fetchPostByTitle } from '@/utils/sharepoint';
+
+interface Post {
+  Title: string;
+  Author: {
+    Title: string;
+  };
+  Created: string;
+  CanvasContent1: string;
+}
+
+export async function getStaticPaths() {
+  const posts = await fetchAllPosts();
+
+  return posts.map((post) => ({
+    params: { slug: post.FileLeafRef.toLowerCase().replace('.aspx', '') },
+    props: {
+      post,
+    },
+  }));
+}
+
+const { post } = Astro.props as { post: Post };
+
+// const authorImageUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_catalogs/users/Photos/${post.Author.Title.toLowerCase().replace(/\s+/g, '.')}.jpg`;
+---
+
+<style>
+  article {
+    color: #333;
+  }
+  article :global(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  article :global(h2) {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  article :global(h3) {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  article :global(h4) {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  article :global(h5) {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  article :global(h6) {
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  article :global(p) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+  }
+  article :global(img) {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  article :global(ul) {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  article :global(ol) {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  article :global(li) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  article :global(a) {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  article :global(a:hover) {
+    text-decoration: none;
+  }
+
+  article :global(blockquote) {
+    border-left: 5px solid #0070f3;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    background-color: #f6f8fa;
+    border-radius: 5px;
+  }
+  article :global(hr) {
+    border: 0;
+    border-top: 1px solid #eaeaea;
+    margin: 2rem 0;
+  }
+  article :global(figure) {
+    width: 100%;
+  }
+  article :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  article :global(th) {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 1px solid #eaeaea;
+  }
+  article :global(td) {
+    padding: 0.5rem 1rem;
+    border: 1px solid #eaeaea;
+  }
+  article :global(iframe) {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1rem;
+  }
+</style>
+
+<BaseLayout>
+  <main class='py-48 max-w-[40%] mx-auto'>
+    <h1 class='text-4xl font-bold'>{post.Title}</h1>
+    <div class='flex gap-4 items-center'>
+      <!-- <img
+        src={authorImageUrl}
+        alt={post.Author.Title}
+        class='w-12 h-12 rounded-full'
+      /> -->
+      <p class='text-sm font-semibold'>{post.Author.Title}</p>
+    </div>
+    <p class='text-sm font-thin'>
+      {moment(post.Created).format('MMMM D, YYYY')}
+    </p>
+    <hr />
+    <div class='flex items-center gap-4 py-8'>
+      <article set:html={`${post.CanvasContent1}`} />
+    </div>
+  </main>
+</BaseLayout>

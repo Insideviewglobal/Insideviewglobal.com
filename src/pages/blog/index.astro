@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { fetchAllPosts } from '@/utils/sharepoint';
+
+const posts = await fetchAllPosts();
+---
+
+<BaseLayout>
+  <div class='flex gap-4 py-48 flex-wrap max-w-[70%] mx-auto'>
+    {
+      posts.map(
+        ({ Title, Description, BannerImageUrl, Author, FileLeafRef }) => (
+          <div class='w-60 flex flex-col gap-4 shadow p-2'>
+            {BannerImageUrl && <img src={BannerImageUrl.Url} alt={Title} />}
+            <h2 class='font-semibold text-xl'>{Title}</h2>
+            <spam class='text-xs font-semibold'>{Author.Title}</spam>
+            <p class='text-xs font-thin'>{Description}</p>
+            <a
+              href={`/blog/${FileLeafRef.toLowerCase().replace('.aspx', '')}`}
+              class='text-blue-500 text-sm font-semibold hover:underline'
+            >
+              Read more
+            </a>
+          </div>
+        )
+      )
+    }
+  </div>
+</BaseLayout>
