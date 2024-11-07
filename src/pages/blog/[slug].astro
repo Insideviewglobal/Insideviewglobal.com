@@ -2,7 +2,7 @@
 import moment from 'moment';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { fetchAllPosts } from '@/utils/sharepoint';
-import { fetchPostByTitle } from '@/utils/sharepoint';
+import { fetchPostByFileName } from '@/utils/sharepoint';
 
 interface Post {
   Title: string;
@@ -17,16 +17,18 @@ export async function getStaticPaths() {
   const posts = await fetchAllPosts();
 
   return posts.map((post) => ({
-    params: { slug: post.FileLeafRef.toLowerCase().replace('.aspx', '') },
+    params: { slug: post.FileLeafRef.replace('.aspx', '') }, // post.FileLeafRef.toLowerCase().replace('.aspx', '')
     props: {
       post,
     },
   }));
 }
-
+const { slug } = Astro.params;
 const { post } = Astro.props as { post: Post };
 
-const { Title, Created, CanvasContent1, Author } = await fetchPostByTitle(post.Title);
+const { Title, Created, CanvasContent1, Author } = await fetchPostByFileName(
+  String(slug)
+);
 
 // const authorImageUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_catalogs/users/Photos/${post.Author.Title.toLowerCase().replace(/\s+/g, '.')}.jpg`;
 ---
@@ -135,7 +137,7 @@ const { Title, Created, CanvasContent1, Author } = await fetchPostByTitle(post.T
 </style>
 
 <BaseLayout>
-  <main class='py-48 max-w-[40%] mx-auto'>
+  <main class='max-w-[80%] py-32 md:py-48 md:max-w-[40%] mx-auto'>
     <h1 class='text-4xl font-bold'>{Title}</h1>
     <div class='flex gap-4 items-center'>
       <!-- <img
