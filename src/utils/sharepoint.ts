@@ -67,7 +67,7 @@ export async function fetchAllPosts() {
   }
 }
 
-export async function fetchPostByTitle(slug: string) {
+export async function fetchPostByFileName(slug: string) {
   try {
     const accessToken = await getAccessToken();
 
@@ -76,7 +76,8 @@ export async function fetchPostByTitle(slug: string) {
       return;
     }
 
-    const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=Title eq '${slug}'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
+    // const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=Title eq '${slug}'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
+    const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=FileLeafRef eq '${slug}.aspx'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
 
     const response = await axios.get(siteUrl, {
       headers: {
