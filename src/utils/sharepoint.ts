@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { readFileSync } from 'fs';
 import * as msal from '@azure/msal-node';
+import path from 'path';
 
 const tenantId = `${import.meta.env.SHAREPOINT_TENANT_ID}`;
 const clientId = `${import.meta.env.SHAREPOINT_CLIENT_ID}`;
@@ -9,9 +10,11 @@ const thumbprint = `${import.meta.env.SHAREPOINT_THUMBPRINT}`;
 let cca;
 
 export async function initializeMsal() {
+  const privateKeyPath = path.join('src', 'utils', 'certs', 'privateKey.pem');
+
   const clientCertificate = {
     thumbprint,
-    privateKey: readFileSync('privateKey.pem', 'utf8'),
+    privateKey: readFileSync(privateKeyPath, 'utf8'),
   };
 
   cca = new msal.ConfidentialClientApplication({
@@ -46,7 +49,7 @@ export async function fetchAllPosts() {
       return;
     }
 
-    const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site%20Pages')/items?$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
+    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site%20Pages')/items?$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
     const response = await axios.get(siteUrl, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -76,7 +79,6 @@ export async function fetchPostByFileName(slug: string) {
       return;
     }
 
-    // const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=Title eq '${slug}'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
     const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=FileLeafRef eq '${slug}.aspx'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
 
     const response = await axios.get(siteUrl, {
