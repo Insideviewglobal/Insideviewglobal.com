@@ -74,14 +74,14 @@
       "display": "true"
     },
     {
-      "member_name": "Pablo Gudjemian",
-      "profile_image": "/assets/team/pablo.jpg",
-      "member_linkedin_link": "https://www.linkedin.com/in/pablogudjemian/",
-      "member_insta_link": "#",
+      "member_name": "Hipatia Medina",
+      "profile_image": "/assets/team/HM_p2.webp",
+      "member_linkedin_link": "https://www.linkedin.com/in/hipatiamedina/",
+      "member_insta_link": "https://www.instagram.com/hipatiamedina/",
       "role_order": 8,
-      "title": "Senior Project Manager",
-      "bio": "IT professional with passion for creating value through technical solutions. Experienced in the entire software development life cycle.",
-      "display": "false"
+      "title": "Cultural-Driven, Human-Centered Marketer",
+      "bio": "With background in humanities, design, and digital marketing, I craft captivating brand stories, driving Inside View Global's vision.",
+      "display": "true"
     }
   ]
 }
