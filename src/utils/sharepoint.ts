@@ -49,13 +49,17 @@ export async function fetchAllPosts() {
       return;
     }
 
-    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site%20Pages')/items?$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
+    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site%20Pages')/items?$filter=PublishToWeb eq 1 &$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
     const response = await axios.get(siteUrl, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         Accept: 'application/json;odata=verbose',
       },
     });
+
+    if (!response.data.d.results) {
+      return [];
+    }
 
     return response.data.d.results;
   } catch (error) {
@@ -79,7 +83,7 @@ export async function fetchPostByFileName(slug: string) {
       return;
     }
 
-    const siteUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_api/web/lists/getbytitle('Site Pages')/items?$filter=FileLeafRef eq '${slug}.aspx'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
+    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site Pages')/items?$filter=FileLeafRef eq '${slug}.aspx'&$select=Title,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author`;
 
     const response = await axios.get(siteUrl, {
       headers: {
