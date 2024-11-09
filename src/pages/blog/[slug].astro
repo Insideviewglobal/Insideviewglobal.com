@@ -24,13 +24,10 @@ export async function getStaticPaths() {
   }));
 }
 const { slug } = Astro.params;
-const { post } = Astro.props as { post: Post };
 
-const { Title, Created, CanvasContent1, Author } = await fetchPostByFileName(
-  String(slug)
-);
+const post = await fetchPostByFileName(String(slug));
+const { Title, Created, CanvasContent1, Author } = post;
 
-// const authorImageUrl = `https://xdvxr.sharepoint.com/sites/iViewHubBlogs/_catalogs/users/Photos/${post.Author.Title.toLowerCase().replace(/\s+/g, '.')}.jpg`;
 ---
 
 <style>
