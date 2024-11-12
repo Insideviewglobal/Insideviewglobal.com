@@ -6,6 +6,7 @@ import path from 'path';
 const tenantId = `${import.meta.env.SHAREPOINT_TENANT_ID}`;
 const clientId = `${import.meta.env.SHAREPOINT_CLIENT_ID}`;
 const thumbprint = `${import.meta.env.SHAREPOINT_THUMBPRINT}`;
+const tenantUrl = `${import.meta.env.SHAREPOINT_ROOTSITE}`;
 
 let cca;
 
@@ -32,7 +33,7 @@ export async function getAccessToken() {
       await initializeMsal();
     }
     const result = await cca.acquireTokenByClientCredential({
-      scopes: ['https://xdvxr.sharepoint.com/.default'],
+      scopes: [`${tenantUrl}`],
     });
     return result.accessToken;
   } catch (error) {
