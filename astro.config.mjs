@@ -27,7 +27,7 @@ export default defineConfig({
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(), robotsTxt(
     {
       userAgent: '*', // Apply this rule to all bots
-      disallow: ['/admin/', '/private/'], // Disallow these directories
+      disallow: ['/admin/', '/private/','src'], // Disallow these directories
       allow: ['/public/'], // Allow this directory
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
     }
