@@ -50,7 +50,7 @@ export async function fetchAllPosts() {
       return;
     }
 
-    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site%20Pages')/items?$filter=PublishToWeb eq 1 &$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
+    const siteUrl = `${import.meta.env.SHAREPOINT_SITE_URL}/_api/web/lists/getbytitle('Site%20Pages')/items?$filter=Status eq 'Publish' &$select=Title,Description,BannerImageUrl,FileLeafRef,CanvasContent1,Created,Author/Title,Author/Id&$expand=Author&$orderby=Created desc`;
     const response = await axios.get(siteUrl, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
