@@ -82,6 +82,17 @@
       "title": "Cultural-Driven, Human-Centered Marketer",
       "bio": "With background in humanities, design, and digital marketing, I craft captivating brand stories, driving Inside View Global's vision.",
       "display": "true"
+    },
+    {
+      "member_name": "Zack Le",
+      "profile_image": "/assets/team/Zack.jpg",
+      "member_linkedin_link": "https://www.linkedin.com/in/quocdungle/",
+      "member_insta_link": "",
+      "role_order": 9,
+      "title": "Full-scale service, Perseverance",
+      "bio": "With over 15 years of experience, this skilled Senior Software Developer and Linux Admin excels in creating seamless web apps and managing Linux systems. A natural problem-solver, they thrive on innovation and collaboration.",
+      "display": "true"
     }
+
   ]
 }
