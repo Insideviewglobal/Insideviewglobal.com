@@ -8,22 +8,29 @@ import { loadEnv } from 'vite';
 
 import robotsTxt from "astro-robots-txt";
 
+import cloudflare from '@astrojs/cloudflare';
+
 const env = loadEnv("", process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'hybrid',
+
   markdown: {
     drafts: true,
     shikiConfig: {
       theme: "css-variables"
     }
   },
+
   shikiConfig: {
     wrap: true,
     skipInline: false,
     drafts: true
   },
+
   site: 'https://insideviewglobal.com',
+
   integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(), robotsTxt(
     {
       userAgent: '*', // Apply this rule to all bots
@@ -32,5 +39,7 @@ export default defineConfig({
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
     }
 
-  )]
+  )],
+
+  adapter: cloudflare()
 });
