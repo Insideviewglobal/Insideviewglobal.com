@@ -39,9 +39,6 @@ export default defineConfig({
     }
 
   )],
-  ssr: {
-    noExternal: false,
-  },
   adapter: cloudflare({
     platformProxy:{
       enabled: true,
