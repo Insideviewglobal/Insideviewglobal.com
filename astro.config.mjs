@@ -14,8 +14,7 @@ const env = loadEnv("", process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
-
+  output: 'server',
   markdown: {
     drafts: true,
     shikiConfig: {
