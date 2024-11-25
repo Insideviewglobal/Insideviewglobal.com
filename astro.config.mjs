@@ -39,6 +39,11 @@ export default defineConfig({
     }
 
   )],
+  vite: {
+    ssr: {
+      external: ['node:buffer'],
+    },
+  },
   adapter: cloudflare({
     platformProxy:{
       enabled: true,
