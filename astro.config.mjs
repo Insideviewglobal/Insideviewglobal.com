@@ -16,7 +16,7 @@ const env = loadEnv('', process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
+  output: 'server',
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -45,10 +45,7 @@ export default defineConfig({
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
     }),
   ],
-  adapter: [
-    node({
-      mode: 'standalone',
-    }),
-    cloudflare(),
-  ],
+  adapter: node({
+    mode: 'middleware',
+  }),
 });
