@@ -3,7 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { fetchAllPosts } from '@/utils/sharepoint';
 
 
-const posts = await fetchAllPosts();
+const posts = await fetchAllPosts(key);
 ---
 
 <BaseLayout>

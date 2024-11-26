@@ -10,8 +10,6 @@ import robotsTxt from 'astro-robots-txt';
 
 import cloudflare from '@astrojs/cloudflare';
 
-import node from '@astrojs/node';
-
 const env = loadEnv('', process.cwd());
 
 // https://astro.build/config
@@ -44,7 +42,5 @@ export default defineConfig({
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
     }),
   ],
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: cloudflare(),
 });
