@@ -10,11 +10,13 @@ import robotsTxt from "astro-robots-txt";
 
 import cloudflare from '@astrojs/cloudflare';
 
+import node from '@astrojs/node';
+
 const env = loadEnv("", process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'server',
+  output: 'hybrid',
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -39,14 +41,7 @@ export default defineConfig({
     }
 
   )],
-  vite: {
-    ssr: {
-      external: ['node:buffer'],
-    },
-  },
-  adapter: cloudflare({
-    platformProxy:{
-      enabled: true,
-    }
-  })
+  adapter: node({
+    mode: 'standalone',
+  }),
 });
