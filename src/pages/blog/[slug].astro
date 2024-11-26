@@ -28,7 +28,6 @@ const { slug } = Astro.params;
 
 const post = await fetchPostByFileName(String(slug));
 const { Title, Created, CanvasContent1, Author } = post;
-
 ---
 
 <style>
@@ -142,7 +141,7 @@ const { Title, Created, CanvasContent1, Author } = post;
         src={authorImageUrl}
         alt={post.Author.Title}
         class='w-12 h-12 rounded-full'
-      /> -->
+      />  -->
       <p class='text-sm font-semibold'>{Author.Title}</p>
     </div>
     <p class='text-sm font-thin'>
