@@ -15,7 +15,7 @@ const env = loadEnv('', process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
+  output: 'server',
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -47,4 +47,5 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone',
   }),
+  // adapter: cloudflare(),
 });
