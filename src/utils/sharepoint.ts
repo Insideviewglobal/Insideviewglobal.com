@@ -7,15 +7,14 @@ const tenantId = `${import.meta.env.SHAREPOINT_TENANT_ID}`;
 const clientId = `${import.meta.env.SHAREPOINT_CLIENT_ID}`;
 const thumbprint = `${import.meta.env.SHAREPOINT_THUMBPRINT}`;
 const tenantUrl = `${import.meta.env.SHAREPOINT_ROOTSITE}`;
+const privateKey = `${import.meta.env.SHAREPOINT_PRIVATE_KEY}`;
 
 let cca;
 
 export async function initializeMsal() {
-  const privateKeyPath = path.join('src', 'utils', 'certs', 'privateKey.pem');
-
   const clientCertificate = {
     thumbprint,
-    privateKey: readFileSync(privateKeyPath, 'utf8'),
+    privateKey,
   };
 
   cca = new msal.ConfidentialClientApplication({
