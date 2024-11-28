@@ -7,12 +7,13 @@ import icon from 'astro-icon';
 import { loadEnv } from 'vite';
 
 import robotsTxt from 'astro-robots-txt';
-
+import cloudfare from '@astrojs/cloudflare';
 
 const env = loadEnv('', process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   markdown: {
     drafts: true,
     shikiConfig: {
@@ -41,4 +42,22 @@ export default defineConfig({
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
     }),
   ],
+  adapter: cloudfare(),
+  vite: {
+    ssr: {
+      external: [
+        'http',
+        'crypto',
+        'https',
+        'fs',
+        'path',
+        'os',
+        'url',
+        'zlib',
+        'stream',
+        'util',
+        'buffer',
+      ],
+    },
+  },
 });

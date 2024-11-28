@@ -1,7 +1,5 @@
 import axios from 'axios';
-import { readFileSync } from 'fs';
 import * as msal from '@azure/msal-node';
-import path from 'path';
 
 const tenantId = `${import.meta.env.SHAREPOINT_TENANT_ID}`;
 const clientId = `${import.meta.env.SHAREPOINT_CLIENT_ID}`;
