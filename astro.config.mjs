@@ -27,6 +27,7 @@ export default defineConfig({
     drafts: true,
   },
 
+
   site: 'https://insideviewglobal.com',
 
   integrations: [
@@ -44,3 +45,4 @@ export default defineConfig({
   ],
   adapter: cloudflare(),
 });
+
