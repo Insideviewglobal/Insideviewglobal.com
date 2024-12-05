@@ -1,36 +1,43 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
-import mdx from "@astrojs/mdx";
-import alpinejs from "@astrojs/alpinejs";
-import icon from "astro-icon";
+import tailwind from '@astrojs/tailwind';
+import sitemap from '@astrojs/sitemap';
+import mdx from '@astrojs/mdx';
+import alpinejs from '@astrojs/alpinejs';
+import icon from 'astro-icon';
 import { loadEnv } from 'vite';
 
-import robotsTxt from "astro-robots-txt";
+import robotsTxt from 'astro-robots-txt';
 
-const env = loadEnv("", process.cwd());
+const env = loadEnv('', process.cwd());
 
 // https://astro.build/config
 export default defineConfig({
   markdown: {
     drafts: true,
     shikiConfig: {
-      theme: "css-variables"
-    }
+      theme: 'css-variables',
+    },
   },
+
   shikiConfig: {
     wrap: true,
     skipInline: false,
-    drafts: true
+    drafts: true,
   },
+
   site: 'https://insideviewglobal.com',
-  integrations: [tailwind(), sitemap(), mdx(), alpinejs(), icon(), robotsTxt(
-    {
+
+  integrations: [
+    tailwind(),
+    sitemap(),
+    mdx(),
+    alpinejs(),
+    icon(),
+    robotsTxt({
       userAgent: '*', // Apply this rule to all bots
-      disallow: ['/admin/', '/private/','src'], // Disallow these directories
+      disallow: ['/admin/', '/private/', 'src'], // Disallow these directories
       allow: ['/public/'], // Allow this directory
       sitemap: 'https://insideviewglobal.com/sitemap-0.xml', // Add a sitemap link
-    }
-
-  )]
+    }),
+  ],
 });

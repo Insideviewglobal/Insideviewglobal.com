@@ -3,6 +3,7 @@ import moment from 'moment';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { fetchAllPosts } from '@/utils/sharepoint';
 import { fetchPostByFileName } from '@/utils/sharepoint';
+import { parseStringPromise, Builder } from 'xml2js';
 
 interface Post {
   Title: string;
@@ -29,6 +30,90 @@ const { slug } = Astro.params;
 const post = await fetchPostByFileName(String(slug));
 const { Title, Created, CanvasContent1, Author } = post;
 
+const videoList: string[] = [];
+
+// const replaceImageSrc = (html: string) => {
+//   const regex = /<img[^>]+src="([^">]+)"/g;
+//   const newHtml = html.replace(regex, (match, src) => {
+//     if (src.includes('https')) return match;
+//     return match.replace(src, `https://insideviewglobal.sharepoint.com/${src}`);
+//   });
+//   return newHtml;
+// };
+
+// const addIframe = (html: string) => {
+//   const regex = /iframe\s+([^>]+)>/gi;
+//   const match = regex.exec(html);
+//   console.log(match);
+
+//   // take <iframe width=200 height=113 src=https://www.youtube.com/embed/H8iuyspQPHc?feature=oembed frameborder=0 allowfullscreen> </iframe>
+//   // and paste it in inside the closes div
+// };
+function extractYouTubeVideoID(url) {
+  const regex =
+    /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+  const match = url.match(regex);
+  return match ? match[1] : null;
+}
+
+function constructYouTubeEmbedURL(videoID) {
+  return `https://www.youtube.com/embed/${videoID}`;
+}
+
+async function recursiveSearch(obj) {
+  for (const key in obj) {
+    switch (key) {
+      case 'img':
+        let src = obj[key][0].$.src;
+        if (src.includes('https')) {
+          break;
+        }
+        src = src.replace(
+          src,
+          `https://insideviewglobal.sharepoint.com/${src}`
+        );
+        obj[key][0].$.src = src;
+        break;
+      case 'div':
+        const webPartData = obj[key][0];
+        if (
+          !webPartData ||
+          !webPartData['$'] ||
+          !webPartData['$']['data-sp-webpartdata']
+        ) {
+          break;
+        }
+        const cachedEmbedCode = JSON.parse(webPartData.$['data-sp-webpartdata'])
+          .properties.cachedEmbedCode;
+
+        if (!cachedEmbedCode) break;
+
+        const videoID = extractYouTubeVideoID(cachedEmbedCode);
+        if (!videoID) {
+          break;
+        }
+
+        const embedURL = constructYouTubeEmbedURL(videoID);
+
+        videoList.push(embedURL);
+        break;
+      default:
+        break;
+    }
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      recursiveSearch(obj[key]);
+    }
+  }
+  return obj;
+}
+
+let xmlParseToJS = await parseStringPromise(CanvasContent1);
+
+recursiveSearch(xmlParseToJS);
+
+const builder = new Builder();
+
+let xml = builder.buildObject(xmlParseToJS);
 ---
 
 <style>
@@ -138,19 +223,24 @@ const { Title, Created, CanvasContent1, Author } = post;
   <main class='max-w-[80%] py-32 md:py-48 md:max-w-[40%] mx-auto'>
     <h1 class='text-4xl font-bold'>{Title}</h1>
     <div class='flex gap-4 items-center'>
-      <!-- <img
-        src={authorImageUrl}
-        alt={post.Author.Title}
-        class='w-12 h-12 rounded-full'
-      /> -->
       <p class='text-sm font-semibold'>{Author.Title}</p>
     </div>
     <p class='text-sm font-thin'>
       {moment(Created).format('MMMM D, YYYY')}
     </p>
     <hr />
-    <div class='flex items-center gap-4 py-8'>
-      <article set:html={`${CanvasContent1}`} />
+    <div class='flex flex-col items-center gap-4 py-8'>
+      <article set:html={xml} />
+      {
+        videoList.map((video) => (
+          <iframe
+            src={video}
+            frameborder='0'
+            allowfullscreen
+            class='w-full aspect-video'
+          />
+        ))
+      }
     </div>
   </main>
 </BaseLayout>
